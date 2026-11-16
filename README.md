@@ -74,6 +74,5 @@ npm test
 
 Consulte também:
 - 📖 [Blueprint Completo LLO2 V2.1 & Guia de Ajuste Cirúrgico](docs/load_order_fotorrealista_2026_xbox_series_s.md)
-- 🔬 [Estudo de Viabilidade Arquitetural no Xbox Series S](docs/estudo_viabilidade_skyrim_2026_xbox_series_s.md)
 - 🔌 [Referência Técnica (`API_REFERENCE.md`)](API_REFERENCE.md)
 - 🧪 [Relatório de Testes (`TESTING.md`)](TESTING.md)
