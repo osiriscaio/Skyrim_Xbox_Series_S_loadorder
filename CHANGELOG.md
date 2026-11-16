@@ -2,6 +2,13 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo, seguindo o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/) e [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [2.1.1] - 2026-11-16
+
+### Alterado
+- **Disparo Inicial de Publicação no GitHub Pages (`pages.yml`):** Acionamento do pipeline oficial `Deploy Cockpit to GitHub Pages` após ativação de visibilidade pública e configuração da origem `GitHub Actions` no repositório remoto, publicando o Cockpit em `https://osiriscaio.github.io/Skyrim_Xbox_Series_S_loadorder/`.
+
+---
+
 ## [2.1.0] - 2026-11-16
 
 ### Adicionado

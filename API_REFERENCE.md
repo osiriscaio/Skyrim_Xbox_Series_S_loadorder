@@ -1,6 +1,6 @@
 # Referência Técnica de Dados, Estado e Automação (`API_REFERENCE.md`)
 
-**Versão:** `v2.1.0`
+**Versão:** `v2.1.1`
 
 Embora o **Cockpit Skyrim SE 2026 — Xbox Series S** seja uma aplicação web `100%` estática hospedada no GitHub Pages (sem backend proprietário nem coleta de dados), este documento especifica formalmente os **3 contratos técnicos** utilizados pelo painel:
 1. Schema do Manifesto Binário Auditado (`data/verified_v2_85_manifest.json` e `window.MODS`).

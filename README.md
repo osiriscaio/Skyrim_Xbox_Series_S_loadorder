@@ -1,4 +1,4 @@
-# Skyrim SE 2026 "PC-Ultra Medieval Grandioso (2K + 3D)" — Xbox Series S Load Order & Cockpit (`v2.1.0`)
+# Skyrim SE 2026 "PC-Ultra Medieval Grandioso (2K + 3D)" — Xbox Series S Load Order & Cockpit (`v2.1.1`)
 
 [![Deploy Cockpit to GitHub Pages](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml/badge.svg)](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml)
 
@@ -15,7 +15,9 @@ Curadoria técnica, auditoria binária (`.ckm` / `.esp` / `.bsa`) e **Cockpit In
 
 ---
 
-## 🚀 Destaques Implementados na Versão `v2.1.0`
+## 🚀 Destaques Implementados nas Versões `v2.1.0` / `v2.1.1`
+
+- **`v2.1.1`:** Ativação e disparo automático do workflow de publicação contínua no GitHub Pages (`https://osiriscaio.github.io/Skyrim_Xbox_Series_S_loadorder/`) com validação integrada via GitHub Actions.
 
 1. **Correção Binária Integral das Armaduras Comuns em `2K` (`#36`):**
    - Substituído o antigo par recortado (`#35 2K Realistic Armors` + `#36 Vanilla Armor Replacer - No overlap`, que possuía `128` ponteiros `.nif` órfãos no `.esp` e ausência da textura `bootsiron.dds` exigida pelas Botas de Aço da Lydia) pelo pacote completo sem cortes **`Vanilla Armor Replacer | By NordwarUA`** (`467,71 MB` • `822` arquivos BSA auditados, **`0` malhas ou texturas ausentes**).
