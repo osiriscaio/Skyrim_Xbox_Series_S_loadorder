@@ -1,4 +1,4 @@
-# Skyrim SE 2026 "PC-Ultra Medieval Grandioso (2K + 3D)" — Xbox Series S Load Order & Cockpit (`v2.1.0`)
+# Skyrim SE 2026 "PC-Ultra Medieval Grandioso (2K + 3D)" — Xbox Series S Load Order & Cockpit (`v2.1.1`)
 
 [![Deploy Cockpit to GitHub Pages](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml/badge.svg)](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml)
 
@@ -53,7 +53,7 @@ Curadoria técnica, auditoria binária (`.ckm` / `.esp` / `.bsa`) e **Cockpit In
 │   └── verified_v2_85_manifest.json                     # Manifesto binário completo dos 85 mods
 ├── docs/
 │   ├── load_order_fotorrealista_2026_xbox_series_s.md   # Blueprint LLO2 V2.1 + Guia In-Place & Cheat Room
-│   ├── estudo_viabilidade_skyrim_2026_xbox_series_s.md  # Estudo de arquitetura Xbox Series S (15 GB)
+│   └── load_order_fotorrealista_2026_xbox_series_s.md   # Blueprint LLO2 V2.1 + Guia In-Place & Cheat Room
 │   └── planning/
 │       └── plano_impl_v1.md                             # Plano de implantação versionado
 ├── scripts/

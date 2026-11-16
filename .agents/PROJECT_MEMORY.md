@@ -5,7 +5,7 @@ Repositório autoral dedicado à engenharia, auditoria binária (`.ckm`/`.esp`/`
 
 - **Repositório Remoto:** `https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder`
 - **Cockpit Publicado (GitHub Pages):** `https://osiriscaio.github.io/Skyrim_Xbox_Series_S_loadorder/`
-- **Versão Atual:** `v2.1.0` (`85` Creations verificadas • `12,44 GiB` / `15,00 GB` • `~2,56 GiB` livres para a Regra do Espaço Duplo)
+- **Versão Atual:** `v2.1.1` (`85` Creations verificadas • `12,44 GiB` / `15,00 GB` • `~2,56 GiB` livres para a Regra do Espaço Duplo)
 
 ## Decisões Arquiteturais Consolidadas
 1. **Proteção contra Lockout de Interface (`.swf`):** Mods de UI obsoletos contendo `startmenu.swf` ou `bethesdanetlogin.swf` (ex.: *Nordic UI - Updated*) bloqueiam o menu *Creations* pós-dezembro/2023. Utilizamos exclusivamente `#10 Nordic SkyHUD` (HUD in-game pura).

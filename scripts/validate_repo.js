@@ -19,7 +19,6 @@ for (const rel of [
   'assets/tailwindcss.min.js',
   'data/verified_v2_85_manifest.json',
   'docs/load_order_fotorrealista_2026_xbox_series_s.md',
-  'docs/estudo_viabilidade_skyrim_2026_xbox_series_s.md',
   'docs/planning/plano_impl_v1.md',
   'README.md',
   'API_REFERENCE.md',
@@ -122,7 +121,6 @@ console.log(`✅ 4/5 Linker TES4/MAST (0 erros) e orçamento (${totalGib.toFixed
 const textFiles = [
   'index.html', 'README.md', 'API_REFERENCE.md', 'CHANGELOG.md', 'TESTING.md',
   'docs/load_order_fotorrealista_2026_xbox_series_s.md',
-  'docs/estudo_viabilidade_skyrim_2026_xbox_series_s.md',
   'docs/planning/plano_impl_v1.md',
   '.agents/PROJECT_MEMORY.md'
 ];
