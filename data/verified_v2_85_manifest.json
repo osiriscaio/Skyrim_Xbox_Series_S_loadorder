@@ -1,0 +1,1854 @@
+[
+  {
+    "id": 1,
+    "bnetId": "fe05e888-47cb-445d-a070-bb3aa5765c99",
+    "legacyId": 2947658,
+    "title": "Unofficial Skyrim Special Edition Patch [USSEP]",
+    "author": "Arthmoor",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 302561250,
+    "sizeMb": 288.54,
+    "files": [
+      "unofficial skyrim special edition patch.esp",
+      "unofficial skyrim special edition patch.ini",
+      "unofficial skyrim special edition patch_xbox.bsa",
+      "unofficial skyrim special edition patch - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "ccbgssse001-fish.esm",
+      "ccqdrsse001-survivalmode.esl",
+      "ccbgssse037-curios.esl",
+      "ccbgssse025-advdsgs.esm",
+      "_ResourcePack.esl"
+    ]
+  },
+  {
+    "id": 2,
+    "bnetId": "d32b3566-b46e-48c7-82c8-3deaa1edd4e9",
+    "legacyId": 4326928,
+    "title": "Simple Workaround Framework",
+    "author": "aWildTommas",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 2242327,
+    "sizeMb": 2.14,
+    "files": [
+      "Simple Workaround Framework.esp",
+      "Simple Workaround Framework.ini",
+      "Simple Workaround Framework_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "ccBGSSSE001-Fish.esm",
+      "ccBGSSSE025-AdvDSGS.esm",
+      "ccQDRSSE001-SurvivalMode.esl"
+    ]
+  },
+  {
+    "id": 3,
+    "bnetId": "05c3dd40-b12f-4414-abb8-d389928ba2fc",
+    "legacyId": 4343041,
+    "title": "Realistic Equipment - SE Edition",
+    "author": "aWildTommas",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 12014594,
+    "sizeMb": 11.46,
+    "files": [
+      "Realistic Equipment.esp",
+      "Realistic Equipment_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "ccBGSSSE001-Fish.esm",
+      "ccBGSSSE025-AdvDSGS.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 4,
+    "bnetId": "7fa3fed7-6cd6-4035-bf10-5c0ba80fddf1",
+    "legacyId": 4336261,
+    "title": "Just Shields (on Back) - SE Edition",
+    "author": "aWildTommas",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 2302387,
+    "sizeMb": 2.2,
+    "files": [
+      "Just Shields (on Back).esp",
+      "Just Shields (on Back)_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm",
+      "ccBGSSSE001-Fish.esm",
+      "ccBGSSSE025-AdvDSGS.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 5,
+    "bnetId": "ac3ffcd0-2943-47f3-b365-e6fd1b980cc9",
+    "legacyId": 4344623,
+    "title": "Reforging to the Masses (Weapon Expansion) - SWF Edition",
+    "author": "aWildTommas",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 54396263,
+    "sizeMb": 51.88,
+    "files": [
+      "RFM.esm"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 6,
+    "bnetId": "8a16bdda-8f83-4f36-840f-c0bffbaca677",
+    "legacyId": null,
+    "title": "Lux Resources v 2.2 (17102025)",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 178115444,
+    "sizeMb": 169.86,
+    "files": [
+      "Lux - Resources.esp",
+      "Lux - Resources_xbox.bsa",
+      "Lux - Resources - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 7,
+    "bnetId": "3152322e-2b4b-4367-ac73-eceaf3766b5f",
+    "legacyId": null,
+    "title": "Lux Via v 2.2 - Master File",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 48107590,
+    "sizeMb": 45.88,
+    "files": [
+      "Lux Via.esp",
+      "Lux Via_xbox.bsa",
+      "Lux Via - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp"
+    ]
+  },
+  {
+    "id": 8,
+    "bnetId": "4f7b6905-47f8-4c7a-a5d5-39026c6339a7",
+    "legacyId": null,
+    "title": "Lux Orbis v 4.5 - Master File",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 172725,
+    "sizeMb": 0.16,
+    "files": [
+      "Lux Orbis - Master plugin.esm"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 9,
+    "bnetId": "097cb9b0-e543-43e9-ab29-46365bb4e89a",
+    "legacyId": null,
+    "title": "Lux v 7.1 - Master File",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 29416,
+    "sizeMb": 0.03,
+    "files": [
+      "Lux - Master plugin.esm"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Dawnguard.esm"
+    ]
+  },
+  {
+    "id": 10,
+    "bnetId": "29b8495b-6f70-4130-afd8-fea999034f81",
+    "legacyId": 4281182,
+    "title": "Nordic SkyHUD",
+    "author": "Devilsplay77",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 492319,
+    "sizeMb": 0.47,
+    "files": [
+      "Nordic SkyHUD.esp",
+      "Nordic SkyHUD.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 11,
+    "bnetId": "2d5ff0fe-249d-49f1-9aa5-60043ee44762",
+    "legacyId": null,
+    "title": "Kontrol - Updated",
+    "author": "TommasPatches",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 3598,
+    "sizeMb": 0,
+    "files": [
+      "Kontrol - Updated.esp",
+      "Kontrol - Updated_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 12,
+    "bnetId": "25f42b49-82ad-4218-a2e0-9a6d4e93f5a7",
+    "legacyId": 4231363,
+    "title": "DMH Busty Skeevers",
+    "author": "daddymchugenuts",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 300827,
+    "sizeMb": 0.29,
+    "files": [
+      "DMH Busty Skeevers.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 13,
+    "bnetId": "bb5077d5-39f6-46b7-8497-28cdbf7ae038",
+    "legacyId": 3304897,
+    "title": "Display Enhancements (XB1)",
+    "author": "Bradenm1",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 727394,
+    "sizeMb": 0.69,
+    "files": [
+      "Display Enhancements.esp"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 14,
+    "bnetId": "39c6a829-bfca-4af7-9588-3745e23d6e9c",
+    "legacyId": 3010376,
+    "title": "Cheat Room (XB1)",
+    "author": "Bradenm1",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1311875,
+    "sizeMb": 1.25,
+    "files": [
+      "Cheat Room.esp",
+      "Cheat Room_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 15,
+    "bnetId": "d9cb9a1c-4b5f-4f73-9505-987aa4f0930d",
+    "legacyId": 4269547,
+    "title": "Audio SFX Overhaul",
+    "author": "clofas1",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 136126582,
+    "sizeMb": 129.82,
+    "files": [
+      "AudioSFXOverhaul.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 16,
+    "bnetId": "b306155a-d36c-40fb-857d-6d52d9a4329a",
+    "legacyId": 3017337,
+    "title": "Static Mesh Improvement Mod SE XB1",
+    "author": "Brumbek",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 951623788,
+    "sizeMb": 907.54,
+    "files": [
+      "Static Mesh Improvement Mod SE.esp",
+      "Static Mesh Improvement Mod SE.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 17,
+    "bnetId": "7150b7a4-cc64-4ddc-9216-ada180f153b9",
+    "legacyId": 4241333,
+    "title": "LucidAPs' High Poly Project (v5.x) with Fixes",
+    "author": "PeaceoftheWorld",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 365496857,
+    "sizeMb": 348.56,
+    "files": [
+      "High_Poly_Project_with_Fixes.esp",
+      "High_Poly_Project_with_Fixes.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 18,
+    "bnetId": "98903899-c893-48dd-b96c-840ab221779f",
+    "legacyId": 4337752,
+    "title": "Skyland Bits and Bobs - A Clutter Overhaul",
+    "author": "Skyking2020",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 835948435,
+    "sizeMb": 797.22,
+    "files": [
+      "Skyland Bits and Bobs.esp",
+      "Skyland Bits and Bobs_xbox.bsa",
+      "Skyland Bits and Bobs - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 19,
+    "bnetId": "e70def02-08fc-4b14-ae1e-e49826063691",
+    "legacyId": 4321263,
+    "title": "FYX AIO - Mesh Improvements",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 28366685,
+    "sizeMb": 27.05,
+    "files": [
+      "FYX - AIO.esp",
+      "FYX - AIO - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 20,
+    "bnetId": "f47c9a66-4160-458c-a9a4-cc5108e474cb",
+    "legacyId": null,
+    "title": "Nordic Stonewalls Terraces (Style1, Nordic)- 2K",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 17680034,
+    "sizeMb": 16.86,
+    "files": [
+      "Nordic_Stonewalls_Terraces.esp",
+      "Nordic_Stonewalls_Terraces_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 21,
+    "bnetId": "97fa1d34-4f4c-4e90-ba33-eb5d81e5f6b9",
+    "legacyId": null,
+    "title": "Nordic Farmhouse Stonewall - 2k1k",
+    "author": "GroovyKick24",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 4694945,
+    "sizeMb": 4.48,
+    "files": [
+      "Nordic Farmhouse Stonewall.esp",
+      "Nordic Farmhouse Stonewall_xbox.bsa"
+    ],
+    "deps": []
+  },
+  {
+    "id": 22,
+    "bnetId": "f9ccd915-2485-41e2-9644-8792c34ce0dd",
+    "legacyId": null,
+    "title": "High Quality Ivy Replacer 1k - Variation 1",
+    "author": "GroovyKick24",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 10281821,
+    "sizeMb": 9.81,
+    "files": [
+      "Ivy Replacer BOS.esp",
+      "Ivy Replacer BOS_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 23,
+    "bnetId": "23c08480-c611-4c44-9997-f9b44be7560e",
+    "legacyId": null,
+    "title": "SRP Architecture 2K - Part 1",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1734510631,
+    "sizeMb": 1654.16,
+    "files": [
+      "SRP_Architecture_1.esp",
+      "SRP_Architecture_1_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 24,
+    "bnetId": "334113cc-ad69-484c-ac43-230c4f7bb94d",
+    "legacyId": null,
+    "title": "SRP Architecture 2K - Part 2",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1614269091,
+    "sizeMb": 1539.49,
+    "files": [
+      "SRP_Architecture_2.esp",
+      "SRP_Architecture_2_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 25,
+    "bnetId": "36a20bde-06f5-421d-8c35-eade6ae490de",
+    "legacyId": 4281562,
+    "title": "SRP Dungeons 1k",
+    "author": "BraccaMykar79",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 499634937,
+    "sizeMb": 476.49,
+    "files": [
+      "SRP Dungeons.esp",
+      "SRP Dungeons.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 26,
+    "bnetId": "2d01fb32-2469-48b8-a397-7d1d21da49d4",
+    "legacyId": null,
+    "title": "Illustrious Whiterun v 4.0 - Complex Material(2k1k)",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 562865702,
+    "sizeMb": 536.79,
+    "files": [
+      "Illustrious_whiterun_2k1k.esp",
+      "Illustrious_whiterun_2k1k_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 27,
+    "bnetId": "e18692d5-d32b-4ae2-9701-b887527c4abf",
+    "legacyId": null,
+    "title": "Whiterun Doors and Gate 2K by todor0v",
+    "author": "JarlBallin89",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 30185604,
+    "sizeMb": 28.79,
+    "files": [
+      "WhiterunDoorsGates.esp",
+      "WhiterunDoorsGates_xbox.bsa",
+      "WhiterunDoorsGates - Textures_xbox.bsa"
+    ],
+    "deps": []
+  },
+  {
+    "id": 28,
+    "bnetId": "09ec0e22-d218-4f5b-8790-1469a2ba3137",
+    "legacyId": null,
+    "title": "Skyking Fantasia Landscapes",
+    "author": "Skyking2020",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 550788334,
+    "sizeMb": 525.27,
+    "files": [
+      "Fantasia Landscapes.esp",
+      "Fantasia Landscapes_xbox.bsa",
+      "Fantasia Landscapes - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 29,
+    "bnetId": "4e411d00-d5d6-4212-a9b2-366984105cc3",
+    "legacyId": null,
+    "title": "ERM - Enhanced Rocks and Mountains",
+    "author": "FM07",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 13743708,
+    "sizeMb": 13.11,
+    "files": [
+      "ERM - Enhanced Rocks and Mountains.esp",
+      "ERM - Enhanced Rocks and Mountains_xbox.bsa"
+    ],
+    "deps": []
+  },
+  {
+    "id": 30,
+    "bnetId": "2144a6f4-b525-4a0c-9ef2-e41208d06225",
+    "legacyId": 4150681,
+    "title": "Blended Roads Redone",
+    "author": "StoneSpiralGaming",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 22860368,
+    "sizeMb": 21.8,
+    "files": [
+      "Blended Roads Redone.esp",
+      "Blended Roads Redone.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 31,
+    "bnetId": "c04aef31-2293-443f-911f-618775057684",
+    "legacyId": 4150670,
+    "title": "Hyperborean Snow",
+    "author": "StoneSpiralGaming",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 21021255,
+    "sizeMb": 20.05,
+    "files": [
+      "Hyperborean Snow.esp",
+      "Hyperborean Snow - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 32,
+    "bnetId": "79b1ab4b-9277-4e55-9bef-b5bcd7b1d3a2",
+    "legacyId": 4235981,
+    "title": "Simplicity of Snow",
+    "author": "WillOhTheWisp",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 20688148,
+    "sizeMb": 19.73,
+    "files": [
+      "Simplicity of Snow.esp",
+      "Simplicity of Snow.ini",
+      "Simplicity of Snow_xbox.bsa",
+      "Simplicity of Snow - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 33,
+    "bnetId": "95372fdb-5774-4e70-92bf-ea0b386b2b00",
+    "legacyId": 4256227,
+    "title": "Believable weapons (sheathed greatswords)",
+    "author": "jowg",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 35201307,
+    "sizeMb": 33.57,
+    "files": [
+      "Believable weapons.esp",
+      "Believable weapons.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 34,
+    "bnetId": "3b1908d3-b4b2-4d42-9351-5bf3532c798a",
+    "legacyId": null,
+    "title": "(Updated) Xavbio Retextures AiO (No CC)",
+    "author": "YEW-XavbioPorts",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 704532715,
+    "sizeMb": 671.89,
+    "files": [
+      "XavbioRetextureAiO.esp",
+      "XavbioRetextureAiO_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 35,
+    "bnetId": "c50337a2-215d-4e33-9792-f10dd2aa0901",
+    "legacyId": 4228043,
+    "title": "Optimized Quality CubeMaps - HD Cube Maps",
+    "author": "RetiredAuthor",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 105366973,
+    "sizeMb": 100.49,
+    "files": [
+      "CUBEMAPSOPT.esp",
+      "CUBEMAPSOPT - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 36,
+    "bnetId": "9d94d88d-0275-45c0-8083-ecede3c8cbf1",
+    "legacyId": 4143740,
+    "title": "Vanilla Armor Replacer | By NordwarUA",
+    "author": "Raxxinate",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 490425179,
+    "sizeMb": 467.71,
+    "files": [
+      "DIS_Replacer.esp",
+      "DIS_Replacer.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 37,
+    "bnetId": "61f19279-a197-441d-b331-9f70d4d98d39",
+    "legacyId": null,
+    "title": "New Legion 2k (SWF)",
+    "author": "Snipey360_NordwarUA",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 117105774,
+    "sizeMb": 111.68,
+    "files": [
+      "DIS_Heavy_Legion.esp",
+      "DIS_Heavy_Legion_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 38,
+    "bnetId": "d058f69d-1734-4091-9278-af5794550b8f",
+    "legacyId": null,
+    "title": "Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo",
+    "author": "Snipey360_NordwarUA",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 358975884,
+    "sizeMb": 342.35,
+    "files": [
+      "NW_Sons_of_Skyrim.esp",
+      "NW_Sons_of_Skyrim_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "ccBGSSSE025-AdvDSGS.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 39,
+    "bnetId": "e43b23d2-cb7c-489f-b235-c9005244bbc5",
+    "legacyId": null,
+    "title": "Unplayable Faction Armors SSE 2k SWF",
+    "author": "Snipey360_NordwarUA",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 214809239,
+    "sizeMb": 204.86,
+    "files": [
+      "DIS_Armor_Fractions.esp",
+      "DIS_Armor_Fractions_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 40,
+    "bnetId": "3cbfd96a-d5cc-4ff7-a6ff-f67db10e9635",
+    "legacyId": null,
+    "title": "Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo",
+    "author": "Snipey360_NordwarUA",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 73816166,
+    "sizeMb": 70.4,
+    "files": [
+      "NW_Companions_Replacer_Light - Just Wolf Armor.esp",
+      "NW_Companions_Replacer_Light - Just Wolf Armor_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm",
+      "Simple Workaround Framework.esp"
+    ]
+  },
+  {
+    "id": 41,
+    "bnetId": "2815fe8a-1a3e-47d1-8712-f13fe97b404d",
+    "legacyId": 4316242,
+    "title": "Divergence - Compendium of Beasts - AIO - 1K",
+    "author": "TXTEC",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 171614972,
+    "sizeMb": 163.66,
+    "files": [
+      "Divergence - Compendium of Beasts - AIO.esp",
+      "Divergence - Compendium of Beasts - AIO.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 42,
+    "bnetId": "764fe718-2f09-4e14-9950-c510aef11b9d",
+    "legacyId": 4237141,
+    "title": "Fluffworks (Fluffy Animals) Quality 2K",
+    "author": "Mandoo6435",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 168188032,
+    "sizeMb": 160.4,
+    "files": [
+      "Fluffworks.esp",
+      "Fluffworks.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 43,
+    "bnetId": "248a7ee0-b71c-4a90-b2d5-557501003ea5",
+    "legacyId": 4329497,
+    "title": "Embers XD V 3.2.8 (1K) - Lux Orbis Edition",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 59178343,
+    "sizeMb": 56.44,
+    "files": [
+      "Embers XD.esp",
+      "Embers XD_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 44,
+    "bnetId": "892f943a-aaf2-4323-8cca-b0ded4016a1d",
+    "legacyId": 4320119,
+    "title": "VAE2 - Visual Animated  Enchants 2-023",
+    "author": "l3st4t75",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 9866824,
+    "sizeMb": 9.41,
+    "files": [
+      "VAE2.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 45,
+    "bnetId": "1a32bed2-577a-4e6b-b36e-df939b1397f7",
+    "legacyId": 4187379,
+    "title": "Pandorable Mega Pack",
+    "author": "MeisterB",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 901051903,
+    "sizeMb": 859.31,
+    "files": [
+      "pan mega pack.esp",
+      "pan mega pack_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 46,
+    "bnetId": "a479bf14-bd34-48cc-aff6-cb7b768fa429",
+    "legacyId": 4244883,
+    "title": "RS Children Optimized",
+    "author": "Mandoo6435",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 30848485,
+    "sizeMb": 29.42,
+    "files": [
+      "RSkyrimChildren.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Dragonborn.esm",
+      "Hearthfires.esm"
+    ]
+  },
+  {
+    "id": 47,
+    "bnetId": "b85ca6d7-a9bc-45ec-a6b1-f2e022f0f228",
+    "legacyId": 4238237,
+    "title": "Bella Beauty AND THE BEASTS Bundle",
+    "author": "basspainter",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 112212864,
+    "sizeMb": 107.01,
+    "files": [
+      "bbbeastbundle.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 48,
+    "bnetId": "a0b75c6a-1c54-4dba-8fcd-14d5e0576132",
+    "legacyId": 4337459,
+    "title": "Subsurface Scattering Shaders for Skins",
+    "author": "youngemmawatson",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 46852,
+    "sizeMb": 0.04,
+    "files": [
+      "SubsurfaceScatteringShader.esp",
+      "SubsurfaceScatteringShader.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 49,
+    "bnetId": "61ea861e-8a0c-48e7-a189-4ab827d5818b",
+    "legacyId": 4271284,
+    "title": "XP32 Maximum Skeleton Special Extended Plus",
+    "author": "BraccaMykar79",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1708428,
+    "sizeMb": 1.63,
+    "files": [
+      "XPMSE.esp",
+      "XPMSE.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm"
+    ]
+  },
+  {
+    "id": 50,
+    "bnetId": "44797002-072b-43d6-919b-7f512e591de4",
+    "legacyId": 4318966,
+    "title": "Comprehensive First Person Animation Overhaul - CFPAO",
+    "author": "Devilsplay77",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 844288,
+    "sizeMb": 0.81,
+    "files": [
+      "CFPAO.esp",
+      "CFPAO.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 51,
+    "bnetId": "7c34465e-fac0-4378-83f7-a8af4b4e2e4e",
+    "legacyId": 4307936,
+    "title": "GDB's The Revenge",
+    "author": "Devilsplay77",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 161972191,
+    "sizeMb": 154.47,
+    "files": [
+      "Action Based Projectiles.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 52,
+    "bnetId": "20c24db7-c1bf-49b9-a42f-9c519e379b1f",
+    "legacyId": 2970997,
+    "title": "VioLens - A Killmove Mod SE [XB1]",
+    "author": "The-Reko",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1313796,
+    "sizeMb": 1.25,
+    "files": [
+      "VioLens SE.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 53,
+    "bnetId": "9b085660-ba68-4140-bb62-3bedd571cca2",
+    "legacyId": 4335752,
+    "title": "Skoglendi - A Grass Mod (Green Tundra)",
+    "author": "Devilsplay77",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 57079240,
+    "sizeMb": 54.44,
+    "files": [
+      "Skoglendi - A Grass Mod.esp",
+      "Skoglendi - A Grass Mod.bsa",
+      "Skoglendi - A Grass Mod - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 54,
+    "bnetId": "d7b08b61-e7f8-42c0-9be7-aafa27370474",
+    "legacyId": 4199686,
+    "title": "Origins of Forest - 3D Forest Grass",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 12825545,
+    "sizeMb": 12.23,
+    "files": [
+      "Origins Of Forest - 3D Forest Grass.esp",
+      "Origins Of Forest - 3D Forest Grass.bsa",
+      "Origins Of Forest - 3D Forest Grass - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 55,
+    "bnetId": "4f4642c6-2841-4a13-b3fc-aaac078dfc20",
+    "legacyId": 4263944,
+    "title": "Cathedral 3D Pine Grass",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 10272283,
+    "sizeMb": 9.8,
+    "files": [
+      "Cathedral - 3D Pine Grass.esp",
+      "Cathedral - 3D Pine Grass.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 56,
+    "bnetId": "01132b5b-c389-4706-ba70-cfaeb5991934",
+    "legacyId": 4011845,
+    "title": "Landscape Fixes For Grass Mods",
+    "author": "Code1k",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 8190048,
+    "sizeMb": 7.81,
+    "files": [
+      "Landscape Fixes For Grass Mods.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 57,
+    "bnetId": "4781fe76-09e9-4103-bbc0-d47bd3a0636b",
+    "legacyId": 4147709,
+    "title": "Cathedral Plants and Mushrooms 2k",
+    "author": "vagueraptor",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 101692951,
+    "sizeMb": 96.98,
+    "files": [
+      "CathedralPlants.esp",
+      "CathedralPlants - Textures.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 58,
+    "bnetId": "ffb09c5f-9df8-45c9-82ab-4fb0d6a659de",
+    "legacyId": 4282550,
+    "title": "Draco's 3D Plants & Shrubs (2k-2k)",
+    "author": "lexifer452",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 38456321,
+    "sizeMb": 36.67,
+    "files": [
+      "Draco's3DPlants&Shrubs2k.esp",
+      "Draco's3DPlants&Shrubs2k.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 59,
+    "bnetId": "87a402ad-8447-48e6-90ff-609bf3bd11e2",
+    "legacyId": null,
+    "title": "[XB1] Nature Of The Wild Lands 2.31 - Forest and Trees Improvement Mod | SE",
+    "author": "RainyGrove",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 415391852,
+    "sizeMb": 396.15,
+    "files": [
+      "Nature of the Wild Lands.esp",
+      "Nature of the Wild Lands_xbox.bsa",
+      "Nature of the Wild Lands - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 60,
+    "bnetId": "1cb4c5c8-5d50-4e66-a3b0-e0607fe09ac6",
+    "legacyId": 4186064,
+    "title": "Alpine Forest of Whiterun Valley XB1",
+    "author": "Aenohesa",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1059798,
+    "sizeMb": 1.01,
+    "files": [
+      "Alpine Forest of Whiterun Valley.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm"
+    ]
+  },
+  {
+    "id": 61,
+    "bnetId": "7bc79410-960f-4844-8a25-5ade0ab6d0e9",
+    "legacyId": 4243144,
+    "title": "The Great Cities, Towns, and Villages Bundle",
+    "author": "basspainter",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 50214345,
+    "sizeMb": 47.89,
+    "files": [
+      "allthegreateverything.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 62,
+    "bnetId": "be476c43-c71f-4ead-8af9-2cb555e1bc21",
+    "legacyId": 4285981,
+    "title": "JK&#39;s Interiors AiO",
+    "author": "StoneSpiralGaming",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 36993260,
+    "sizeMb": 35.28,
+    "files": [
+      "JK's Interiors AiO.esp",
+      "JK's Interiors AiO_xbox.bsa",
+      "JK's Interiors AiO - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 63,
+    "bnetId": "6f90cb1e-f00d-4490-8c9f-aedb752b11a1",
+    "legacyId": 4059215,
+    "title": "JK's Skyrim - All in One by jkrojmal & Teabag86",
+    "author": "campolo313",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 12490848,
+    "sizeMb": 11.91,
+    "files": [
+      "JKs Skyrim.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 64,
+    "bnetId": "20319fab-ef0c-46f1-b228-72d925a06f0c",
+    "legacyId": 4247819,
+    "title": "The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch",
+    "author": "basspainter",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 1522828,
+    "sizeMb": 1.45,
+    "files": [
+      "allthegreateverythingjk.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "JKs Skyrim.esp",
+      "allthegreateverything.esp"
+    ]
+  },
+  {
+    "id": 65,
+    "bnetId": "ce5d06bc-a37b-4bca-94f7-16f1273449ff",
+    "legacyId": 4176401,
+    "title": "Fortified Whiterun",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 17888441,
+    "sizeMb": 17.06,
+    "files": [
+      "WhiterunDefenses.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 66,
+    "bnetId": "bb537194-3fea-4b3d-b019-1eac0f999232",
+    "legacyId": null,
+    "title": "Capital Whiterun Expansion with Fixes - No Planks",
+    "author": "FM07",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 29133833,
+    "sizeMb": 27.78,
+    "files": [
+      "SurWR.esp",
+      "SurWR_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 67,
+    "bnetId": "70b62127-cf25-4b16-9cee-bedf2c3567ed",
+    "legacyId": 4177549,
+    "title": "Fortified Whiterun - JK’s Skyrim Patch",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 14569,
+    "sizeMb": 0.01,
+    "files": [
+      "Fortified Whiterun - JKs Skyrim Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "JKs Skyrim.esp",
+      "WhiterunDefenses.esp"
+    ]
+  },
+  {
+    "id": 68,
+    "bnetId": "767fa253-a705-45f4-b117-b324a8cc1afe",
+    "legacyId": 4321077,
+    "title": "FYX - Fortified Whiterun Consistency Patch",
+    "author": "Skyfall515",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 952700,
+    "sizeMb": 0.91,
+    "files": [
+      "FYX - Fortified Whiterun Consistency.esp",
+      "FYX - Fortified Whiterun Consistency.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "WhiterunDefenses.esp"
+    ]
+  },
+  {
+    "id": 69,
+    "bnetId": "5789c8a0-1bc5-470b-9086-8719eeab19f0",
+    "legacyId": null,
+    "title": "Capital Whiterun Expansion - Fortified Whiterun Patch",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 57495,
+    "sizeMb": 0.05,
+    "files": [
+      "SurWR - Whiterun Defenses Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "SurWR.esp",
+      "WhiterunDefenses.esp"
+    ]
+  },
+  {
+    "id": 70,
+    "bnetId": "cc2945b5-c4a6-4c3a-ab46-ac6cffb31f6e",
+    "legacyId": null,
+    "title": "Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch",
+    "author": "FM07",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 105861,
+    "sizeMb": 0.1,
+    "files": [
+      "JK - CWE Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "JKs Skyrim.esp",
+      "JK's Interiors AiO.esp",
+      "SurWR.esp"
+    ]
+  },
+  {
+    "id": 71,
+    "bnetId": "adfc2d2e-b1a2-49bd-b68a-a19e69d400aa",
+    "legacyId": 4220849,
+    "title": "Trees In Cities for JK's Skyrim",
+    "author": "substill",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 90785,
+    "sizeMb": 0.09,
+    "files": [
+      "JK Skyrim Feat Trees In Cities 5in1 Patch v4_3.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "JKs Skyrim.esp"
+    ]
+  },
+  {
+    "id": 72,
+    "bnetId": "736fcb09-316d-40f1-9182-702afc17140a",
+    "legacyId": 4273311,
+    "title": "SRP LODs  (Medium Resolution)",
+    "author": "BraccaMykar79",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 485449001,
+    "sizeMb": 462.96,
+    "files": [
+      "SNRP LODs.esp",
+      "SNRP LODs.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 73,
+    "bnetId": "41f6cc87-078f-4e43-88a2-f4f13d975ee6",
+    "legacyId": null,
+    "title": "Green Tundra LOD",
+    "author": "deleted241129-000858",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 9177180,
+    "sizeMb": 8.75,
+    "files": [
+      "Green Tundra LOD.esp",
+      "Green Tundra LOD_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm"
+    ]
+  },
+  {
+    "id": 74,
+    "bnetId": "edd90cb6-3150-4956-9d80-fd89bcb8efab",
+    "legacyId": 4302401,
+    "title": "DAWN: Dramatic Atmospheres, Weathers, & Nature",
+    "author": "clofas1",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 153531806,
+    "sizeMb": 146.42,
+    "files": [
+      "DAWN.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 75,
+    "bnetId": "ad96197d-21cf-40a3-b1aa-c689400833f4",
+    "legacyId": 4318909,
+    "title": "DAWN Waters w/ Natural Waterfalls",
+    "author": "clofas1",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 15398662,
+    "sizeMb": 14.69,
+    "files": [
+      "_DAWN Water & Waterfalls.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  },
+  {
+    "id": 76,
+    "bnetId": "3d0e7f09-120c-4a73-89e8-4c838f12cdd0",
+    "legacyId": null,
+    "title": "Lux Via v 2.2 - Plugin",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 816246,
+    "sizeMb": 0.78,
+    "files": [
+      "Lux Via - plugin.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp",
+      "Lux Via.esp"
+    ]
+  },
+  {
+    "id": 77,
+    "bnetId": "d627ca87-efb4-4db3-84ca-282db9ce65b7",
+    "legacyId": null,
+    "title": "Lux Orbis v 4.5 - Plugin",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 25654892,
+    "sizeMb": 24.47,
+    "files": [
+      "Lux Orbis.esp",
+      "Lux Orbis_xbox.bsa",
+      "Lux Orbis - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp",
+      "Lux Orbis - Master plugin.esm"
+    ]
+  },
+  {
+    "id": 78,
+    "bnetId": "9cd85311-2507-4d29-9fe2-568a03e039f4",
+    "legacyId": 4250877,
+    "title": "Lux Orbis / JK's Skyrim AIO Patch",
+    "author": "basspainter",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 264927,
+    "sizeMb": 0.25,
+    "files": [
+      "JKs_Skyrim_No_Lights_Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp",
+      "JKs Skyrim.esp",
+      "Lux Orbis.esp"
+    ]
+  },
+  {
+    "id": 79,
+    "bnetId": "aae5792a-3d12-43cd-b107-4c6390fd6101",
+    "legacyId": 4253383,
+    "title": "Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch",
+    "author": "basspainter",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 94108,
+    "sizeMb": 0.09,
+    "files": [
+      "allthegreateverythingorbis.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "allthegreateverything.esp",
+      "Lux Orbis.esp"
+    ]
+  },
+  {
+    "id": 80,
+    "bnetId": "1de3a7f2-7b1b-4046-b9ac-7144111c7815",
+    "legacyId": null,
+    "title": "Lux v 7.1 - Plugin",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 119244591,
+    "sizeMb": 113.72,
+    "files": [
+      "Lux.esp",
+      "Lux_xbox.bsa",
+      "Lux - Textures_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp"
+    ]
+  },
+  {
+    "id": 81,
+    "bnetId": "c8fa0a02-e38f-44fa-a8ef-7f1e937f3e30",
+    "legacyId": null,
+    "title": "Lux - Updated USSEP Patch",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 22268,
+    "sizeMb": 0.02,
+    "files": [
+      "Lux - USSEP patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp",
+      "unofficial skyrim special edition patch.esp",
+      "Lux.esp"
+    ]
+  },
+  {
+    "id": 82,
+    "bnetId": "7d00fe62-ebab-4d20-a8f2-cbdeeed2bfeb",
+    "legacyId": null,
+    "title": "Lux - Free Creation Club Content Patch",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 26561,
+    "sizeMb": 0.03,
+    "files": [
+      "Lux - Free CC Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "HearthFires.esm",
+      "ccBGSSSE001-Fish.esm",
+      "ccBGSSSE025-AdvDSGS.esm",
+      "Lux - Resources.esp",
+      "Lux.esp"
+    ]
+  },
+  {
+    "id": 83,
+    "bnetId": "1b8d0adc-0108-40ad-9ac9-c9efdcce06e4",
+    "legacyId": null,
+    "title": "Jk&#39;s Interiors AiO - Lux Patch",
+    "author": "FatalIllusion",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 3865512,
+    "sizeMb": 3.69,
+    "files": [
+      "Lux - Jk's Interiors AiO Patch.esp",
+      "Lux - Jk's Interiors AiO Patch_xbox.bsa"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm",
+      "Lux - Resources.esp",
+      "Lux.esp",
+      "JK's Interiors AiO.esp"
+    ]
+  },
+  {
+    "id": 84,
+    "bnetId": "9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264",
+    "legacyId": 4268574,
+    "title": "JK&#39;s Interiors AiO JK&#39;s Skyrim AIO Patch",
+    "author": "StoneSpiralGaming",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 113539,
+    "sizeMb": 0.11,
+    "files": [
+      "JK's Interiors AIO JK's Skyrim Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "JKs Skyrim.esp",
+      "JK's Interiors AiO.esp"
+    ]
+  },
+  {
+    "id": 85,
+    "bnetId": "07b6749e-71f1-4c60-8a2b-f9e77d888b3c",
+    "legacyId": 4319624,
+    "title": "Alternate Perspective - Alternate Start",
+    "author": "Guizzu",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 5171085,
+    "sizeMb": 4.93,
+    "files": [
+      "AlternatePerspective.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "Dawnguard.esm",
+      "HearthFires.esm",
+      "Dragonborn.esm"
+    ]
+  }
+]

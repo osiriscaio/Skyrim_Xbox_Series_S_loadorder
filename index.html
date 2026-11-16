@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0f17" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2338bdf8'%3E%3Cpath d='M12 2L15.5 9L22 12L15.5 15L12 22L8.5 15L2 12L8.5 9L12 2Z'/%3E%3C/svg%3E" />
+  <title>Cockpit Skyrim SE 2026 — Xbox Series S (15 GB Edition)</title>
+  <script src="./assets/tailwindcss.min.js"></script>
+  <script>
+    // Aplica tema escuro padrão apenas se aberto fora do Antigravity (ex: direto no celular ou Chrome/Edge local)
+    (function () {
+      var root = document.documentElement;
+      var bg = getComputedStyle(root).getPropertyValue('--background').trim();
+      if (!bg) {
+        var standaloneTokens = {
+          '--background': '#0b0f17',
+          '--content': '#0f1623',
+          '--card': '#151e2e',
+          '--sidebar': '#101725',
+          '--border': '#26344d',
+          '--foreground': '#f1f5f9',
+          '--muted-foreground': '#94a3b8',
+          '--placeholder': '#64748b',
+          '--primary': '#38bdf8',
+          '--primary-foreground': '#082f49',
+          '--secondary': '#1e293b',
+          '--secondary-foreground': '#e2e8f0',
+          '--accent': '#22c55e'
+        };
+        Object.keys(standaloneTokens).forEach(function (k) {
+          root.style.setProperty(k, standaloneTokens[k]);
+        });
+      }
+    })();
+  </script>
+  <style>
+    /* Blindagem Mobile-First, WCAG 2.5.8 (44x44px) e Fallback Offline/Visualizador Mobile */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; overscroll-behavior-y: contain; }
+    body {
+      margin: 0;
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-variant-numeric: tabular-nums;
+      overflow-x: hidden;
+    }
+    .hidden { display: none !important; }
+    svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; }
+    button, select, a.touch-btn, label.touch-btn, [role="checkbox"] {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible, [role="checkbox"]:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+    .wrap-anywhere { overflow-wrap: anywhere; word-break: break-word; }
+    /* Fallback semântico caso o CDN externo seja bloqueado no Visualizador de HTML do celular / modo offline */
+    header, nav { background-color: var(--background); border-bottom: 1px solid var(--border); }
+    nav.sticky-nav { position: sticky; top: 0; z-index: 30; }
+    input, select, textarea { background-color: var(--background); color: var(--foreground); border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.5rem 0.75rem; }
+    button, a.touch-btn, label.touch-btn { border-radius: 0.75rem; border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-decoration: none; font: inherit; }
+    @media (max-width: 767px) {
+      .touch-target { min-height: 44px !important; min-width: 44px !important; }
+      input[type="text"], select, textarea { font-size: 16px !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
+
+  <noscript>
+    <div style="margin:12px;padding:14px;border-radius:12px;background:#1e293b;color:#f8fafc;border:2px solid #38bdf8;font-size:14px;line-height:1.45;">
+      <strong>⚠️ Pré-visualização limitada (WhatsApp / Arquivos):</strong> este visualizador bloqueia botões interativos. Toque no ícone de <strong>Compartilhar / Menu (⋮ ou ↗)</strong> e escolha <strong>"Abrir no Chrome"</strong> ou <strong>"Abrir no Safari"</strong> para usar o painel completo!
+    </div>
+  </noscript>
+
+  <!-- Top Hero & Compact Telemetry (Rola naturalmente no celular sem bloquear a tela!) -->
+  <header class="border-b border-[var(--border)] bg-[var(--background)]">
+    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 pt-4 pb-3">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] font-bold shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15.5 9L22 12L15.5 15L12 22L8.5 15L2 12L8.5 9L12 2Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h1 class="text-base sm:text-xl font-bold tracking-tight text-[var(--foreground)] leading-snug">
+              Skyrim SE 2026 — Cockpit Xbox Series S
+            </h1>
+            <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]">
+              V2.1 • 15 GB Cap
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-1">
+            Controle de bordo mobile (sofá + controle Xbox) e sincronização rápida (`1440p @ 45–60 FPS`) • <a href="https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder" target="_blank" rel="noopener noreferrer" class="underline text-[var(--primary)]">Repositório GitHub ↗</a>
+          </p>
+        </div>
+
+        <!-- Quick Action Buttons (44px Touch Targets on Mobile) -->
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2">
+          <button id="btnNextPending" onclick="openNextPending()" class="touch-target col-span-2 sm:col-span-1 inline-flex items-center justify-center gap-2 px-3.5 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 transition-all duration-200 shadow-sm cursor-pointer">
+            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="btnNextPendingLabel">Abrir Próximo Pendente (#01)</span>
+          </button>
+
+          <button onclick="exportState()" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)] hover:opacity-85 transition-all duration-200 cursor-pointer" title="Exportar progresso em JSON">
+            <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Exportar
+          </button>
+
+          <div class="grid grid-cols-2 gap-2 sm:contents">
+            <label class="touch-btn touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)] hover:opacity-85 transition-all duration-200 cursor-pointer" title="Importar progresso JSON">
+              <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Importar
+              <input type="file" accept=".json" class="hidden" onchange="importState(event)" />
+            </label>
+
+            <button onclick="resetProgress()" class="touch-target inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--card)] text-[var(--muted-foreground)] border border-[var(--border)] hover:text-[var(--foreground)] transition-all duration-200 cursor-pointer">
+              Zerar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact 2x2 Mobile Telemetry Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 mt-3.5">
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
+          <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
+            <span class="truncate">1. Library Web</span>
+            <span id="statWebCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
+            <div id="barWeb" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
+          <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
+            <span class="truncate">2. Xbox DL</span>
+            <span id="statDlCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
+            <div id="barDl" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
+          <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
+            <span class="truncate">3. Ordem LLO2</span>
+            <span id="statOrdCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
+            <div id="barOrd" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
+          <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
+            <span class="truncate">Espaço Xbox</span>
+            <span id="statSpaceText" class="font-semibold text-[var(--foreground)] shrink-0">12,44 / 15 GB</span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
+            <div id="barSpace" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 83%"></div>
+          </div>
+          <p id="statDoubleSpaceHint" class="hidden sm:block text-xs text-[var(--muted-foreground)] mt-1 truncate">
+            Livre: ~2,56 GiB (&gt; 1,62 GiB máx.)
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Compact Sticky Tab Navigation (Todas as 4 abas 100% visíveis no celular em grid 2x2!) -->
+  <nav aria-label="Navegação do Painel" class="sticky-nav sticky top-0 z-30 border-b border-[var(--border)] bg-[var(--background)]/92 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-2">
+      <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2">
+        <button id="tab-llo" onclick="switchTab('llo')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] transition-all duration-200 cursor-pointer">
+          1. Ordem LLO2 (#01→#85)
+        </button>
+        <button id="tab-size" onclick="switchTab('size')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
+          2. Por Tamanho (GB)
+        </button>
+        <button id="tab-auto" onclick="switchTab('auto')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
+          3. Ajuste / Hotfix V2.1
+        </button>
+        <button id="tab-enb" onclick="switchTab('enb')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
+          4. Calibração ENB / DAWN
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-3.5 sm:px-6 py-4 sm:py-6">
+
+    <!-- TAB 1 & 2: MOD LIST VIEW -->
+    <section id="view-mods">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-3.5 sm:p-4 mb-4 sm:mb-5 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3">
+        <div class="relative flex-1 min-w-0">
+          <input
+            id="searchInput"
+            type="text"
+            aria-label="Filtrar mods por nome, número ou zona"
+            oninput="renderModList()"
+            placeholder="Buscar #14, #36, Cheat Room, NordWarUA, Whiterun..."
+            class="touch-target w-full px-3.5 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-base sm:text-sm bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] border border-[var(--border)] focus:outline-none focus:border-[var(--primary)]"
+          />
+        </div>
+        <div class="grid grid-cols-1 sm:flex sm:flex-wrap items-center gap-2">
+          <select id="statusFilter" aria-label="Filtrar por etapa concluída" onchange="renderModList()" class="touch-target w-full sm:w-auto px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-base sm:text-sm bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)] cursor-pointer">
+            <option value="all">Todos os 85 itens (V2.1 PC-Ultra)</option>
+            <option value="pending_web">Faltam adicionar na Web</option>
+            <option value="pending_dl">Faltam baixar no Xbox</option>
+            <option value="pending_ord">Faltam ordenar na LLO2</option>
+            <option value="done_all">100% Concluídos</option>
+          </select>
+
+          <button type="button" id="autoCheckWebBtn" role="checkbox" aria-checked="true" onclick="toggleAutoCheckWeb()" class="touch-target inline-flex items-center justify-center sm:justify-start gap-2 text-xs sm:text-sm text-[var(--foreground)] px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg bg-[var(--background)] border border-[var(--border)] cursor-pointer">
+            <span id="autoCheckWebBox" class="inline-flex items-center justify-center w-5 h-5 rounded bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold">✓</span>
+            <span>Auto-marcar "1. Web" ao abrir link</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="modsContainer" class="space-y-5 sm:space-y-6"></div>
+    </section>
+
+    <!-- TAB 3: AUTOMATION & MOBILE 1-TAP HOTFIX -->
+    <section id="view-auto" class="hidden space-y-5 sm:space-y-6">
+      <!-- Surgical In-Place Hotfix Card (Armor 2K Fix + Cheat Room) -->
+      <div class="bg-[var(--card)] border-2 border-[var(--accent)] rounded-xl p-4 sm:p-5 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="min-w-0">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[var(--accent)]/20 text-[var(--accent)] mb-1">
+              NOVO • AJUSTE CIRÚRGICO DIRETO PELO CELULAR OU PC
+            </div>
+            <h3 class="text-base font-bold text-[var(--foreground)] wrap-anywhere">Hotfix In-Place V2.1 — Corrigir Armaduras Comuns 2K + Adicionar Cheat Room (Sem Refazer o Load Order!)</h3>
+            <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-1 leading-relaxed">
+              <strong>Está pelo celular? Não precisa de PC nem Console F12!</strong> Basta tocar nos <strong>4 botões diretos abaixo</strong> logado na Bethesda.net para desmarcar os 2 antigos e adicionar os 2 novos em 10 segundos (ou use o botão de script F12 se estiver no notebook):
+            </p>
+          </div>
+          <button onclick="copyHotfixSwapScript()" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--accent)] text-[#052e16] hover:opacity-90 transition-all duration-200 cursor-pointer shrink-0">
+            Copiar Script PC (F12)
+          </button>
+        </div>
+
+        <!-- 4 Direct Mobile 1-Tap Buttons (Zero F12 Needed!) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <a href="https://creations.bethesda.net/en/skyrim/details/f9f7b1e0-6849-4764-8c1b-18b3c6fe6542" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>1. Desmarcar Antigo #35 (Realistic Armors)</span>
+            <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
+          </a>
+          <a href="https://creations.bethesda.net/en/skyrim/details/72f27a12-1e05-4472-8cb0-6b3ad08363c6" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>2. Desmarcar Antigo #36 (VAR No Overlap)</span>
+            <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
+          </a>
+          <a href="https://creations.bethesda.net/en/skyrim/details/39c6a829-bfca-4af7-9588-3745e23d6e9c" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border border-[var(--primary)]/50 text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
+            <span>3. Adicionar Novo #14: Cheat Room (1,25 MB)</span>
+            <span class="text-[var(--primary)] font-bold shrink-0">Adicionar ↗</span>
+          </a>
+          <a href="https://creations.bethesda.net/en/skyrim/details/9d94d88d-0275-45c0-8083-ecede3c8cbf1" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border border-[var(--primary)]/50 text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
+            <span>4. Adicionar Novo #36: Vanilla Armor 2K (467,7 MB)</span>
+            <span class="text-[var(--primary)] font-bold shrink-0">Adicionar ↗</span>
+          </a>
+        </div>
+
+        <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+          <strong>No Xbox Series S (sem limpar Espaço Reservado):</strong> em <em>Creations → Y (Load Order)</em>, apague com <strong>X</strong> apenas os 2 antigos, baixe os 2 novos, mova o <strong>Cheat Room</strong> para <code>#14</code> e o <strong>Vanilla Armor Replacer</strong> para <code>#36</code>, salve com <strong>Options (☰) → Save Load Order</strong> e reinicie o Skyrim!
+        </p>
+
+        <details class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+          <summary class="touch-target flex items-center text-xs sm:text-sm font-semibold text-[var(--foreground)] cursor-pointer">
+            Ver código do Script PC (Console F12)
+          </summary>
+          <pre id="hotfixArmorScriptBox" class="mt-3 pt-3 border-t border-[var(--border)] text-xs text-[var(--foreground)] overflow-x-auto max-h-60 leading-relaxed"></pre>
+        </details>
+      </div>
+
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 space-y-4">
+        <h2 class="text-lg font-bold text-[var(--foreground)]">Automação Completa V2.1 "PC-Ultra Medieval Grandioso" (Smart-Sync 85 Mods • 12,44 GiB)</h2>
+        <p class="text-sm text-[var(--muted-foreground)]">
+          O novo <strong>Autopilot Smart-Sync REST API v2</strong> abaixo faz a transição completa da lista V1 para a V2 sozinho: remove automaticamente da sua <code>Library</code> qualquer mod antigo que saiu da lista, mantém os que continuam e inscreve todos os novos pacotes <code>2K + Malhas 3D + NordWarUA + Cidades Fortificadas + Florestas</code> validando <strong>85/85</strong> no servidor!
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 1 • Smart-Sync API (~20s)</div>
+            <h3 class="text-sm font-semibold mt-1">Poda V1 + Injeção dos 85 Mods V2</h3>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
+              Logado em <code>creations.bethesda.net/en/skyrim/library</code>, cole o script <strong>Passo 1</strong> abaixo no Console (<code>F12</code>). Ele limpa as sobras da V1 e crava exatos <strong>85/85 UUIDs verificados</strong> na sua conta.
+            </p>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 2 • Limpar 15 GB + Download Lote</div>
+            <h3 class="text-sm font-semibold mt-1">12,34 GiB c/ Folga p/ Espaço Duplo</h3>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
+              No Xbox Series S, limpe o <em>Espaço Reservado (15,0 GB)</em>, abra <em>Creations → Options (☰)</em>, ative <em>Disable Missing Creation Check</em> e clique em <strong>"Download all Creations in my Library"</strong> (~2,66 GiB livres garantem extração do maior arquivo de 1,62 GiB sem erro!).
+            </p>
+          </div>
+
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 3 • Ordenar Antes de Sair (`Y`)</div>
+            <h3 class="text-sm font-semibold mt-1">Ordenar #01 → #85 + New Game</h3>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
+              <strong>Regra de Ouro Anti-Crash:</strong> ao terminar o download, <strong>NÃO aperte B!</strong> Aperte <strong>Y (Load Order)</strong> ali mesmo, ordene de <code>#01</code> a <code>#85</code>, salve com <strong>Options (☰) → "Save Load Order to Bethesda.net"</strong>, reinicie o console e inicie <strong>New Game</strong>!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Browser Console Helper Script (Primary Smart-Sync V2) -->
+      <div class="bg-[var(--card)] border-2 border-[var(--primary)] rounded-xl p-5 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h3 class="text-base font-bold text-[var(--foreground)]">Passo 1 (Principal) — Autopilot Smart-Sync V2: Limpa Sobras da V1 + Inscreve os 85 Mods PC-Ultra (~20s)</h3>
+            <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-0.5">
+              1. Logado em <a href="https://creations.bethesda.net/en/skyrim/library" target="_blank" rel="noopener noreferrer" class="underline text-[var(--primary)]">creations.bethesda.net/en/skyrim/library</a>, pressione <code>F12</code> → <strong>Console</strong>.<br/>
+              2. Cole o código abaixo e aperte <code>Enter</code>. Ele remove automaticamente os mods antigos da V1 que não fazem parte da V2, inscreve os novos pacotes <code>2K/3D</code> e audita <strong>85/85</strong> no servidor da Bethesda!
+            </p>
+          </div>
+          <button onclick="copyAutomationScript()" id="btnCopyScript" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 transition-all duration-200 cursor-pointer shrink-0">
+            Copiar Smart-Sync V2.1 (85 Mods)
+          </button>
+        </div>
+
+        <pre id="automationScriptBox" class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 text-xs text-[var(--foreground)] overflow-x-auto max-h-80 leading-relaxed"></pre>
+      </div>
+
+      <!-- Clear Library Helper Script (Optional Step 0) -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h3 class="text-base font-bold text-[var(--foreground)]">Utilitário Opcional — Zerar 100% da <code>Library</code> via API Direta</h3>
+            <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-0.5">
+              Só é necessário se algum dia você quiser esvaziar completamente sua conta (o Smart-Sync acima já remove automaticamente os itens fora da lista V2.1).
+            </p>
+          </div>
+          <button onclick="copyClearLibraryScript()" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)] hover:opacity-85 transition-all duration-200 cursor-pointer shrink-0">
+            Copiar Script API de Limpeza Total
+          </button>
+        </div>
+        <pre id="clearLibraryScriptBox" class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4 text-xs text-[var(--foreground)] overflow-x-auto max-h-60 leading-relaxed"></pre>
+      </div>
+    </section>
+
+    <!-- TAB 4: IN-GAME VIRTUAL ENB CALIBRATION -->
+    <section id="view-enb" class="hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 sm:p-5 space-y-4">
+        <h2 class="text-lg font-bold text-[var(--foreground)]">Protocolo Final e Calibração "DAWN v2 + Rudy/Cabbage ENB Look" no Controle</h2>
+        <p class="text-sm text-[var(--muted-foreground)]">
+          Após os 85 mods estarem ordenados de <code>#01</code> a <code>#85</code> e você iniciar um <strong>New Game</strong> (obrigatório para gerar as novas muralhas medievais, distritos de Whiterun, cidadelas e armaduras 2K sem conflito), aplique estes ajustes:
+        </p>
+
+        <div id="calibChecklist" class="space-y-3 pt-2"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Top-Right Toast feedback (Evita colisão com os polegares no rodapé do celular!) -->
+  <div id="toast" role="status" aria-live="polite" class="fixed top-16 right-4 left-4 sm:left-auto z-50 hidden pointer-events-none px-4 py-3 rounded-xl bg-[var(--card)] text-[var(--foreground)] border-2 border-[var(--primary)] shadow-xl text-xs sm:text-sm font-semibold text-center sm:text-left"></div>
+
+  <!-- Fallback Copy Modal (Para visualizadores mobile que bloqueiam clipboard em arquivos locais) -->
+  <div id="copyFallbackModal" class="fixed inset-0 z-50 hidden bg-black/75 flex items-center justify-center p-4">
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 sm:p-5 w-full max-w-lg space-y-3 shadow-2xl">
+      <div class="flex items-center justify-between gap-2">
+        <h3 id="copyModalTitle" class="text-sm sm:text-base font-bold text-[var(--foreground)]">Copiar Texto</h3>
+        <button type="button" onclick="closeCopyModal()" class="touch-target px-3 py-2 rounded-xl bg-[var(--secondary)] text-[var(--secondary-foreground)] text-xs font-semibold cursor-pointer">Fechar ✕</button>
+      </div>
+      <p class="text-xs text-[var(--muted-foreground)]">Toque e segure no campo abaixo e selecione <strong>Copiar</strong>:</p>
+      <textarea id="copyModalTextarea" readonly rows="5" class="w-full p-3 rounded-xl bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)] text-base sm:text-xs font-mono"></textarea>
+    </div>
+  </div>
+
+  <script>
+    var STORAGE_KEY = 'skyrim_se_2026_xbox_cockpit_v2_ultra';
+
+    var MODS = [
+      {"id":1,"bnetId":"fe05e888-47cb-445d-a070-bb3aa5765c99","legacyId":2947658,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Unofficial Skyrim Special Edition Patch [USSEP]","query":"Unofficial Skyrim Special Edition Patch [USSEP]","sizeMb":288.54,"note":"Correções essenciais de engine/quests (compatível c/ SE Padrão 1.6+)."},
+      {"id":2,"bnetId":"d32b3566-b46e-48c7-82c8-3deaa1edd4e9","legacyId":4326928,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Simple Workaround Framework","query":"Simple Workaround Framework","sizeMb":2.14,"note":"Framework base obrigatório p/ armaduras NordWarUA 2K e equipamentos visíveis."},
+      {"id":3,"bnetId":"05c3dd40-b12f-4414-abb8-d389928ba2fc","legacyId":4343041,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Realistic Equipment - SE Edition","query":"Realistic Equipment - SE Edition","sizeMb":11.46,"note":"Exibe espadas duplas, machados e cajados na cintura/costas (SE Edition)."},
+      {"id":4,"bnetId":"7fa3fed7-6cd6-4035-bf10-5c0ba80fddf1","legacyId":4336261,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Just Shields (on Back) - SE Edition","query":"Just Shields (on Back) - SE Edition","sizeMb":2.2,"note":"Escudos heráldicos visíveis nas costas em tempo real (SE Edition)."},
+      {"id":5,"bnetId":"ac3ffcd0-2943-47f3-b365-e6fd1b980cc9","legacyId":4344623,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Reforging to the Masses (Weapon Expansion) - SWF Edition","query":"Reforging to the Masses (Weapon Expansion) - SWF Edition","sizeMb":51.88,"note":"Master ESM que distribui +300 armas medievais históricas (alabardas, lanças, espadas longas) no mundo!"},
+      {"id":6,"bnetId":"8a16bdda-8f83-4f36-840f-c0bffbaca677","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Resources v 2.2 (17102025)","query":"Lux Resources v 2.2 (17102025)","sizeMb":169.86,"note":"Recursos base de lanternas, malhas e feixes da suíte Lux."},
+      {"id":7,"bnetId":"3152322e-2b4b-4367-ac73-eceaf3766b5f","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Via v 2.2 - Master File","query":"Lux Via v 2.2 - Master File","sizeMb":45.88,"note":"Master file de estradas, pontes e marcos iluminados (FatalIllusion)."},
+      {"id":8,"bnetId":"4f7b6905-47f8-4c7a-a5d5-39026c6339a7","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Orbis v 4.5 - Master File","query":"Lux Orbis v 4.5 - Master File","sizeMb":0.16,"note":"Master file de iluminação externa das cidades e vilas."},
+      {"id":9,"bnetId":"097cb9b0-e543-43e9-ab29-46365bb4e89a","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux v 7.1 - Master File","query":"Lux v 7.1 - Master File","sizeMb":0.03,"note":"Master file de iluminação interna cinematográfica."},
+      {"id":10,"bnetId":"29b8495b-6f70-4130-afd8-fea999034f81","legacyId":4281182,"zone":"Zona 2 — HUD Segura, Câmera, Pós-Processamento & Cheat Room","name":"Nordic SkyHUD","query":"Nordic SkyHUD","sizeMb":0.47,"note":"HUD minimalista nórdica pura (zero conflito c/ Creation Club)."},
+      {"id":11,"bnetId":"2d5ff0fe-249d-49f1-9aa5-60043ee44762","legacyId":null,"zone":"Zona 2 — HUD Segura, Câmera, Pós-Processamento & Cheat Room","name":"Kontrol - Updated","query":"Kontrol - Updated","sizeMb":0.01,"note":"8 atalhos rápidos via LB + D-Pad/Botões no controle Xbox."},
+      {"id":12,"bnetId":"25f42b49-82ad-4218-a2e0-9a6d4e93f5a7","legacyId":4231363,"zone":"Zona 2 — HUD Segura, Câmera, Pós-Processamento & Cheat Room","name":"DMH Busty Skeevers","query":"DMH Busty Skeevers","sizeMb":0.29,"note":"FOV 90, câmera 3ª pessoa moderna, anti-serrilhado de folhagem e Snow Fix."},
+      {"id":13,"bnetId":"bb5077d5-39f6-46b7-8497-28cdbf7ae038","legacyId":3304897,"zone":"Zona 2 — HUD Segura, Câmera, Pós-Processamento & Cheat Room","name":"Display Enhancements (XB1)","query":"Display Enhancements (XB1)","sizeMb":0.69,"note":"Preset 28 + Sunlight Scale p/ simular Rudy/Cabbage ENB sobre o DAWN v2."},
+      {"id":14,"bnetId":"39c6a829-bfca-4af7-9588-3745e23d6e9c","legacyId":3010376,"zone":"Zona 2 — HUD Segura, Câmera, Pós-Processamento & Cheat Room","name":"Cheat Room (XB1)","query":"Cheat Room (XB1)","sizeMb":1.25,"note":"Sala de ajustes rápidos via magia Cheat Teleport: baús c/ todas as armaduras comuns, botões de XP/Perks/Skills e Cheat Spell p/ resetar inventário de seguidores!"},
+      {"id":15,"bnetId":"d9cb9a1c-4b5f-4f73-9505-987aa4f0930d","legacyId":4269547,"zone":"Zona 3 — Áudio Acústico Next-Gen","name":"Audio SFX Overhaul","query":"Audio SFX Overhaul","sizeMb":129.82,"note":"Reverberação física realista de lâminas, armaduras pesadas, vento, chuva e cavernas."},
+      {"id":16,"bnetId":"b306155a-d36c-40fb-857d-6d52d9a4329a","legacyId":3017337,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"Static Mesh Improvement Mod SE XB1","query":"Static Mesh Improvement Mod SE XB1","sizeMb":907.54,"note":"SMIM Completo de PC (908 MB sem redução 512px!): +1.000 objetos 3D reais em alta definição."},
+      {"id":17,"bnetId":"7150b7a4-cc64-4ddc-9216-ada180f153b9","legacyId":4241333,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"LucidAPs' High Poly Project (v5.x) with Fixes","query":"LucidAPs' High Poly Project (v5.x) with Fixes","sizeMb":348.56,"note":"High Poly Project Completo de PC (349 MB): frutas, pães, moedas, estátuas, feno, lenha e braseiros ultra-3D."},
+      {"id":18,"bnetId":"98903899-c893-48dd-b96c-840ab221779f","legacyId":4337752,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"Skyland Bits and Bobs - A Clutter Overhaul","query":"Skyland Bits and Bobs - A Clutter Overhaul","sizeMb":797.22,"note":"Retexturiza 100% da mobília, baús, louças, poções e interiores."},
+      {"id":19,"bnetId":"e70def02-08fc-4b14-ae1e-e49826063691","legacyId":4321263,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"FYX AIO - Mesh Improvements","query":"FYX AIO - Mesh Improvements","sizeMb":27.05,"note":"Segredo do Nolvus/Lorerim: converte torres, paliçadas, rampas, poços e telhados retos em malha 3D esculpida!"},
+      {"id":20,"bnetId":"f47c9a66-4160-458c-a9a4-cc5108e474cb","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","query":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","sizeMb":16.86,"note":"Substitui muros baixos chapados por rochas 3D individuais empilhadas em 2K (mindflux)."},
+      {"id":21,"bnetId":"97fa1d34-4f4c-4e90-ba33-eb5d81e5f6b9","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"Nordic Farmhouse Stonewall - 2k1k","query":"Nordic Farmhouse Stonewall - 2k1k","sizeMb":4.48,"note":"Muros rurais de vilarejos remodelados pedra por pedra em 3D 2K/1K (mindflux)."},
+      {"id":22,"bnetId":"f9ccd915-2485-41e2-9644-8792c34ce0dd","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Full PC (SMIM Full + HPP 2K + FYX 3D)","name":"High Quality Ivy Replacer 1k - Variation 1","query":"High Quality Ivy Replacer 1k - Variation 1","sizeMb":9.81,"note":"Substitui heras 2D coladas nas paredes medievais por folhagem 3D densa."},
+      {"id":23,"bnetId":"23c08480-c611-4c44-9997-f9b44be7560e","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 1","query":"SRP Architecture 2K - Part 1","sizeMb":1654.16,"note":"Parte 1 (1,65 GB em 2K puro!): todas as cidades, castelos e vilas com normal maps profundos anti-chapados!"},
+      {"id":24,"bnetId":"334113cc-ad69-484c-ac43-230c4f7bb94d","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 2","query":"SRP Architecture 2K - Part 2","sizeMb":1539.49,"note":"Parte 2 (1,54 GB em 2K puro!): completa 100% da arquitetura medieval base + DLCs do Skurkbro v4."},
+      {"id":25,"bnetId":"36a20bde-06f5-421d-8c35-eade6ae490de","legacyId":4281562,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Dungeons 1k","query":"SRP Dungeons 1k","sizeMb":476.49,"note":"Ruínas Nórdicas, Dwemer, Cavernas, Minas e Apocrypha com relevo profundo Skurkbro."},
+      {"id":26,"bnetId":"2d01fb32-2469-48b8-a397-7d1d21da49d4","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","query":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","sizeMb":536.79,"note":"Whiterun inteira em 2K (2048px) com Complex Material nativo p/ brilho/relevo real em madeira, ouro e pedra!"},
+      {"id":27,"bnetId":"e18692d5-d32b-4ae2-9701-b887527c4abf","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Whiterun Doors and Gate 2K by todor0v","query":"Whiterun Doors and Gate 2K by todor0v","sizeMb":28.79,"note":"Portões e portas medievais de Whiterun em 2K com ferragens 3D e reflexo metálico."},
+      {"id":28,"bnetId":"09ec0e22-d218-4f5b-8790-1469a2ba3137","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Skyking Fantasia Landscapes","query":"Skyking Fantasia Landscapes","sizeMb":525.27,"note":"Adeus terra seca marrom: terrenos vibrantes, musgo verde vivo, rochas nítidas, pontes e estradas!"},
+      {"id":29,"bnetId":"4e411d00-d5d6-4212-a9b2-366984105cc3","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"ERM - Enhanced Rocks and Mountains","query":"ERM - Enhanced Rocks and Mountains","sizeMb":13.11,"note":"Aumenta a poligonagem 3D das montanhas e penhascos."},
+      {"id":30,"bnetId":"2144a6f4-b525-4a0c-9ef2-e41208d06225","legacyId":4150681,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Blended Roads Redone","query":"Blended Roads Redone","sizeMb":21.8,"note":"Pedras de calçamento medieval em alto-relevo 3D nas estradas."},
+      {"id":31,"bnetId":"c04aef31-2293-443f-911f-618775057684","legacyId":4150670,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Hyperborean Snow","query":"Hyperborean Snow","sizeMb":20.05,"note":"Textura de neve cristalina de alta definição."},
+      {"id":32,"bnetId":"79b1ab4b-9277-4e55-9bef-b5bcd7b1d3a2","legacyId":4235981,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Simplicity of Snow","query":"Simplicity of Snow","sizeMb":19.73,"note":"Shader dinâmico de neve realista sob telhados e muralhas."},
+      {"id":33,"bnetId":"95372fdb-5774-4e70-92bf-ea0b386b2b00","legacyId":4256227,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Believable weapons (sheathed greatswords)","query":"Believable weapons (sheathed greatswords)","sizeMb":33.57,"note":"Remodela todas as espadas, machados e martelos vanilla p/ proporções medievais reais."},
+      {"id":34,"bnetId":"3b1908d3-b4b2-4d42-9351-5bf3532c798a","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"(Updated) Xavbio Retextures AiO (No CC)","query":"(Updated) Xavbio Retextures AiO (No CC)","sizeMb":671.89,"note":"Base ultra-nítida (672 MB) p/ 100% das armas, roupas nobres/magos e sets Orc/Élfico/Vidro/Daédrico/Dracônico!"},
+      {"id":35,"bnetId":"c50337a2-215d-4e33-9792-f10dd2aa0901","legacyId":4228043,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Optimized Quality CubeMaps - HD Cube Maps","query":"Optimized Quality CubeMaps - HD Cube Maps","sizeMb":100.49,"note":"CubeMaps HD de PC: faz o aço polido das armaduras e lâminas refletir a luz com realismo metálico!"},
+      {"id":36,"bnetId":"9d94d88d-0275-45c0-8083-ecede3c8cbf1","legacyId":4143740,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Vanilla Armor Replacer | By NordwarUA","query":"Vanilla Armor Replacer | By NordwarUA","sizeMb":467.71,"note":"Pacote Completo 2K Sem Cortes (467,7 MB • 822 arquivos BSA íntegros): substitui Ferro, Aço (incluindo Botas da Lydia!), Placas de Aço, Couro, Pelagem, Escamas, Anão, Ébano, Lobo e Nórdica Antiga em 2K sem nenhuma malha/textura ausente!"},
+      {"id":37,"bnetId":"61f19279-a197-441d-b331-9f70d4d98d39","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"New Legion 2k (SWF)","query":"New Legion 2k (SWF)","sizeMb":111.68,"note":"NordWarUA 2K: Legião Imperial inteira com armaduras pesadas históricas em 2K!"},
+      {"id":38,"bnetId":"d058f69d-1734-4091-9278-af5794550b8f","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","query":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","sizeMb":342.35,"note":"NordWarUA 2K (342 MB): Guardas de TODAS as cidades + Stormcloaks c/ cotas de malha, capas, elmos e escudos 2K!"},
+      {"id":39,"bnetId":"e43b23d2-cb7c-489f-b235-c9005244bbc5","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Unplayable Faction Armors SSE 2k SWF","query":"Unplayable Faction Armors SSE 2k SWF","sizeMb":204.86,"note":"NordWarUA 2K (205 MB): Vigilantes de Stendarr, Mão de Prata e Alik'r com sets medievais exclusivos em 2K!"},
+      {"id":40,"bnetId":"3cbfd96a-d5cc-4ff7-a6ff-f67db10e9635","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","query":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","sizeMb":70.4,"note":"NordWarUA 2K: Os Companheiros de Jorrvaskr (Whiterun) vestem armaduras nórdicas medievais de elite em 2K!"},
+      {"id":41,"bnetId":"2815fe8a-1a3e-47d1-8712-f13fe97b404d","legacyId":4316242,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Divergence - Compendium of Beasts - AIO - 1K","query":"Divergence - Compendium of Beasts - AIO - 1K","sizeMb":163.66,"note":"Dragões, gigantes, trolls e autômatos retexturizados em alta definição."},
+      {"id":42,"bnetId":"764fe718-2f09-4e14-9950-c510aef11b9d","legacyId":4237141,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Fluffworks (Fluffy Animals) Quality 2K","query":"Fluffworks (Fluffy Animals) Quality 2K","sizeMb":160.4,"note":"Assinatura visual do Nolvus PC (2K): lobos, ursos, cavalos e sabrecats com pelagem volumétrica 3D real!"},
+      {"id":43,"bnetId":"248a7ee0-b71c-4a90-b2d5-557501003ea5","legacyId":4329497,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","query":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","sizeMb":56.44,"note":"Brasas, fogueiras, forjas e tochas incandescentes 3D calibradas p/ Lux Orbis."},
+      {"id":44,"bnetId":"892f943a-aaf2-4323-8cca-b0ded4016a1d","legacyId":4320119,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"VAE2 - Visual Animated Enchants 2-023","query":"VAE2 - Visual Animated Enchants 2-023","sizeMb":9.41,"note":"Partículas modernas nas armas encantadas."},
+      {"id":45,"bnetId":"1a32bed2-577a-4e6b-b36e-df939b1397f7","legacyId":4187379,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Pandorable Mega Pack","query":"Pandorable Mega Pack","sizeMb":859.31,"note":"Mega-pacote (859 MB): centenas de NPCs masculinos e femininos esculpidos em alta definição!"},
+      {"id":46,"bnetId":"a479bf14-bd34-48cc-aff6-cb7b768fa429","legacyId":4244883,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"RS Children Optimized","query":"RS Children Optimized","sizeMb":29.42,"note":"Rostos realistas p/ crianças do jogo base."},
+      {"id":47,"bnetId":"b85ca6d7-a9bc-45ec-a6b1-f2e022f0f228","legacyId":4238237,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Bella Beauty AND THE BEASTS Bundle","query":"Bella Beauty AND THE BEASTS Bundle","sizeMb":107.01,"note":"Carregado abaixo do Pandorable p/ unificar pele, olhos reflexivos e feras sem risco de Dark Face Bug!"},
+      {"id":48,"bnetId":"a0b75c6a-1c54-4dba-8fcd-14d5e0576132","legacyId":4337459,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Subsurface Scattering Shaders for Skins","query":"Subsurface Scattering Shaders for Skins","sizeMb":0.04,"note":"Espalhamento sub-superficial de luz na pele sob o sol do DAWN v2."},
+      {"id":49,"bnetId":"61ea861e-8a0c-48e7-a189-4ab827d5818b","legacyId":4271284,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"XP32 Maximum Skeleton Special Extended Plus","query":"XP32 Maximum Skeleton Special Extended Plus","sizeMb":1.63,"note":"Esqueleto obrigatório p/ animações modernas e escudos/armas nas costas."},
+      {"id":50,"bnetId":"44797002-072b-43d6-919b-7f512e591de4","legacyId":4318966,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"Comprehensive First Person Animation Overhaul - CFPAO","query":"Comprehensive First Person Animation Overhaul - CFPAO","sizeMb":0.81,"note":"Combate e magia fluidos em 1ª pessoa."},
+      {"id":51,"bnetId":"7c34465e-fac0-4378-83f7-a8af4b4e2e4e","legacyId":4307936,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"GDB's The Revenge","query":"GDB's The Revenge","sizeMb":154.47,"note":"Combate moderno Nemesis em 3ª pessoa, esquiva, poções e interações animadas."},
+      {"id":52,"bnetId":"20c24db7-c1bf-49b9-a42f-9c519e379b1f","legacyId":2970997,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"VioLens - A Killmove Mod SE [XB1]","query":"VioLens - A Killmove Mod SE [XB1]","sizeMb":1.25,"note":"Controle de câmeras de finalização cinematográficas."},
+      {"id":53,"bnetId":"9b085660-ba68-4140-bb62-3bedd571cca2","legacyId":4335752,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Skoglendi - A Grass Mod (Green Tundra)","query":"Skoglendi - A Grass Mod (Green Tundra)","sizeMb":54.44,"note":"Pasto longo verde vibrante em 100% de densidade (ZERO corte Less Grass!) cobrindo campinas e vales!"},
+      {"id":54,"bnetId":"d7b08b61-e7f8-42c0-9be7-aafa27370474","legacyId":4199686,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Origins of Forest - 3D Forest Grass","query":"Origins of Forest - 3D Forest Grass","sizeMb":12.23,"note":"Adiciona samambaias gigantes e arbustos 3D na altura da cintura no chão das florestas!"},
+      {"id":55,"bnetId":"4f4642c6-2841-4a13-b3fc-aaac078dfc20","legacyId":4263944,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Cathedral 3D Pine Grass","query":"Cathedral 3D Pine Grass","sizeMb":9.8,"note":"Plantas alpinas 3D fotografadas cobrindo o solo dos pinheirais."},
+      {"id":56,"bnetId":"01132b5b-c389-4706-ba70-cfaeb5991934","legacyId":4011845,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Landscape Fixes For Grass Mods","query":"Landscape Fixes For Grass Mods","sizeMb":7.81,"note":"Impede a grama densa de atravessar calçadas e pisos das cidades."},
+      {"id":57,"bnetId":"4781fe76-09e9-4103-bbc0-d47bd3a0636b","legacyId":4147709,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Cathedral Plants and Mushrooms 2k","query":"Cathedral Plants and Mushrooms 2k","sizeMb":96.98,"note":"Flores silvestres, lavandas, tundras e cogumelos vibrantes em 2K!"},
+      {"id":58,"bnetId":"ffb09c5f-9df8-45c9-82ab-4fb0d6a659de","legacyId":4282550,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Draco's 3D Plants & Shrubs (2k-2k)","query":"Draco's 3D Plants & Shrubs (2k-2k)","sizeMb":36.67,"note":"Substitui arbustos e plantas por modelos 3D high-poly em 2K/2K!"},
+      {"id":59,"bnetId":"87a402ad-8447-48e6-90ff-609bf3bd11e2","legacyId":null,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"[XB1] Nature Of The Wild Lands 2.31 - Forest and Trees Improvement Mod | SE","query":"[XB1] Nature Of The Wild Lands 2.31 - Forest and Trees Improvement Mod | SE","sizeMb":396.15,"note":"O auge absoluto de PC no Xbox (396 MB): +100 modelos colossais de árvores, copas densas e troncos caídos!"},
+      {"id":60,"bnetId":"1cb4c5c8-5d50-4e66-a3b0-e0607fe09ac6","legacyId":4186064,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada em Whiterun","name":"Alpine Forest of Whiterun Valley XB1","query":"Alpine Forest of Whiterun Valley XB1","sizeMb":1.01,"note":"Derivado do Great Forest of Whiterun Hold: fecha TODO o vale de Whiterun em floresta densa sem clipar muros!"},
+      {"id":61,"bnetId":"7bc79410-960f-4844-8a25-5ade0ab6d0e9","legacyId":4243144,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundle","query":"The Great Cities, Towns, and Villages Bundle","sizeMb":47.89,"note":"Reconstrói Winterhold, Falkreath, Dawnstar, Morthal, Dragon Bridge, Rorikstead e +6 vilas como fortalezas épicas!"},
+      {"id":62,"bnetId":"be476c43-c71f-4ead-8af9-2cb555e1bc21","legacyId":4285981,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Interiors AiO","query":"JK's Interiors AiO","sizeMb":35.28,"note":"Transforma palácios, estalagens, templos e guildas em interiores medievais riquíssimos."},
+      {"id":63,"bnetId":"6f90cb1e-f00d-4490-8c9f-aedb752b11a1","legacyId":4059215,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Skyrim - All in One by jkrojmal & Teabag86","query":"JK's Skyrim - All in One by jkrojmal & Teabag86","sizeMb":11.91,"note":"Reforma externa completa de todas as grandes capitais de Skyrim."},
+      {"id":64,"bnetId":"20319fab-ef0c-46f1-b228-72d925a06f0c","legacyId":4247819,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","query":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","sizeMb":1.45,"note":"Integra perfeitamente The Great Cities (#61) com JK's Skyrim (#63)."},
+      {"id":65,"bnetId":"ce5d06bc-a37b-4bca-94f7-16f1273449ff","legacyId":4176401,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun","query":"Fortified Whiterun","sizeMb":17.06,"note":"Ergue muralhas medievais altas c/ ameias, torres de vigia, portões rastrilhos e passarelas em Whiterun!"},
+      {"id":66,"bnetId":"bb537194-3fea-4b3d-b019-1eac0f999232","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion with Fixes - No Planks","query":"Capital Whiterun Expansion with Fixes - No Planks","sizeMb":27.78,"note":"Expande Whiterun com novos distritos murados, praças, lojas e vida de grande capital medieval!"},
+      {"id":67,"bnetId":"70b62127-cf25-4b16-9cee-bedf2c3567ed","legacyId":4177549,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun - JK’s Skyrim Patch","query":"Fortified Whiterun - JK’s Skyrim Patch","sizeMb":0.01,"note":"Patch oficial entre Fortified Whiterun (#65) e JK's Skyrim (#63)."},
+      {"id":68,"bnetId":"767fa253-a705-45f4-b117-b324a8cc1afe","legacyId":4321077,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"FYX - Fortified Whiterun Consistency Patch","query":"FYX - Fortified Whiterun Consistency Patch","sizeMb":0.91,"note":"Aplica as malhas 3D e arquitetura de Whiterun nas torres do Fortified Whiterun (#65)."},
+      {"id":69,"bnetId":"5789c8a0-1bc5-470b-9086-8719eeab19f0","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - Fortified Whiterun Patch","query":"Capital Whiterun Expansion - Fortified Whiterun Patch","sizeMb":0.05,"note":"Patch oficial entre Capital Whiterun Expansion (#66) e Fortified Whiterun (#65)."},
+      {"id":70,"bnetId":"cc2945b5-c4a6-4c3a-ab46-ac6cffb31f6e","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","query":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","sizeMb":0.1,"note":"Patch combo oficial entre Capital Whiterun (#66), JK's Skyrim (#63) e JK's Interiors (#62)."},
+      {"id":71,"bnetId":"adfc2d2e-b1a2-49bd-b68a-a19e69d400aa","legacyId":4220849,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Trees In Cities for JK's Skyrim","query":"Trees In Cities for JK's Skyrim","sizeMb":0.09,"note":"Adiciona árvores majestosas dentro de Whiterun, Solitude, Windhelm, Riften e Markarth!"},
+      {"id":72,"bnetId":"736fcb09-316d-40f1-9182-702afc17140a","legacyId":4273311,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"SRP LODs (Medium Resolution)","query":"SRP LODs (Medium Resolution)","sizeMb":462.96,"note":"LODs distantes das cidades, torres e ruínas alinhados com as texturas do SRP 2K (#22–#24)."},
+      {"id":73,"bnetId":"41f6cc87-078f-4e43-88a2-f4f13d975ee6","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Green Tundra LOD","query":"Green Tundra LOD","sizeMb":8.75,"note":"Garante horizonte distante verde vibrante no vale de Whiterun em sintonia com Skoglendi + Fantasia!"},
+      {"id":74,"bnetId":"edd90cb6-3150-4956-9d80-fd89bcb8efab","legacyId":4302401,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN: Dramatic Atmospheres, Weathers, & Nature","query":"DAWN: Dramatic Atmospheres, Weathers, & Nature","sizeMb":146.42,"note":"O melhor clima do Xbox (146 MB): raios solares volumétricos, cores vibrantes, neblina épica e áudio natural 3D!"},
+      {"id":75,"bnetId":"ad96197d-21cf-40a3-b1aa-c689400833f4","legacyId":4318909,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN Waters w/ Natural Waterfalls","query":"DAWN Waters w/ Natural Waterfalls","sizeMb":14.69,"note":"Água física cristalina, espuma de corredeiras e cachoeiras naturais integradas ao DAWN v2."},
+      {"id":76,"bnetId":"3d0e7f09-120c-4a73-89e8-4c838f12cdd0","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Via v 2.2 - Plugin","query":"Lux Via v 2.2 - Plugin","sizeMb":0.78,"note":"Pontes medievais, santuários e lanternas nas estradas florestadas (pareado c/ Master #07)."},
+      {"id":77,"bnetId":"d627ca87-efb4-4db3-84ca-282db9ce65b7","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis v 4.5 - Plugin","query":"Lux Orbis v 4.5 - Plugin","sizeMb":24.47,"note":"Iluminação quente de tochas, braseiros e vitrais nas muralhas medievais à noite."},
+      {"id":78,"bnetId":"9cd85311-2507-4d29-9fe2-568a03e039f4","legacyId":4250877,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / JK's Skyrim AIO Patch","query":"Lux Orbis / JK's Skyrim AIO Patch","sizeMb":0.25,"note":"Sincroniza as luzes externas do Lux Orbis com JK's Skyrim (#63)."},
+      {"id":79,"bnetId":"aae5792a-3d12-43cd-b107-4c6390fd6101","legacyId":4253383,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","query":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","sizeMb":0.09,"note":"Sincroniza as luzes externas do Lux Orbis com as fortalezas do The Great Cities (#61)."},
+      {"id":80,"bnetId":"1de3a7f2-7b1b-4046-b9ac-7144111c7815","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux v 7.1 - Plugin","query":"Lux v 7.1 - Plugin","sizeMb":113.72,"note":"Iluminação interna dramática com sombras reais e feixes de luz pelas janelas."},
+      {"id":81,"bnetId":"c8fa0a02-e38f-44fa-a8ef-7f1e937f3e30","legacyId":null,"zone":"Zona 12 — Patches Finais de Compatibilidade & Start Seguro (#81 → #85)","name":"Lux - Updated USSEP Patch","query":"Lux - Updated USSEP Patch","sizeMb":0.02,"note":"Compatibiliza o Lux v7.1 (#80) com o USSEP (#01)."},
+      {"id":82,"bnetId":"7d00fe62-ebab-4d20-a8f2-cbdeeed2bfeb","legacyId":null,"zone":"Zona 12 — Patches Finais de Compatibilidade & Start Seguro (#81 → #85)","name":"Lux - Free Creation Club Content Patch","query":"Lux - Free Creation Club Content Patch","sizeMb":0.03,"note":"Iluminação Lux v7.1 p/ as Creations gratuitas do SE 1.6 (Fishing & Saints and Seducers)."},
+      {"id":83,"bnetId":"1b8d0adc-0108-40ad-9ac9-c9efdcce06e4","legacyId":null,"zone":"Zona 12 — Patches Finais de Compatibilidade & Start Seguro (#81 → #85)","name":"Jk's Interiors AiO - Lux Patch","query":"Jk's Interiors AiO - Lux Patch","sizeMb":3.69,"note":"Patch reconstruído p/ Lux v7.1 (#80) + JK's Interiors AiO (#62)."},
+      {"id":84,"bnetId":"9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264","legacyId":4268574,"zone":"Zona 12 — Patches Finais de Compatibilidade & Start Seguro (#81 → #85)","name":"JK's Interiors AiO JK's Skyrim AIO Patch","query":"JK's Interiors AiO JK's Skyrim AIO Patch","sizeMb":0.11,"note":"Conecta portas e janelas entre JK's Interiors (#62) e JK's Skyrim (#63)."},
+      {"id":85,"bnetId":"07b6749e-71f1-4c60-8a2b-f9e77d888b3c","legacyId":4319624,"zone":"Zona 12 — Patches Finais de Compatibilidade & Start Seguro (#81 → #85)","name":"Alternate Perspective - Alternate Start","query":"Alternate Perspective - Alternate Start","sizeMb":4.93,"note":"Último da lista! Inicia New Game em 5s na sala segura (obrigatório p/ carregar cidades e armaduras limpas)."}
+    ];
+
+    var CALIB_STEPS = [
+      { key: 'c1', title: '1. Limpar Espaço Reservado (15,0 GB) — Somente em Instalação do Zero', desc: 'Se estiver migrando da V1 do zero: Meus Jogos e Apps → Skyrim → Gerenciar Jogo → Dados Salvos → Espaço Reservado (15,0 GB) → Limpar. (Para pequenos ajustes na V2, NÃO limpe!)' },
+      { key: 'c2', title: '2. Desligar Missing Creation Check + Download 1-Clique (12,44 GiB)', desc: 'Dentro de Creations → Options (☰), ative "Disable Missing Creation Check on Save" e clique em "Download all Creations in my Library".' },
+      { key: 'c3', title: '3. REGRA DE OURO: Ordenar #01 → #85 em Y (Load Order) ANTES de Sair!', desc: 'Assim que os downloads terminarem, NÃO aperte B! Aperte Y (Load Order) ali mesmo, ordene de #01 a #85, salve na nuvem com Options (☰) → "Save Load Order to Bethesda.net", encerre o Skyrim e reinicie o Xbox Series S.' },
+      { key: 'c3b', title: '4. Iniciar via NEW GAME (Cidades Fortificadas & NordWarUA Full 2K)', desc: 'Em New Game, você nasce em 5s no quarto do Alternate Perspective com 100% das muralhas do Fortified Whiterun, distritos do Capital Whiterun, fortalezas do The Great Cities e armaduras NordWarUA 2K gerados limpos!' },
+      { key: 'c4', title: '5. Configurar Cathedral Meditation (Poder nativo do DAWN v2)', desc: 'Em Magias → Poderes → Cathedral Meditation: escolha WorldView → "Vivid" (1x) + "Warm" (1x) para realçar o verde esmeralda das matas, os dourados do sol e o aço medieval!' },
+      { key: 'c5', title: '6. Configurar Display Enhancements (Assinatura Rudy/Cabbage ENB de PC)', desc: 'Ative o Preset 28 (1x), depois em Cinematic: Contrast +1, Saturation +2, Sunlight Scale +2. Cria feixes volumétricos intensos e sombras profundas!' },
+      { key: 'c6', title: '7. Configurar Busty Skeevers (Anti-Shimmering p/ Florestas Densas)', desc: 'Em Display: FOV = 90, Shadow Fix = ON, Snow Fix = Mode 2 e Softening = 0.15 (suaviza o serrilhado das agulhas de pinheiro e pasto 3D em 1440p).' }
+    ];
+
+    var currentTab = 'llo';
+    var autoCheckWeb = true;
+    var state = loadState();
+
+    function loadState() {
+      try {
+        var raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return { mods: {}, calib: {} };
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {}
+      updateStats();
+    }
+
+    function toggleAutoCheckWeb() {
+      autoCheckWeb = !autoCheckWeb;
+      var btn = document.getElementById('autoCheckWebBtn');
+      var box = document.getElementById('autoCheckWebBox');
+      if (btn) btn.setAttribute('aria-checked', autoCheckWeb ? 'true' : 'false');
+      if (box) {
+        box.textContent = autoCheckWeb ? '✓' : '';
+        box.className = autoCheckWeb
+          ? 'inline-flex items-center justify-center w-5 h-5 rounded bg-[var(--primary)] text-[var(--primary-foreground)] text-xs font-bold'
+          : 'inline-flex items-center justify-center w-5 h-5 rounded border border-[var(--border)] bg-[var(--card)] text-xs';
+      }
+    }
+
+    function getModState(id) {
+      if (!state.mods[id]) {
+        state.mods[id] = { web: false, dl: false, ord: false };
+      }
+      return state.mods[id];
+    }
+
+    function toggleStage(id, stage) {
+      var ms = getModState(id);
+      ms[stage] = !ms[stage];
+      if (stage === 'ord' && ms.ord) {
+        ms.web = true;
+        ms.dl = true;
+      } else if (stage === 'dl' && ms.dl) {
+        ms.web = true;
+      }
+      saveState();
+      renderModList();
+    }
+
+    function toggleCalib(key) {
+      state.calib[key] = !state.calib[key];
+      saveState();
+      renderCalib();
+    }
+
+    function buildBethesdaUrl(mod) {
+      if (mod && mod.bnetId) {
+        return 'https://creations.bethesda.net/en/skyrim/details/' + mod.bnetId;
+      }
+      var q = typeof mod === 'string' ? mod : (mod && mod.query) || '';
+      return 'https://creations.bethesda.net/en/skyrim/all?platforms=XB&text=' + encodeURIComponent(q);
+    }
+
+    function markWebOnOpen(id) {
+      if (!autoCheckWeb) return;
+      setTimeout(function () {
+        var ms = getModState(id);
+        if (!ms.web) {
+          ms.web = true;
+          saveState();
+          renderModList();
+        }
+      }, 80);
+    }
+
+    function openModSearch(id) {
+      var mod = MODS.find(function (m) { return m.id === id; });
+      if (!mod) return;
+      var url = buildBethesdaUrl(mod);
+      markWebOnOpen(id);
+      var a = document.createElement('a');
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+
+    function openNextPending() {
+      var list = currentTab === 'size'
+        ? MODS.slice().sort(function (a, b) { return b.sizeMb - a.sizeMb; })
+        : MODS;
+      var next = list.find(function (m) { return !getModState(m.id).web; });
+      if (!next) {
+        showToast('Todos os ' + MODS.length + ' mods já estão marcados na Library Web!');
+        return;
+      }
+      openModSearch(next.id);
+      showToast('Abrindo #' + pad2(next.id) + ': ' + next.name);
+    }
+
+    function fallbackExecCopy(txt) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = txt;
+        ta.setAttribute('readonly', '');
+        ta.style.cssText = 'position:fixed;top:0;left:-9999px;font-size:16px;opacity:0;';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        ta.setSelectionRange(0, txt.length);
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return !!ok;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function openCopyModal(txt, label) {
+      var modal = document.getElementById('copyFallbackModal');
+      var title = document.getElementById('copyModalTitle');
+      var area = document.getElementById('copyModalTextarea');
+      if (!modal || !area) return;
+      if (title) title.textContent = 'Copiar: ' + label;
+      area.value = txt;
+      modal.classList.remove('hidden');
+      setTimeout(function () {
+        area.focus();
+        area.select();
+      }, 60);
+    }
+
+    function closeCopyModal() {
+      var modal = document.getElementById('copyFallbackModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function copyText(txt, label) {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function' && window.isSecureContext) {
+        navigator.clipboard.writeText(txt).then(function () {
+          showToast('Copiado: ' + label);
+        }).catch(function () {
+          if (fallbackExecCopy(txt)) showToast('Copiado: ' + label);
+          else openCopyModal(txt, label);
+        });
+        return;
+      }
+      if (fallbackExecCopy(txt)) {
+        showToast('Copiado: ' + label);
+      } else {
+        openCopyModal(txt, label);
+      }
+    }
+
+    function pad2(n) {
+      return n < 10 ? '0' + n : String(n);
+    }
+
+    function formatSize(mb) {
+      if (mb >= 1024) return (mb / 1024).toFixed(2) + ' GB';
+      if (mb < 1) return Math.round(mb * 1024) + ' KB';
+      return mb.toFixed(mb % 1 === 0 ? 0 : 1) + ' MB';
+    }
+
+    function updateStats() {
+      var webDone = 0, dlDone = 0, ordDone = 0, totalMb = 0, dlMb = 0;
+      MODS.forEach(function (m) {
+        totalMb += m.sizeMb;
+        var ms = getModState(m.id);
+        if (ms.web) webDone++;
+        if (ms.dl) { dlDone++; dlMb += m.sizeMb; }
+        if (ms.ord) ordDone++;
+      });
+
+      var totalCount = MODS.length;
+      document.getElementById('statWebCount').textContent = webDone + ' / ' + totalCount;
+      document.getElementById('statDlCount').textContent = dlDone + ' / ' + totalCount;
+      document.getElementById('statOrdCount').textContent = ordDone + ' / ' + totalCount;
+
+      document.getElementById('barWeb').style.width = ((webDone / totalCount) * 100).toFixed(1) + '%';
+      document.getElementById('barDl').style.width = ((dlDone / totalCount) * 100).toFixed(1) + '%';
+      document.getElementById('barOrd').style.width = ((ordDone / totalCount) * 100).toFixed(1) + '%';
+
+      var totalGb = totalMb / 1024;
+      var freeGb = 15.0 - totalGb;
+      document.getElementById('statSpaceText').textContent = totalGb.toFixed(2).replace('.', ',') + ' / 15 GB';
+      document.getElementById('barSpace').style.width = Math.min(100, (totalGb / 15.0) * 100).toFixed(1) + '%';
+      document.getElementById('statDoubleSpaceHint').textContent =
+        'Baixado: ' + (dlMb / 1024).toFixed(2).replace('.', ',') + ' GB • Livre: ~' + freeGb.toFixed(2).replace('.', ',') + ' GB';
+
+      var nextPending = MODS.find(function (m) { return !getModState(m.id).web; });
+      var btnLabel = document.getElementById('btnNextPendingLabel');
+      if (nextPending) {
+        btnLabel.textContent = 'Abrir Próximo Pendente (#' + pad2(nextPending.id) + ')';
+      } else {
+        btnLabel.textContent = 'Todos na Library (' + totalCount + '/' + totalCount + ')';
+      }
+    }
+
+    function switchTab(tab) {
+      currentTab = tab;
+      ['llo', 'size', 'auto', 'enb'].forEach(function (t) {
+        var btn = document.getElementById('tab-' + t);
+        if (t === tab) {
+          btn.className = 'touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] transition-all duration-200 cursor-pointer';
+        } else {
+          btn.className = 'touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer';
+        }
+      });
+
+      document.getElementById('view-mods').classList.toggle('hidden', tab !== 'llo' && tab !== 'size');
+      document.getElementById('view-auto').classList.toggle('hidden', tab !== 'auto');
+      document.getElementById('view-enb').classList.toggle('hidden', tab !== 'enb');
+
+      if (tab === 'llo' || tab === 'size') renderModList();
+      if (tab === 'enb') renderCalib();
+    }
+
+    function matchesFilter(mod) {
+      var q = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+      var sf = document.getElementById('statusFilter').value;
+      var ms = getModState(mod.id);
+
+      if (q) {
+        var hay = (mod.name + ' ' + mod.zone + ' ' + mod.note + ' #' + pad2(mod.id) + ' ' + mod.id).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+
+      if (sf === 'pending_web' && ms.web) return false;
+      if (sf === 'pending_dl' && ms.dl) return false;
+      if (sf === 'pending_ord' && ms.ord) return false;
+      if (sf === 'done_all' && !(ms.web && ms.dl && ms.ord)) return false;
+      return true;
+    }
+
+    function renderModRow(mod, rankIndex) {
+      var ms = getModState(mod.id);
+      var allDone = ms.web && ms.dl && ms.ord;
+
+      var badgePrefix = currentTab === 'size'
+        ? '<span class="px-2 py-0.5 rounded text-xs font-bold bg-[var(--primary)] text-[var(--primary-foreground)] shrink-0">DL #' + pad2(rankIndex + 1) + '</span>' +
+          '<span class="px-2 py-0.5 rounded text-xs font-mono bg-[var(--secondary)] text-[var(--secondary-foreground)] shrink-0">LLO #' + pad2(mod.id) + '</span>'
+        : '<span class="px-2.5 py-0.5 rounded text-xs font-bold font-mono bg-[var(--secondary)] text-[var(--foreground)] border border-[var(--border)] shrink-0">#' + pad2(mod.id) + '</span>';
+
+      var btnStage = function (stage, label, active) {
+        var cls = active
+          ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-transparent font-semibold'
+          : 'bg-[var(--background)] text-[var(--muted-foreground)] border-[var(--border)] hover:text-[var(--foreground)]';
+        return '<button type="button" onclick="toggleStage(' + mod.id + ', \'' + stage + '\')" class="touch-target w-full lg:w-auto inline-flex items-center justify-center px-2.5 py-2 lg:py-1.5 rounded-xl lg:rounded-lg text-xs border transition-all duration-200 cursor-pointer ' + cls + '">' +
+          (active ? '✓ ' : '') + label +
+          '</button>';
+      };
+
+      return (
+        '<div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-3.5 sm:p-4 transition-all duration-200 hover:border-[var(--primary)]/60 ' + (allDone ? 'opacity-75' : '') + '">' +
+          '<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">' +
+            '<div class="space-y-1.5 min-w-0">' +
+              '<div class="flex flex-wrap items-center gap-2 min-w-0">' +
+                badgePrefix +
+                '<h4 class="text-sm sm:text-base font-semibold text-[var(--foreground)] wrap-anywhere leading-snug">' + escapeHtml(mod.name) + '</h4>' +
+                '<span class="px-2 py-0.5 rounded-full text-xs font-medium bg-[var(--background)] text-[var(--muted-foreground)] border border-[var(--border)] shrink-0">' + formatSize(mod.sizeMb) + '</span>' +
+              '</div>' +
+              '<p class="text-xs text-[var(--muted-foreground)] leading-relaxed wrap-anywhere">' + escapeHtml(mod.note) + '</p>' +
+            '</div>' +
+
+            '<div class="flex flex-col sm:flex-row lg:items-center gap-2 shrink-0 w-full lg:w-auto">' +
+              '<div class="grid grid-cols-3 gap-2 w-full sm:w-auto lg:flex">' +
+                btnStage('web', '1. Web', ms.web) +
+                btnStage('dl', '2. Xbox', ms.dl) +
+                btnStage('ord', '3. #' + pad2(mod.id), ms.ord) +
+              '</div>' +
+              '<div class="grid grid-cols-2 gap-2 w-full sm:w-auto lg:flex">' +
+                '<button type="button" onclick="copyText(\'' + escapeJs(mod.query) + '\', \'' + escapeJs(mod.name) + '\')" class="touch-target w-full lg:w-auto inline-flex items-center justify-center px-3 py-2 lg:py-1.5 rounded-xl lg:rounded-lg text-xs font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer" title="Copiar nome exato p/ busca">' +
+                  'Copiar Nome' +
+                '</button>' +
+                '<a href="' + escapeHtml(buildBethesdaUrl(mod)) + '" target="_blank" rel="noopener noreferrer" onclick="markWebOnOpen(' + mod.id + ')" class="touch-btn touch-target w-full lg:w-auto inline-flex items-center justify-center gap-1 px-3 py-2 lg:py-1.5 rounded-xl lg:rounded-lg text-xs font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 transition-all duration-200 cursor-pointer" title="Abrir página exata deste Mod na Bethesda.net">' +
+                  'Abrir Mod ↗' +
+                '</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+
+    function renderModList() {
+      var container = document.getElementById('modsContainer');
+      var filtered = MODS.filter(matchesFilter);
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-8 text-center text-sm text-[var(--muted-foreground)]">Nenhum mod encontrado para o filtro selecionado.</div>';
+        return;
+      }
+
+      if (currentTab === 'size') {
+        var sorted = filtered.slice().sort(function (a, b) { return b.sizeMb - a.sizeMb; });
+        var htmlSize = '<div class="space-y-2.5">' + sorted.map(function (m, idx) {
+          return renderModRow(m, idx);
+        }).join('') + '</div>';
+        container.innerHTML = htmlSize;
+        return;
+      }
+
+      // Agrupado por Zona LLO2
+      var zones = [];
+      var zoneMap = {};
+      filtered.forEach(function (m) {
+        if (!zoneMap[m.zone]) {
+          zoneMap[m.zone] = [];
+          zones.push(m.zone);
+        }
+        zoneMap[m.zone].push(m);
+      });
+
+      container.innerHTML = zones.map(function (z) {
+        var items = zoneMap[z];
+        var zMb = items.reduce(function (acc, i) { return acc + i.sizeMb; }, 0);
+        return (
+          '<div class="space-y-2.5">' +
+            '<div class="flex items-center justify-between px-1">' +
+              '<h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[var(--primary)]">' + escapeHtml(z) + '</h3>' +
+              '<span class="text-xs text-[var(--muted-foreground)]">' + items.length + ' itens • ' + formatSize(zMb) + '</span>' +
+            '</div>' +
+            items.map(function (m, idx) { return renderModRow(m, idx); }).join('') +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    function renderCalib() {
+      var container = document.getElementById('calibChecklist');
+      container.innerHTML = CALIB_STEPS.map(function (step) {
+        var done = !!state.calib[step.key];
+        return (
+          '<div onclick="toggleCalib(\'' + step.key + '\')" class="flex items-start gap-3 p-4 rounded-xl border border-[var(--border)] bg-[var(--background)] hover:border-[var(--primary)]/60 transition-all duration-200 cursor-pointer">' +
+            '<div class="mt-0.5 w-5 h-5 rounded flex items-center justify-center border ' + (done ? 'bg-[var(--primary)] text-[var(--primary-foreground)] border-transparent font-bold text-xs' : 'border-[var(--border)]') + '">' +
+              (done ? '✓' : '') +
+            '</div>' +
+            '<div>' +
+              '<h4 class="text-sm font-semibold text-[var(--foreground)] ' + (done ? 'line-through opacity-75' : '') + '">' + escapeHtml(step.title) + '</h4>' +
+              '<p class="text-xs text-[var(--muted-foreground)] mt-1 leading-relaxed">' + escapeHtml(step.desc) + '</p>' +
+            '</div>' +
+          '</div>'
+        );
+      }).join('');
+    }
+
+    function buildTokenHelperLines() {
+      return [
+        '  const BASE_API = "https://api.bethesda.net";',
+        '  const BNET_KEY = "SHROCS4-WHtMJglvWDhSCShxXk9UUUVaWXZEUT9Ld3Q_UFs-UV1eOTpgcTFCCl5PdjtFYldiDEVLXzZIcX1LST8ofDhMb253Xk5NRG8-CkA7UyRIXH5ELT5fM0pfcz9P";',
+        '  const sleep = (ms) => new Promise(r => setTimeout(r, ms));',
+        '  const acquireIdToken = async (forceRefresh = false) => {',
+        '    if (!forceRefresh) {',
+        '      try {',
+        '        const riotTok = document.querySelector("app")?._tag?.store?.getState?.()?.cogs?.idToken;',
+        '        if (riotTok && riotTok.length > 20) return riotTok;',
+        '      } catch (e) {}',
+        '      try {',
+        '        for (const root of [document.getElementById("ugc-content"), document.getElementById("root"), document.body]) {',
+        '          if (!root) continue;',
+        '          const fk = Object.keys(root).find(k => k.startsWith("__reactContainer$") || k.startsWith("__reactFiber$"));',
+        '          if (!fk) continue;',
+        '          const q = [root[fk]], seen = new WeakSet();',
+        '          let steps = 0;',
+        '          while (q.length && steps++ < 2500) {',
+        '            const n = q.shift();',
+        '            if (!n || typeof n !== "object" || seen.has(n)) continue;',
+        '            seen.add(n);',
+        '            const st = n.memoizedState?.store || n.stateNode?.store || n.pendingProps?.store || n.memoizedProps?.store;',
+        '            const tok = st?.getState?.()?.cogs?.idToken || st?.getState?.()?.auth?.idToken;',
+        '            if (tok && tok.length > 20) return tok;',
+        '            if (n.child) q.push(n.child);',
+        '            if (n.sibling) q.push(n.sibling);',
+        '          }',
+        '        }',
+        '      } catch (e) {}',
+        '    }',
+        '    for (const [method, path] of [["PUT", "/dwemer/attunement/v1/authenticate"], ["POST", "/dwemer/attunement/v1/authenticate/session"]]) {',
+        '      try {',
+        '        const r = await fetch(BASE_API + path, { method, mode: "cors", credentials: "include", headers: { "Content-Type": "application/json" }, body: "{}" });',
+        '        if (r.ok) { const j = await r.json(); if (j?.idToken) return j.idToken; }',
+        '      } catch (e) {}',
+        '    }',
+        '    return null;',
+        '  };',
+        '  const makeHeaders = (token) => ({',
+        '    "Content-Type": "application/json",',
+        '    "Authorization": "Bearer " + token,',
+        '    "x-bnet-product": "SKYRIM",',
+        '    "x-bnet-key": BNET_KEY,',
+        '    "accept-language": "en,pt-BR;q=0.9"',
+        '  });',
+        '  const fetchSubscribedMap = async (token) => {',
+        '    const map = new Map();',
+        '    for (let page = 1; page <= 10; page++) {',
+        '      const r = await fetch(`${BASE_API}/ugcmods/v2/content/subscribe?product=SKYRIM&page=${page}&size=100&_ts=${Date.now()}`, {',
+        '        method: "GET", mode: "cors", credentials: "include", cache: "no-store", headers: makeHeaders(token)',
+        '      });',
+        '      if (!r.ok) break;',
+        '      const j = await r.json();',
+        '      const rows = j?.platform?.response?.data || [];',
+        '      rows.forEach(it => { if (it?.content_id) map.set(it.content_id, it); });',
+        '      const total = Number(j?.platform?.response?.total || rows.length);',
+        '      if (map.size >= total || rows.length < 100) break;',
+        '    }',
+        '    return map;',
+        '  };'
+      ];
+    }
+
+    function buildConsoleAutomationSnippet() {
+      var manifestPayload = MODS.map(function (m) {
+        return { id: m.id, bnetId: m.bnetId, legacyId: m.legacyId, name: m.name };
+      });
+
+      return [
+        '// === SMART-SYNC REST API v2 — SKYRIM PC-ULTRA MEDIEVAL V2 (85 MODS • 12,34 GiB) ===',
+        '// 1. Esteja logado em https://creations.bethesda.net/en/skyrim/library',
+        '// 2. Abra o Console (F12), cole este script inteiro e aperte Enter (~20 segundos).',
+        '(async function() {',
+        '  const MODS = ' + JSON.stringify(manifestPayload) + ';',
+        '  const TARGET_SET = new Set(MODS.map(m => m.bnetId));'
+      ].concat(buildTokenHelperLines()).concat([
+        '  localStorage.removeItem("skyrim_autopilot_done_v1");',
+        '  ["skyrim-xb-helper", "bnet-auto-frame"].forEach(id => { const el = document.getElementById(id); if (el) el.remove(); });',
+        '  let stop = false, okCount = 0, prunedCount = 0, failList = [];',
+        '  const hud = document.createElement("div");',
+        '  hud.id = "skyrim-xb-helper";',
+        '  hud.style.cssText = "position:fixed;bottom:20px;right:20px;z-index:999999;background:#0f172a;color:#f8fafc;border:2px solid #38bdf8;border-radius:14px;padding:16px;font-family:system-ui,sans-serif;width:440px;box-shadow:0 16px 40px rgba(0,0,0,.75);";',
+        '  document.body.appendChild(hud);',
+        '  const renderHud = (idx, title, sub, stateMode = "run") => {',
+        '    const pct = Math.round((idx / MODS.length) * 100);',
+        '    const color = stateMode === "err" ? "#ef4444" : (stateMode === "done" ? "#22c55e" : "#38bdf8");',
+        '    hud.style.borderColor = color;',
+        '    const failHtml = failList.length ? `<div style="margin-top:8px;max-height:110px;overflow:auto;background:#1e293b;padding:8px;border-radius:8px;font-size:11px;color:#fca5a5"><b>Falhas (${failList.length}):</b><br/>` + failList.map(m => `#${String(m.id).padStart(2,"0")} <a href="https://creations.bethesda.net/en/skyrim/details/${m.bnetId}" target="_blank" style="color:#38bdf8;text-decoration:underline">${m.name}</a> (${m.reason})`).join("<br/>") + `</div>` : "";',
+        '    hud.innerHTML = `<div style="display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:${color}"><span>SMART-SYNC V2 • ${idx}/${MODS.length} (${pct}%)</span><span>Podados: ${prunedCount} | V2: ${okCount}/${MODS.length}</span></div>` +',
+        '      `<div style="width:100%;height:7px;background:#1e293b;border-radius:99px;margin:8px 0;overflow:hidden"><div style="width:${pct}%;height:100%;background:${color};transition:width .2s"></div></div>` +',
+        '      `<div style="font-size:13px;font-weight:600;color:#f1f5f9">${title}</div>` +',
+        '      `<div style="font-size:12px;color:#94a3b8;margin-top:4px;line-height:1.4">${sub}</div>` + failHtml +',
+        '      `<div style="display:flex;gap:8px;margin-top:12px">` +',
+        '      (stateMode === "run" ? `<button id="ap-stop" style="background:#ef4444;color:#fff;border:0;border-radius:8px;padding:7px 12px;font-size:12px;font-weight:700;cursor:pointer">Interromper</button>` : `<button id="ap-reload" style="background:#22c55e;color:#052e16;border:0;border-radius:8px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer">Abrir / Recarregar Library ↻</button><button id="ap-close" style="background:#334155;color:#f8fafc;border:0;border-radius:8px;padding:7px 12px;font-size:12px;cursor:pointer">Fechar</button>`) +',
+        '      `</div>`;',
+        '    const sb = document.getElementById("ap-stop"); if (sb) sb.onclick = () => { stop = true; renderHud(idx, "Interrompido pelo usuário", "Execução pausada.", "err"); };',
+        '    const rl = document.getElementById("ap-reload"); if (rl) rl.onclick = () => { window.location.href = "https://creations.bethesda.net/en/skyrim/library"; };',
+        '    const cl = document.getElementById("ap-close"); if (cl) cl.onclick = () => hud.remove();',
+        '  };',
+        '  renderHud(0, "Autenticando sessão Bethesda.net...", "Extraindo Bearer idToken da sua conta logada...", "run");',
+        '  let token = await acquireIdToken(false);',
+        '  if (!token) {',
+        '    renderHud(0, "Sessão Não Autenticada (Sem Token)", "Confirme que você está em creations.bethesda.net e logado no canto superior direito, recarregue (F5) e cole novamente.", "err");',
+        '    return;',
+        '  }',
+        '  renderHud(0, "Fase 1/3: Limpando sobras da Lista V1...", "Removendo da Library apenas os mods antigos substituídos na V2...", "run");',
+        '  const existingMap = await fetchSubscribedMap(token);',
+        '  for (const [cid, item] of existingMap.entries()) {',
+        '    if (stop) return;',
+        '    if (!TARGET_SET.has(cid)) {',
+        '      renderHud(0, "Fase 1/3: Removendo mod antigo...", `${item.title || cid}`, "run");',
+        '      const r = await fetch(`${BASE_API}/ugcmods/v2/content/${cid}/preference`, {',
+        '        method: "PUT", mode: "cors", credentials: "include", headers: makeHeaders(token),',
+        '        body: JSON.stringify({ preferences: { subscribe: false } })',
+        '      });',
+        '      if (r.ok) prunedCount++;',
+        '      await sleep(160);',
+        '    }',
+        '  }',
+        '  const putSubscribe = async (mod) => {',
+        '    for (let attempt = 1; attempt <= 3; attempt++) {',
+        '      const r = await fetch(`${BASE_API}/ugcmods/v2/content/${mod.bnetId}/preference`, {',
+        '        method: "PUT", mode: "cors", credentials: "include",',
+        '        headers: makeHeaders(token),',
+        '        body: JSON.stringify({ preferences: { subscribe: true } })',
+        '      });',
+        '      if (r.status === 401 && attempt === 1) {',
+        '        const fresh = await acquireIdToken(true);',
+        '        if (fresh) { token = fresh; continue; }',
+        '      }',
+        '      if (r.status === 429) { await sleep(2200 * attempt); continue; }',
+        '      const j = await r.json().catch(() => ({}));',
+        '      if (r.ok && (!j?.platform?.code || j.platform.code === 2000)) {',
+        '        if (typeof mod.legacyId === "number") {',
+        '          fetch(`${BASE_API}/ugcmods/v2/content/${mod.bnetId}/preference`, {',
+        '            method: "PUT", mode: "cors", credentials: "include",',
+        '            headers: makeHeaders(token),',
+        '            body: JSON.stringify({ content: { content_id: Number(mod.legacyId) }, preferences: { bookmark: true } })',
+        '          }).catch(() => {});',
+        '        }',
+        '        return { ok: true };',
+        '      }',
+        '      await sleep(600);',
+        '      if (attempt === 3) return { ok: false, reason: `HTTP ${r.status}` };',
+        '    }',
+        '    return { ok: false, reason: "Falha de rede" };',
+        '  };',
+        '  for (let i = 0; i < MODS.length && !stop; i++) {',
+        '    const m = MODS[i];',
+        '    if (existingMap.has(m.bnetId)) { okCount++; continue; }',
+        '    renderHud(i + 1, `Fase 2/3: #${String(m.id).padStart(2,"0")} ${m.name}`, `Inscrevendo pacote V2 PC-Ultra...`, "run");',
+        '    const res = await putSubscribe(m);',
+        '    if (res.ok) okCount++; else failList.push({ ...m, reason: res.reason });',
+        '    await sleep(190);',
+        '  }',
+        '  if (stop) return;',
+        '  renderHud(MODS.length, "Fase 3/3: Auditando 85/85 no servidor Bethesda...", "Conferindo GET /ugcmods/v2/content/subscribe?product=SKYRIM...", "run");',
+        '  await sleep(800);',
+        '  let serverMap = await fetchSubscribedMap(token);',
+        '  const missingAfter = MODS.filter(m => !serverMap.has(m.bnetId));',
+        '  if (missingAfter.length > 0 && missingAfter.length <= 20) {',
+        '    for (const m of missingAfter) { await putSubscribe(m); await sleep(350); }',
+        '    await sleep(700);',
+        '    serverMap = await fetchSubscribedMap(token);',
+        '  }',
+        '  const verifiedCount = MODS.filter(m => serverMap.has(m.bnetId)).length;',
+        '  failList = MODS.filter(m => !serverMap.has(m.bnetId)).map(m => ({ ...m, reason: "Não confirmado no GET /subscribe" }));',
+        '  okCount = verifiedCount;',
+        '  if (verifiedCount === MODS.length) {',
+        '    renderHud(MODS.length, `SUCESSO TOTAL: ${verifiedCount}/${MODS.length} Mods V2 Confirmados!`, `Removidos da V1: ${prunedCount} | Ativos na Library: ${serverMap.size} (12,34 GiB). Agora limpe o Espaço Reservado (15 GB) no Xbox Series S e use Options (☰) → "Download all Creations in my Library"!`, "done");',
+        '  } else {',
+        '    renderHud(MODS.length, `Confirmados no Servidor: ${verifiedCount}/${MODS.length}`, `Quase lá! Verifique os itens listados abaixo ou clique em Recarregar Library.`, "err");',
+        '  }',
+        '})();'
+      ]).join('\n');
+    }
+
+    function copyAutomationScript() {
+      var code = buildConsoleAutomationSnippet();
+      copyText(code, 'Smart-Sync V2 (85 Mods PC-Ultra)');
+    }
+
+    function buildClearLibrarySnippet() {
+      return [
+        '// === LIMPADOR DIRETO VIA REST API v2 — SKYRIM LIBRARY (BETHESDA.NET) ===',
+        '// Logado em https://creations.bethesda.net/en/skyrim/library, cole no Console (F12) e aperte Enter.',
+        '(async function() {'
+      ].concat(buildTokenHelperLines()).concat([
+        '  let stop = false, removed = 0, skipped = 0;',
+        '  const old = document.getElementById("bnet-lib-cleaner"); if (old) old.remove();',
+        '  const hud = document.createElement("div");',
+        '  hud.id = "bnet-lib-cleaner";',
+        '  hud.style.cssText = "position:fixed;bottom:20px;right:20px;z-index:999999;background:#0f172a;color:#f8fafc;border:2px solid #ef4444;border-radius:14px;padding:15px 16px;font-family:system-ui,sans-serif;width:390px;box-shadow:0 14px 36px rgba(0,0,0,.7);";',
+        '  document.body.appendChild(hud);',
+        '  const setHud = (title, msg, mode = "run") => {',
+        '    const col = mode === "done" ? "#22c55e" : "#f87171";',
+        '    hud.style.borderColor = col;',
+        '    hud.innerHTML = `<div style="font-size:12px;font-weight:700;color:${col}">${title} • Removidos: ${removed}</div>` +',
+        '      `<div style="font-size:12px;margin:6px 0 10px;color:#cbd5e1;line-height:1.4">${msg}</div>` +',
+        '      (mode === "run" ? `<button id="bnet-stop-btn" style="background:#ef4444;color:#fff;border:0;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer">Parar</button>` : `<button id="bnet-reload-btn" style="background:#22c55e;color:#052e16;border:0;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer">Recarregar /library ↻</button>`);',
+        '    const b = document.getElementById("bnet-stop-btn"); if (b) b.onclick = () => { stop = true; setHud("Limpeza Pausada", "Interrompido pelo usuário.", "done"); };',
+        '    const r = document.getElementById("bnet-reload-btn"); if (r) r.onclick = () => window.location.reload();',
+        '  };',
+        '  setHud("LIMPEZA API v2", "Autenticando sessão Bethesda.net...", "run");',
+        '  const token = await acquireIdToken(false);',
+        '  if (!token) { setHud("ERRO DE LOGIN", "Faça login em creations.bethesda.net, aperte F5 e tente novamente.", "err"); return; }',
+        '  const attempted = new Set();',
+        '  for (let pass = 1; pass <= 8 && !stop; pass++) {',
+        '    const map = await fetchSubscribedMap(token);',
+        '    const queue = Array.from(map.values()).filter(it => !attempted.has(it.content_id));',
+        '    if (!queue.length) break;',
+        '    for (let i = 0; i < queue.length && !stop; i++) {',
+        '      const it = queue[i];',
+        '      attempted.add(it.content_id);',
+        '      setHud("LIMPANDO LIBRARY", `Removendo (${i + 1}/${queue.length}): ${it.title || it.content_id}`, "run");',
+        '      const res = await fetch(`${BASE_API}/ugcmods/v2/content/${it.content_id}/preference`, {',
+        '        method: "PUT", mode: "cors", credentials: "include",',
+        '        headers: makeHeaders(token),',
+        '        body: JSON.stringify({ preferences: { subscribe: false } })',
+        '      });',
+        '      if (res.ok) removed++; else skipped++;',
+        '      await sleep(180);',
+        '    }',
+        '  }',
+        '  if (!stop) {',
+        '    const after = await fetchSubscribedMap(token);',
+        '    setHud("LIBRARY LIMPA!", `Concluído! Removidos: ${removed} | Restantes na conta: ${after.size}${skipped ? " (itens oficiais fixos ignorados: " + skipped + ")" : ""}.`, "done");',
+        '  }',
+        '})();'
+      ]).join('\n');
+    }
+
+    function copyClearLibraryScript() {
+      copyText(buildClearLibrarySnippet(), 'Script API de Limpeza da Library');
+    }
+
+    function buildHotfixSwapSnippet() {
+      return [
+        '// === HOTFIX CIRÚRGICO V2.1 (~3s) — CORRIGE ARMADURAS COMUNS 2K + ADICIONA CHEAT ROOM ===',
+        '// Cole no Console (F12) logado em https://creations.bethesda.net/en/skyrim/library',
+        '// (NÃO apaga os outros 83 mods — altera apenas os 2 pacotes abaixo na sua Library!)',
+        '(async function() {'
+      ].concat(buildTokenHelperLines()).concat([
+        '  const token = await acquireIdToken(false);',
+        '  if (!token) { alert("Faça login em creations.bethesda.net, aperte F5 e cole novamente."); return; }',
+        '  const REMOVE = [',
+        '    { id: "f9f7b1e0-6849-4764-8c1b-18b3c6fe6542", legacyId: 4183811, name: "OLD #35 2K Realistic Armors by NordwarUA" },',
+        '    { id: "72f27a12-1e05-4472-8cb0-6b3ad08363c6", legacyId: 4183862, name: "OLD #36 Vanilla Armor Replacer - No overlap (BSA cortado)" }',
+        '  ];',
+        '  const ADD = [',
+        '    { id: "39c6a829-bfca-4af7-9588-3745e23d6e9c", legacyId: 3010376, name: "NEW #14 Cheat Room (XB1) — 1,25 MB" },',
+        '    { id: "9d94d88d-0275-45c0-8083-ecede3c8cbf1", legacyId: 4143740, name: "NEW #36 Vanilla Armor Replacer | By NordwarUA (Full 2K Sem Cortes — 467,71 MB)" }',
+        '  ];',
+        '  for (const r of REMOVE) {',
+        '    await fetch(`${BASE_API}/ugcmods/v2/content/${r.id}/preference`, {',
+        '      method: "PUT", mode: "cors", credentials: "include", headers: makeHeaders(token),',
+        '      body: JSON.stringify({ preferences: { subscribe: false } })',
+        '    });',
+        '    if (r.legacyId) {',
+        '      await fetch(`${BASE_API}/ugcmods/v2/content/${r.id}/preference`, {',
+        '        method: "PUT", mode: "cors", credentials: "include", headers: makeHeaders(token),',
+        '        body: JSON.stringify({ content: { content_id: Number(r.legacyId) }, preferences: { bookmark: false } })',
+        '      }).catch(() => {});',
+        '    }',
+        '    console.log("🗑️ Removido da Library:", r.name);',
+        '  }',
+        '  for (const a of ADD) {',
+        '    await fetch(`${BASE_API}/ugcmods/v2/content/${a.id}/preference`, {',
+        '      method: "PUT", mode: "cors", credentials: "include", headers: makeHeaders(token),',
+        '      body: JSON.stringify({ preferences: { subscribe: true } })',
+        '    });',
+        '    if (a.legacyId) {',
+        '      await fetch(`${BASE_API}/ugcmods/v2/content/${a.id}/preference`, {',
+        '        method: "PUT", mode: "cors", credentials: "include", headers: makeHeaders(token),',
+        '        body: JSON.stringify({ content: { content_id: Number(a.legacyId) }, preferences: { bookmark: true } })',
+        '      }).catch(() => {});',
+        '    }',
+        '    console.log("✅ Adicionado na Library:", a.name);',
+        '  }',
+        '  const map = await fetchSubscribedMap(token);',
+        '  console.log(`🎯 Hotfix V2.1 concluído! Total na Library: ${map.size} | Cheat Room ativo? ${map.has(ADD[0].id)} | Full VAR 2K ativo? ${map.has(ADD[1].id)}`);',
+        '  alert(`Hotfix V2.1 concluído com sucesso!\\n\\nRemovidos da Library: 2K Realistic Armors + VAR No Overlap.\\nAdicionados: Cheat Room (XB1) + Vanilla Armor Replacer Full 2K (467,7 MB).\\nTotal na Library: ${map.size}.\\n\\nAgora no Xbox: apague apenas os 2 antigos em Y (Load Order), baixe os 2 novos e posicione Cheat Room em #14 e Vanilla Armor Replacer em #36!`);',
+        '  window.location.reload();',
+        '})();'
+      ]).join('\n');
+    }
+
+    function copyHotfixSwapScript() {
+      copyText(buildHotfixSwapSnippet(), 'Hotfix Cirúrgico V2.1 (Armaduras 2K + Cheat Room)');
+    }
+
+    function exportState() {
+      var blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'skyrim_se_2026_xbox_progresso.json';
+      a.click();
+      showToast('Backup JSON exportado!');
+    }
+
+    function importState(ev) {
+      var file = ev.target.files && ev.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          var parsed = JSON.parse(e.target.result);
+          if (parsed && typeof parsed === 'object') {
+            state = { mods: parsed.mods || {}, calib: parsed.calib || {} };
+            saveState();
+            renderModList();
+            renderCalib();
+            showToast('Progresso importado com sucesso!');
+          }
+        } catch (err) {
+          showToast('Arquivo JSON inválido.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function resetProgress() {
+      if (!confirm('Deseja zerar as marcações locais deste painel?')) return;
+      state = { mods: {}, calib: {} };
+      saveState();
+      renderModList();
+      renderCalib();
+      showToast('Progresso zerado.');
+    }
+
+    function showToast(msg) {
+      var t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.remove('hidden');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(function () {
+        t.classList.add('hidden');
+      }, 2800);
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function escapeJs(s) {
+      return String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    }
+
+    // Inicialização
+    document.getElementById('hotfixArmorScriptBox').textContent = buildHotfixSwapSnippet();
+    document.getElementById('clearLibraryScriptBox').textContent = buildClearLibrarySnippet();
+    document.getElementById('automationScriptBox').textContent = buildConsoleAutomationSnippet();
+    updateStats();
+    renderModList();
+    renderCalib();
+  </script>
+</body>
+</html>

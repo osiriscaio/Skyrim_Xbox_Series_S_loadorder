@@ -1,0 +1,14 @@
+.git
+.github
+.agents
+node_modules
+scratch
+scripts
+docs
+data
+.env
+.env.*
+*.md
+*.log
+.DS_Store
+Thumbs.db
