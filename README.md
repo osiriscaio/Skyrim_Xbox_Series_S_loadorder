@@ -1,4 +1,4 @@
-# Skyrim SE 2026 "PC-Ultra Medieval Híbrido & VRAM-Safe" — Xbox Series S Load Order & Cockpit (`v2.3.0`)
+# Skyrim SE 2026 "PC-Ultra Medieval Híbrido & VRAM-Safe" — Xbox Series S Load Order & Cockpit (`v2.3.1`)
 
 [![Deploy Cockpit to GitHub Pages](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml/badge.svg)](https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder/actions/workflows/pages.yml)
 
@@ -15,7 +15,11 @@ Curadoria técnica, auditoria binária (`.ckm` / `.esp` / `.bsa`) e **Cockpit In
 
 ---
 
-## 🚀 Destaques Implementados na Versão `v2.3.0` (Caminho B Híbrido: `Simply Realistic` + Guardas `2K`)
+## 🚀 Destaques Implementados nas Versões `v2.3.0` / `v2.3.1` (Caminho B Híbrido + Ordem `Lux` / Modo Offline)
+
+0. **Correção de Ordem `CELL`/`WRLD` em `#60` & Protocolo Modo Offline (`v2.3.1`):**
+   - `JK's Interiors AiO JK's Skyrim AIO Patch` reposicionado de `#80` para **`#60`** (imediatamente abaixo de `#58 JK's Interiors AiO` e `#59 JK's Skyrim`, e **antes** da suíte `Lux`), impedindo que ele sobrescreva as `44` células iluminadas por `#80 Jk's Interiors AiO - Lux Patch`.
+   - Documentado o protocolo **Modo Offline + `Quit` Obrigatório** ao ordenar mods no Xbox Series S, contornando o bug do menu *Creations* online que embaralha patches acima de masters e corrompe grafos Havok (`GDB`/`XP32`) em recarregamentos a quente.
 
 1. **Coesão Medieval Total do Nível 1 ao 80 + Miniaturas 3D Consistentes no Inventário (`#32`):**
    - Substituídos `Just Shields (on Back)` (`2,2 MB`), `Believable weapons` (`33,6 MB`), `Xavbio Retextures AiO` (`671,9 MB`) e `Vanilla Armor Replacer` (`467,7 MB`) pelo pacote unificado **`#32 Simply Realistic Armors & Weapons`** (`676,68 MB` • *BraccaMykar79* • UUID `4f64358b-a5df-4790-bac1-4ac33cf114da`).

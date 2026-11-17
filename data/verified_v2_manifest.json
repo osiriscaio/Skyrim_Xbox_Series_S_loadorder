@@ -1257,6 +1257,27 @@
   },
   {
     "id": 60,
+    "bnetId": "9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264",
+    "legacyId": 4268574,
+    "title": "JK&#39;s Interiors AiO JK&#39;s Skyrim AIO Patch",
+    "author": "StoneSpiralGaming",
+    "published": true,
+    "deleted": false,
+    "marketplace": false,
+    "bytes": 113539,
+    "sizeMb": 0.11,
+    "files": [
+      "JK's Interiors AIO JK's Skyrim Patch.esp"
+    ],
+    "deps": [
+      "Skyrim.esm",
+      "Update.esm",
+      "JKs Skyrim.esp",
+      "JK's Interiors AiO.esp"
+    ]
+  },
+  {
+    "id": 61,
     "bnetId": "20319fab-ef0c-46f1-b228-72d925a06f0c",
     "legacyId": 4247819,
     "title": "The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch",
@@ -1280,7 +1301,7 @@
     ]
   },
   {
-    "id": 61,
+    "id": 62,
     "bnetId": "ce5d06bc-a37b-4bca-94f7-16f1273449ff",
     "legacyId": 4176401,
     "title": "Fortified Whiterun",
@@ -1302,7 +1323,7 @@
     ]
   },
   {
-    "id": 62,
+    "id": 63,
     "bnetId": "bb537194-3fea-4b3d-b019-1eac0f999232",
     "legacyId": null,
     "title": "Capital Whiterun Expansion with Fixes - No Planks",
@@ -1325,7 +1346,7 @@
     ]
   },
   {
-    "id": 63,
+    "id": 64,
     "bnetId": "70b62127-cf25-4b16-9cee-bedf2c3567ed",
     "legacyId": 4177549,
     "title": "Fortified Whiterun - JK’s Skyrim Patch",
@@ -1349,7 +1370,7 @@
     ]
   },
   {
-    "id": 64,
+    "id": 65,
     "bnetId": "767fa253-a705-45f4-b117-b324a8cc1afe",
     "legacyId": 4321077,
     "title": "FYX - Fortified Whiterun Consistency Patch",
@@ -1373,7 +1394,7 @@
     ]
   },
   {
-    "id": 65,
+    "id": 66,
     "bnetId": "5789c8a0-1bc5-470b-9086-8719eeab19f0",
     "legacyId": null,
     "title": "Capital Whiterun Expansion - Fortified Whiterun Patch",
@@ -1397,7 +1418,7 @@
     ]
   },
   {
-    "id": 66,
+    "id": 67,
     "bnetId": "cc2945b5-c4a6-4c3a-ab46-ac6cffb31f6e",
     "legacyId": null,
     "title": "Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch",
@@ -1421,7 +1442,7 @@
     ]
   },
   {
-    "id": 67,
+    "id": 68,
     "bnetId": "adfc2d2e-b1a2-49bd-b68a-a19e69d400aa",
     "legacyId": 4220849,
     "title": "Trees In Cities for JK's Skyrim",
@@ -1441,7 +1462,7 @@
     ]
   },
   {
-    "id": 68,
+    "id": 69,
     "bnetId": "736fcb09-316d-40f1-9182-702afc17140a",
     "legacyId": 4273311,
     "title": "SRP LODs  (Medium Resolution)",
@@ -1461,7 +1482,7 @@
     ]
   },
   {
-    "id": 69,
+    "id": 70,
     "bnetId": "41f6cc87-078f-4e43-88a2-f4f13d975ee6",
     "legacyId": null,
     "title": "Green Tundra LOD",
@@ -1481,7 +1502,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 71,
     "bnetId": "edd90cb6-3150-4956-9d80-fd89bcb8efab",
     "legacyId": 4302401,
     "title": "DAWN: Dramatic Atmospheres, Weathers, & Nature",
@@ -1502,7 +1523,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 72,
     "bnetId": "ad96197d-21cf-40a3-b1aa-c689400833f4",
     "legacyId": 4318909,
     "title": "DAWN Waters w/ Natural Waterfalls",
@@ -1524,7 +1545,7 @@
     ]
   },
   {
-    "id": 72,
+    "id": 73,
     "bnetId": "3d0e7f09-120c-4a73-89e8-4c838f12cdd0",
     "legacyId": null,
     "title": "Lux Via v 2.2 - Plugin",
@@ -1548,7 +1569,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 74,
     "bnetId": "d627ca87-efb4-4db3-84ca-282db9ce65b7",
     "legacyId": null,
     "title": "Lux Orbis v 4.5 - Plugin",
@@ -1574,7 +1595,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 75,
     "bnetId": "9cd85311-2507-4d29-9fe2-568a03e039f4",
     "legacyId": 4250877,
     "title": "Lux Orbis / JK's Skyrim AIO Patch",
@@ -1597,7 +1618,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 76,
     "bnetId": "aae5792a-3d12-43cd-b107-4c6390fd6101",
     "legacyId": 4253383,
     "title": "Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch",
@@ -1621,7 +1642,7 @@
     ]
   },
   {
-    "id": 76,
+    "id": 77,
     "bnetId": "1de3a7f2-7b1b-4046-b9ac-7144111c7815",
     "legacyId": null,
     "title": "Lux v 7.1 - Plugin",
@@ -1646,7 +1667,7 @@
     ]
   },
   {
-    "id": 77,
+    "id": 78,
     "bnetId": "c8fa0a02-e38f-44fa-a8ef-7f1e937f3e30",
     "legacyId": null,
     "title": "Lux - Updated USSEP Patch",
@@ -1671,7 +1692,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 79,
     "bnetId": "7d00fe62-ebab-4d20-a8f2-cbdeeed2bfeb",
     "legacyId": null,
     "title": "Lux - Free Creation Club Content Patch",
@@ -1695,7 +1716,7 @@
     ]
   },
   {
-    "id": 79,
+    "id": 80,
     "bnetId": "1b8d0adc-0108-40ad-9ac9-c9efdcce06e4",
     "legacyId": null,
     "title": "Jk&#39;s Interiors AiO - Lux Patch",
@@ -1716,27 +1737,6 @@
       "Dragonborn.esm",
       "Lux - Resources.esp",
       "Lux.esp",
-      "JK's Interiors AiO.esp"
-    ]
-  },
-  {
-    "id": 80,
-    "bnetId": "9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264",
-    "legacyId": 4268574,
-    "title": "JK&#39;s Interiors AiO JK&#39;s Skyrim AIO Patch",
-    "author": "StoneSpiralGaming",
-    "published": true,
-    "deleted": false,
-    "marketplace": false,
-    "bytes": 113539,
-    "sizeMb": 0.11,
-    "files": [
-      "JK's Interiors AIO JK's Skyrim Patch.esp"
-    ],
-    "deps": [
-      "Skyrim.esm",
-      "Update.esm",
-      "JKs Skyrim.esp",
       "JK's Interiors AiO.esp"
     ]
   },

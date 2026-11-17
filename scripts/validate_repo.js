@@ -11,7 +11,7 @@ function assert(cond, msg) {
   }
 }
 
-console.log('=== SUÍTE DE VALIDAÇÃO SKYRIM XBOX SERIES S LOAD ORDER (v2.3.0) ===');
+console.log('=== SUÍTE DE VALIDAÇÃO SKYRIM XBOX SERIES S LOAD ORDER (v2.3.1) ===');
 
 // 1. Verificar arquivos essenciais
 for (const rel of [
@@ -95,8 +95,10 @@ assert(sandbox.MODS[32].bnetId === '61f19279-a197-441d-b331-9f70d4d98d39', 'Slot
 assert(sandbox.MODS[33].bnetId === 'd058f69d-1734-4091-9278-af5794550b8f', 'Slot #34 deve ser Sons of Skyrim (SWF) 2k');
 assert(sandbox.MODS[44].bnetId === '44797002-072b-43d6-919b-7f512e591de4', 'Slot #45 deve ser CFPAO (acima de XP32 e GDB)');
 assert(sandbox.MODS[54].bnetId === '89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d', 'Slot #55 deve ser Fabled Forests Author\'s Choice 1k');
+assert(sandbox.MODS[59].bnetId === '9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264', 'Slot #60 deve ser JK\'s Interiors AiO JK\'s Skyrim AIO Patch (acima do Lux)');
+assert(sandbox.MODS[79].bnetId === '1b8d0adc-0108-40ad-9ac9-c9efdcce06e4', 'Slot #80 deve ser Jk\'s Interiors AiO - Lux Patch');
 assert(sandbox.MODS[80].bnetId === '39c6a829-bfca-4af7-9588-3745e23d6e9c', 'Slot #81 deve ser Cheat Room (XB1)');
-console.log('✅ 3/5 Paridade estrita 82/82 UUIDs e slots V2.3 confirmada.');
+console.log('✅ 3/5 Paridade estrita 82/82 UUIDs e slots V2.3.1 confirmada.');
 
 // 4. Validação de dependências TES4/MAST e orçamento de 15 GiB
 const provided = new Map([

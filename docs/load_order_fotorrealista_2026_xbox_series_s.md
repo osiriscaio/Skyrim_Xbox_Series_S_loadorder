@@ -107,46 +107,48 @@ A partir da pesquisa exaustiva nas referências de showcase do `r/SkyrimModsXbox
 55. **Fabled Forests Author's Choice 1k** (`91,8 MB` • *BeanPVGaming*) — Combina a densidade colossal de florestas fechadas do *Nature of the Wild Lands + Ulvenwald* com malhas 3D otimizadas *Happy Little Trees* (`~2.500` polígonos vs. `20.000` do NotWL bruto) + LODs 3D embutidos: **elimina 100% do crash na entrada da floresta de Whiterun mantendo o visual exuberante a 60 FPS!**
 56. **Alpine Forest of Whiterun Valley XB1** (`1,0 MB` • *Aenohesa*) — Fecha todo o vale de Whiterun numa floresta alpina densa usando automaticamente os modelos 3D leves do *Fabled Forests* acima dele, com coordenadas limpas para zero *clipping* nas muralhas!
 
-### ZONA 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs (`#57` → `#69`)
+### ZONA 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs (`#57` → `#70`)
 57. **The Great Cities, Towns, and Villages Bundle** (`47,9 MB` • *basspainter*) — Transforma Winterhold, Falkreath, Dawnstar, Morthal, Dragon Bridge, Rorikstead e +6 vilas em fortalezas e cidadelas medievais colossais!
 58. **JK's Interiors AiO** (`35,3 MB` • *StoneSpiralGaming*)
 59. **JK's Skyrim - All in One by jkrojmal & Teabag86** (`11,9 MB` • *campolo313*)
-60. **The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch** (`1,5 MB` • *basspainter*)
-61. **Fortified Whiterun** (`17,1 MB` • *Skyfall515*) — Ergue muralhas medievais altas com ameias, torres de guarda, portões rastrilhos e passarelas em Whiterun!
-62. **Capital Whiterun Expansion with Fixes - No Planks** (`27,8 MB` • *FM07*) — Expande Whiterun com novos distritos murados, mansões, praças e comércio digno de uma grande capital!
-63. **Fortified Whiterun - JK’s Skyrim Patch** (`10 KB` • *Skyfall515*)
-64. **FYX - Fortified Whiterun Consistency Patch** (`930 KB` • *Skyfall515*)
-65. **Capital Whiterun Expansion - Fortified Whiterun Patch** (`51 KB` • *FatalIllusion*)
-66. **Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch** (`102 KB` • *FM07*)
-67. **Trees In Cities for JK's Skyrim** (`92 KB` • *substill*) — Árvores frondosas dentro de Whiterun, Solitude, Windhelm, Riften e Markarth!
-68. **SRP LODs (Medium Resolution)** (`463,0 MB` • *BraccaMykar79*) — LODs distantes das cidades e ruínas alinhados ao *SRP 2K*.
-69. **Green Tundra LOD** (`8,8 MB` • *AceeQ*) — Horizonte distante verde vibrante em Whiterun.
+60. **JK's Interiors AiO JK's Skyrim AIO Patch** (`113 KB` • *StoneSpiralGaming*) — **Obrigatoriamente abaixo dos dois acima (`#58` e `#59`) e ANTES da família `Lux`**, evitando sobrescrever os templates de luz e portais de interiores!
+61. **The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch** (`1,5 MB` • *basspainter*)
+62. **Fortified Whiterun** (`17,1 MB` • *Skyfall515*) — Ergue muralhas medievais altas com ameias, torres de guarda, portões rastrilhos e passarelas em Whiterun!
+63. **Capital Whiterun Expansion with Fixes - No Planks** (`27,8 MB` • *FM07*) — Expande Whiterun com novos distritos murados, mansões, praças e comércio digno de uma grande capital!
+64. **Fortified Whiterun - JK’s Skyrim Patch** (`10 KB` • *Skyfall515*)
+65. **FYX - Fortified Whiterun Consistency Patch** (`930 KB` • *Skyfall515*)
+66. **Capital Whiterun Expansion - Fortified Whiterun Patch** (`51 KB` • *FatalIllusion*)
+67. **Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch** (`102 KB` • *FM07*)
+68. **Trees In Cities for JK's Skyrim** (`92 KB` • *substill*) — Árvores frondosas dentro de Whiterun, Solitude, Windhelm, Riften e Markarth!
+69. **SRP LODs (Medium Resolution)** (`463,0 MB` • *BraccaMykar79*) — LODs distantes das cidades e ruínas alinhados ao *SRP 2K*.
+70. **Green Tundra LOD** (`8,8 MB` • *AceeQ*) — Horizonte distante verde vibrante em Whiterun.
 
-### ZONA 11 — Atmosfera Épica `DAWN v2`, Água Física & Iluminação `LUX Suite` (`#70` → `#76`)
-70. **DAWN: Dramatic Atmospheres, Weathers, & Nature** (`146,4 MB` • *clofas1*) — Raios volumétricos intensos, céus épicos, cores vibrantes e sons 3D naturais!
-71. **DAWN Waters w/ Natural Waterfalls** (`14,7 MB` • *clofas1*)
-72. **Lux Via v 2.2 - Plugin** (`798 KB` • *FatalIllusion*)
-73. **Lux Orbis v 4.5 - Plugin** (`24,5 MB` • *FatalIllusion*)
-74. **Lux Orbis / JK's Skyrim AIO Patch** (`256 KB` • *basspainter*)
-75. **Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch** (`92 KB` • *basspainter*)
-76. **Lux v 7.1 - Plugin** (`113,7 MB` • *FatalIllusion*)
+### ZONA 11 — Atmosfera Épica `DAWN v2`, Água Física & Iluminação `LUX Suite` (`#71` → `#77`)
+71. **DAWN: Dramatic Atmospheres, Weathers, & Nature** (`146,4 MB` • *clofas1*) — Raios volumétricos intensos, céus épicos, cores vibrantes e sons 3D naturais!
+72. **DAWN Waters w/ Natural Waterfalls** (`14,7 MB` • *clofas1*)
+73. **Lux Via v 2.2 - Plugin** (`798 KB` • *FatalIllusion*)
+74. **Lux Orbis v 4.5 - Plugin** (`24,5 MB` • *FatalIllusion*)
+75. **Lux Orbis / JK's Skyrim AIO Patch** (`256 KB` • *basspainter*)
+76. **Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch** (`92 KB` • *basspainter*)
+77. **Lux v 7.1 - Plugin** (`113,7 MB` • *FatalIllusion*)
 
-### ZONA 12 — Patches Finais de Compatibilidade, Cheat Room Isolado & Start Seguro (`#77` → `#82`)
-77. **Lux - Updated USSEP Patch** (`20 KB` • *FatalIllusion*)
-78. **Lux - Free Creation Club Content Patch** (`26 KB` • *FatalIllusion*)
-79. **Jk's Interiors AiO - Lux Patch** (`3,7 MB` • *FatalIllusion*)
-80. **JK's Interiors AiO JK's Skyrim AIO Patch** (`113 KB` • *StoneSpiralGaming*)
+### ZONA 12 — Patches Finais `Lux`, Cheat Room Isolado & Start Seguro (`#78` → `#82`)
+78. **Lux - Updated USSEP Patch** (`20 KB` • *FatalIllusion*)
+79. **Lux - Free Creation Club Content Patch** (`26 KB` • *FatalIllusion*)
+80. **Jk's Interiors AiO - Lux Patch** (`3,7 MB` • *FatalIllusion*) — Agora vence limpo sobre todas as `44` células internas do `JK's Interiors`!
 81. **Cheat Room (XB1)** (`1,25 MB` • *Bradenm1*) — Posicionado no rodapé (`#81`) para **jamais deslocar os prefixos hexadecimais `FormID` dos mods acima**! Sala segura com todas as armaduras/armas, painel de XP/Perks/Skills e `Cheat Spell`.
 82. **Alternate Perspective - Alternate Start** (`4,9 MB` • *Guizzu*) — **Último da lista (`#82`)!** Inicia *New Game* em 5s na sala segura para gerar todas as muralhas, cidadelas e armaduras limpas.
 
 ---
 
-## 4. Protocolo Smart-Sync de Instalação Completa V2.3 (Notebook + Xbox Series S)
+## 4. Protocolo Smart-Sync & Ordenação Blindada em Modo Offline (`V2.3.1`)
 
 1. **Smart-Sync Automático na `Library` (~20 Segundos no Navegador):** Abra `https://creations.bethesda.net/en/skyrim/library` logado, pressione `F12` -> **Console**, cole o script **Smart-Sync V2.3 (82 Mods)** da aba *3. Ajuste / Sync V2.3* do [Cockpit Interativo Online](https://osiriscaio.github.io/Skyrim_Xbox_Series_S_loadorder/) e aperte `Enter`. Ele **remove sozinho** qualquer mod antigo fora da V2.3, mantém os compartilhados e inscreve todos os pacotes calibrados, auditando **`82/82`** no servidor!
-2. **Limpar Espaço Reservado no Xbox Series S (Apenas em Instalação do Zero):** Em *Meus Jogos e Apps -> Skyrim -> Gerenciar Jogo -> Dados Salvos -> Espaço Reservado (15,0 GB)*, clique em **Limpar Espaço Reservado**. *(Se você já está na V2.2, pule para a Seção 7 abaixo — não precisa limpar os 15 GB!)*
+2. **Limpar Espaço Reservado no Xbox Series S (Apenas em Instalação do Zero):** Em *Meus Jogos e Apps -> Skyrim -> Gerenciar Jogo -> Dados Salvos -> Espaço Reservado (15,0 GB)*, clique em **Limpar Espaço Reservado**.
 3. **Download em Lote com 1 Clique:** Abra *Creations*, pressione **Options (`☰`)**, ative **Disable Missing Creation Check on Save** e selecione **"Download all Creations in my Library"** (`11,06 GiB` com `3,94 GiB` de folga livre).
-4. **⚠️ REGRA DE OURO ANTI-CRASH — Ordene em `Y (Load Order)` ANTES de Sair + Hard Reset:** Assim que os 82 downloads terminarem, **NÃO pressione `B` ainda!** Pressione **`Y` (Load Order)** ali mesmo dentro de *Creations*, ordene de `#01` a `#82`, salve com **Options (`☰`) -> "Save Load Order to Bethesda.net"**, segure o botão luminoso **Xbox no controle -> "Reiniciar Console"** e inicie um **`New Game`**.
+4. **⚠️ SEGREDO ANTI-EMBARALHAMENTO — Ordene em `Modo Offline` + `Quit` Obrigatório antes de Jogar:**
+   - O botão *"Save Load Order to Bethesda.net"* e a reabertura do menu *Creations* online possuem um bug conhecido da Bethesda que **embaralha patches acima dos masters e desmarca mods no rodapé**.
+   - Assim que terminar de baixar os pacotes, **feche o Skyrim (`Quit`)**, vá em **Configurações do Xbox → Geral → Configurações de Rede → Ficar Offline**, abra o Skyrim (ele abrirá a lista local limpa e instantânea), ordene de `#01` a `#82`, **feche o Skyrim pelo botão Xbox → `☰` → Encerrar (`Quit`)** *(nunca clique em New Game direto após mexer na ordem!)*, reabra o Skyrim e clique direto em **`New Game`** (depois pode reconectar a rede normalmente — apenas não abra mais o menu *Creations*!).
 
 ---
 

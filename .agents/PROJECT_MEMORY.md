@@ -1,11 +1,11 @@
-# PROJECT MEMORY — Skyrim Xbox Series S Load Order (`v2.3.0`)
+# PROJECT MEMORY — Skyrim Xbox Series S Load Order (`v2.3.1`)
 
 ## Visão Geral do Projeto
 Repositório autoral dedicado à engenharia, auditoria binária (`.ckm`/`.esp`/`.bsa`) e automação do **Load Order LLO2 V2.3 ("PC-Ultra Medieval Híbrido & VRAM-Safe")** para *Skyrim Special Edition Padrão* (Jogo Base + 4 Creations gratuitas do patch 1.6, zero dependência paga de *Anniversary Edition*) no **Xbox Series S**, calibrado simultaneamente para os **15,00 GB** de *Reserved Space* em SSD e para o teto físico de **`~8,0 GB` de memória unificada GDDR6 (RAM + VRAM)**.
 
 - **Repositório Remoto:** `https://github.com/osiriscaio/Skyrim_Xbox_Series_S_loadorder`
 - **Cockpit Publicado (GitHub Pages):** `https://osiriscaio.github.io/Skyrim_Xbox_Series_S_loadorder/`
-- **Versão Atual:** `v2.3.0` (`82` Creations verificadas • `11,06 GiB` / `15,00 GB` • `~3,94 GiB` livres para a Regra do Espaço Duplo)
+- **Versão Atual:** `v2.3.1` (`82` Creations verificadas • `11,06 GiB` / `15,00 GB` • `~3,94 GiB` livres para a Regra do Espaço Duplo; `#60 JK's Interiors + JK's Skyrim Patch` posicionado acima de `#77 Lux` / `#80 Lux - JK's Interiors Patch` + Protocolo Modo Offline Anti-Embaralhamento)
 
 ## Decisões Arquiteturais Consolidadas
 1. **Proteção contra Lockout de Interface (`.swf`):** Mods de UI obsoletos contendo `startmenu.swf` ou `bethesdanetlogin.swf` (ex.: *Nordic UI - Updated*) bloqueiam o menu *Creations* pós-dezembro/2023. Utilizamos exclusivamente `#09 Nordic SkyHUD` (HUD in-game pura).

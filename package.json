@@ -1,6 +1,6 @@
 {
   "name": "skyrim-xbox-series-s-loadorder",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "private": true,
   "description": "Cockpit Interativo Mobile-First e Blueprint Técnico Auditado (LLO2 V2.3 Híbrido & VRAM-Safe — 82 Mods, 11,06 GiB / 15 GB) para Skyrim Special Edition no Xbox Series S.",
   "scripts": {

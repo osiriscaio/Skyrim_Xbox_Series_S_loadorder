@@ -1,6 +1,6 @@
 # Guia de Testes e Auditoria de Qualidade (`TESTING.md`)
 
-**Versão Auditada:** `v2.3.0`
+**Versão Auditada:** `v2.3.1`
 
 ---
 

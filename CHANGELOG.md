@@ -2,6 +2,14 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo, seguindo o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/) e [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [2.3.1] - 2026-11-17
+
+### Corrigido
+- **Ordem Binária de Interiores (`#60 JK's Interiors AiO JK's Skyrim AIO Patch`):** Reposicionado de `#80` para `#60` (logo abaixo de `#58 JK's Interiors AiO` e `#59 JK's Skyrim`), impedindo que seus registros `CELL` (`5`), `WRLD` (`4`) e `NAVM` (`1`) sobrescrevessem `#77 Lux v 7.1` e `#80 Jk's Interiors AiO - Lux Patch` (`44 CELL`, `4319 REFR`).
+- **Protocolo Anti-Embaralhamento em Modo Offline & `Quit` Obrigatório:** Atualizado o checklist para ordenar mods com o Xbox em *Modo Offline* (evitando o bug de *Auto-Reshuffle* do botão *Save Load Order to Bethesda.net*) e encerrar (`Quit`) o Skyrim antes de clicar em *New Game* / *Load Game* (evitando corrupção de grafos Havok `GDB`/`XP32` em *hot-reload*).
+
+---
+
 ## [2.3.0] - 2026-11-17
 
 ### Alterado
