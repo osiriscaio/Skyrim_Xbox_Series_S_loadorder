@@ -2,6 +2,23 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo, seguindo o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/) e [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [2.2.0] - 2026-11-17
+
+### Corrigido
+- **Crash de Memória Unificada (`8,0 GB` GDDR6) na Floresta de Whiterun (`~2,3 GB` de VRAM Ativa Economizados):**
+  - Substituído `#59 [XB1] Nature Of The Wild Lands 2.31` (`396,15 MB`, árvores de `~20.000` polígonos e cascas `2K` sem compressão BC7 que excediam o teto físico de `~8,0 GB` do Xbox Series S ao multiplicar centenas de árvores com `#59 Alpine Forest of Whiterun Valley`) por **`#58 Fabled Forests Author's Choice 1k`** (`89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d` • `91,79 MB`), que preserva os posicionamentos densos de floresta fechada (*NotWL + Ulvenwald*) usando malhas 3D leves *Happy Little Trees* (`~2.500` polígonos) e LODs embutidos.
+  - Substituído `#16 Static Mesh Improvement Mod SE XB1` (`907,54 MB` BC3 legado de 2016) por **`#15 Super Smim'd 1k`** (`87294b6e-6e9d-410c-91ed-6bb9fccac15e` • `502,65 MB` BC7 moderno + ponte/treliças 3D de Whiterun).
+  - Substituído `#17 LucidAPs' High Poly Project` (`348,56 MB` `2K`) por **`#16 LucidAPs' High Poly Project (v5.x) - 1K (with Fixes)`** (`48f7c830-d51d-4e34-910f-80a9166cbcce` • `142,54 MB` BC7, mesmas malhas 3D com `-75%` de VRAM).
+- **Crash ao Conjurar `Cheat Teleport` (3 Causas Combinadas Eliminadas):**
+  - Liberação do headroom de VRAM na transição `MoveTo()` para os `427` objetos 3D (`REFR`) e `54` cofres (`CONT`) de `Cheat Room.esp`.
+  - **Ordem Nemesis Estrita (`#48`–`#50`):** Movido `Comprehensive First Person Animation Overhaul - CFPAO` para `#48`, colando `#49 XP32 Maximum Skeleton Special Extended Plus` diretamente em `#50 GDB's The Revenge` conforme exigência do autor.
+  - **Isolamento de `FormID` (`#84`):** Movido `Cheat Room (XB1)` de `#14` para `#84` (logo acima de `#85 Alternate Perspective`), evitando deslocamento de slots hexadecimais acima dele, documentando o protocolo obrigatório de **Hard Reset ("Reiniciar Console") + `New Game`**.
+
+### Adicionado
+- **Hotfix Cirúrgico V2.2 (Mobile 1-Toque & Desktop Console API):** 6 botões mobile diretos na aba *3. Hotfix Anti-Crash V2.2* + script REST API v2 para substituir apenas os 3 pacotes sem apagar os `15 GB` do console, elevando a folga livre para **`3,46 GiB`** (`11,54 GiB` / `15,00 GB`).
+
+---
+
 ## [2.1.1] - 2026-11-16
 
 ### Alterado

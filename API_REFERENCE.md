@@ -1,11 +1,11 @@
 # Referência Técnica de Dados, Estado e Automação (`API_REFERENCE.md`)
 
-**Versão:** `v2.1.1`
+**Versão:** `v2.2.0`
 
 Embora o **Cockpit Skyrim SE 2026 — Xbox Series S** seja uma aplicação web `100%` estática hospedada no GitHub Pages (sem backend proprietário nem coleta de dados), este documento especifica formalmente os **3 contratos técnicos** utilizados pelo painel:
 1. Schema do Manifesto Binário Auditado (`data/verified_v2_85_manifest.json` e `window.MODS`).
 2. Schema de Persistência Local (`localStorage` + Exportação/Importação JSON).
-3. Endpoints Públicos da **Bethesda.net UGC Mods REST API v2** acionados exclusivamente no navegador do próprio usuário pelos scripts opcionais de automação da aba *Ajuste / Hotfix V2.1*.
+3. Endpoints Públicos da **Bethesda.net UGC Mods REST API v2** acionados exclusivamente no navegador do próprio usuário pelos scripts opcionais de automação da aba *3. Hotfix Anti-Crash V2.2*.
 
 ---
 
@@ -15,7 +15,7 @@ Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada dir
 
 ```json
 {
-  "id": 36,
+  "id": 35,
   "bnetId": "9d94d88d-0275-45c0-8083-ecede3c8cbf1",
   "legacyId": 4143740,
   "title": "Vanilla Armor Replacer | By NordwarUA",
@@ -88,7 +88,7 @@ Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada dir
 
 ## 4. Endpoints Bethesda.net Consumidos pelos Scripts de Console (`Aba 3`)
 
-Os scripts gerados na aba **3. Ajuste / Hotfix V2.1** executam **exclusivamente dentro da aba autenticada do usuário** em `https://creations.bethesda.net/en/skyrim/library` (nenhuma credencial transita pelo GitHub Pages):
+Os scripts gerados na aba **3. Hotfix Anti-Crash V2.2** executam **exclusivamente dentro da aba autenticada do usuário** em `https://creations.bethesda.net/en/skyrim/library` (nenhuma credencial transita pelo GitHub Pages):
 
 | Método & Endpoint (`https://api.bethesda.net`) | Finalidade | Payload / Query |
 | :--- | :--- | :--- |

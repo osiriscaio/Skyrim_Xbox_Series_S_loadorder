@@ -11,7 +11,7 @@ function assert(cond, msg) {
   }
 }
 
-console.log('=== SUÍTE DE VALIDAÇÃO SKYRIM XBOX SERIES S LOAD ORDER (v2.1.0) ===');
+console.log('=== SUÍTE DE VALIDAÇÃO SKYRIM XBOX SERIES S LOAD ORDER (v2.2.0) ===');
 
 // 1. Verificar arquivos essenciais
 for (const rel of [
@@ -20,6 +20,7 @@ for (const rel of [
   'data/verified_v2_85_manifest.json',
   'docs/load_order_fotorrealista_2026_xbox_series_s.md',
   'docs/planning/plano_impl_v1.md',
+  'docs/planning/plano_impl_v2.md',
   'README.md',
   'API_REFERENCE.md',
   'CHANGELOG.md',
@@ -85,9 +86,13 @@ for (let i = 0; i < 85; i++) {
   assert(manifest[i].id === i + 1 && sandbox.MODS[i].id === i + 1, `ID fora de sequência na posição ${i + 1}`);
   assert(manifest[i].bnetId === sandbox.MODS[i].bnetId, `Divergência de UUID no slot #${i + 1}`);
 }
-assert(sandbox.MODS[13].bnetId === '39c6a829-bfca-4af7-9588-3745e23d6e9c', 'Slot #14 deve ser Cheat Room (XB1)');
-assert(sandbox.MODS[35].bnetId === '9d94d88d-0275-45c0-8083-ecede3c8cbf1', 'Slot #36 deve ser Vanilla Armor Replacer Full 2K');
-console.log('✅ 3/5 Paridade estrita 85/85 UUIDs confirmada.');
+assert(sandbox.MODS[14].bnetId === '87294b6e-6e9d-410c-91ed-6bb9fccac15e', 'Slot #15 deve ser Super Smim\'d 1k');
+assert(sandbox.MODS[15].bnetId === '48f7c830-d51d-4e34-910f-80a9166cbcce', 'Slot #16 deve ser LucidAPs\' High Poly Project 1K');
+assert(sandbox.MODS[34].bnetId === '9d94d88d-0275-45c0-8083-ecede3c8cbf1', 'Slot #35 deve ser Vanilla Armor Replacer Full 2K');
+assert(sandbox.MODS[47].bnetId === '44797002-072b-43d6-919b-7f512e591de4', 'Slot #48 deve ser CFPAO (acima de XP32 e GDB)');
+assert(sandbox.MODS[57].bnetId === '89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d', 'Slot #58 deve ser Fabled Forests Author\'s Choice 1k');
+assert(sandbox.MODS[83].bnetId === '39c6a829-bfca-4af7-9588-3745e23d6e9c', 'Slot #84 deve ser Cheat Room (XB1)');
+console.log('✅ 3/5 Paridade estrita 85/85 UUIDs e slots V2.2 confirmada.');
 
 // 4. Validação de dependências TES4/MAST e orçamento de 15 GiB
 const provided = new Map([
@@ -122,6 +127,7 @@ const textFiles = [
   'index.html', 'README.md', 'API_REFERENCE.md', 'CHANGELOG.md', 'TESTING.md',
   'docs/load_order_fotorrealista_2026_xbox_series_s.md',
   'docs/planning/plano_impl_v1.md',
+  'docs/planning/plano_impl_v2.md',
   '.agents/PROJECT_MEMORY.md'
 ];
 for (const rel of textFiles) {
