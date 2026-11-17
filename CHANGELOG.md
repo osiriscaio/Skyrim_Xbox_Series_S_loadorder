@@ -2,6 +2,20 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo, seguindo o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/) e [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [2.3.0] - 2026-11-17
+
+### Alterado
+- **Arquitetura Híbrida de Armaduras e Armas — Caminho B (`82` Mods • `11,06 GiB` / `15,00 GB` • `~3,94 GiB` livres):**
+  - Substituídos `Just Shields (on Back) - SE Edition` (`2,20 MB`), `Believable weapons` (`33,57 MB`), `(Updated) Xavbio Retextures AiO (No CC)` (`671,89 MB`) e `Vanilla Armor Replacer | By NordwarUA` (`467,71 MB`) por **`#32 Simply Realistic Armors & Weapons`** (`4f64358b-a5df-4790-bac1-4ac33cf114da` • `legacyId: 4313632` • `676,68 MB` por *BraccaMykar79*), posicionado imediatamente abaixo de `#31 Optimized Quality CubeMaps` e acima de `#33 New Legion 2k (SWF)` e `#34 Sons of Skyrim (SWF) 2k`.
+  - Unifica 100% da direção de arte medieval histórica até o fim de jogo (*Orcish, Elven, Glass, Daedric Noble, Dragonbone/Dragonscale, Stalhrim* + armas *Billyro*), restaura a consistência das miniaturas 3D no menu de inventário (`_go.nif`) e reduz o peso total em mais **`~499 MB`** mantendo os guardas e facções em `2K`.
+- **Manifesto Canônico Version-Agnostic (`data/verified_v2_manifest.json`) & Persistência por UUID:**
+  - Renomeado o manifesto binário para `data/verified_v2_manifest.json` e migrada a chave interna de `state.mods` no `localStorage` para `bnetId` (UUID) com fallback retrocompatível por `id`.
+
+### Adicionado
+- **Card de Upgrade Cirúrgico V2.3 (Mobile 1-Toque & Desktop Console API):** 5 botões mobile diretos na aba *3. Ajuste / Sync V2.3* + script REST API v2 para realizar a transição V2.2 → V2.3 sem limpar os `15 GB`.
+
+---
+
 ## [2.2.0] - 2026-11-17
 
 ### Corrigido

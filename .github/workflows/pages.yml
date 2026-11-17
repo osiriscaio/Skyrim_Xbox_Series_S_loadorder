@@ -39,7 +39,7 @@ jobs:
           cp .nojekyll _site/.nojekyll
           cp -r assets/* _site/assets/
           cp -r docs/*.md _site/docs/
-          cp data/verified_v2_85_manifest.json _site/data/verified_v2_85_manifest.json
+          cp data/verified_v2_manifest.json _site/data/verified_v2_manifest.json
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,46 +1,45 @@
 # Referência Técnica de Dados, Estado e Automação (`API_REFERENCE.md`)
 
-**Versão:** `v2.2.0`
+**Versão:** `v2.3.0`
 
 Embora o **Cockpit Skyrim SE 2026 — Xbox Series S** seja uma aplicação web `100%` estática hospedada no GitHub Pages (sem backend proprietário nem coleta de dados), este documento especifica formalmente os **3 contratos técnicos** utilizados pelo painel:
-1. Schema do Manifesto Binário Auditado (`data/verified_v2_85_manifest.json` e `window.MODS`).
-2. Schema de Persistência Local (`localStorage` + Exportação/Importação JSON).
-3. Endpoints Públicos da **Bethesda.net UGC Mods REST API v2** acionados exclusivamente no navegador do próprio usuário pelos scripts opcionais de automação da aba *3. Hotfix Anti-Crash V2.2*.
+1. Schema do Manifesto Binário Auditado (`data/verified_v2_manifest.json` e `window.MODS`).
+2. Schema de Persistência Local (`localStorage` indexado por UUID + Exportação/Importação JSON).
+3. Endpoints Públicos da **Bethesda.net UGC Mods REST API v2** acionados exclusivamente no navegador do próprio usuário pelos scripts opcionais de automação da aba *3. Ajuste / Sync V2.3*.
 
 ---
 
-## 1. Contrato do Manifesto de Mods (`data/verified_v2_85_manifest.json`)
+## 1. Contrato do Manifesto de Mods (`data/verified_v2_manifest.json`)
 
-Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada diretamente nos cabeçalhos binários `.ckm` / `TES4` / `.bsa`:
+Cada um dos `82` itens ordenados de `#01` a `#82` segue a estrutura auditada diretamente nos cabeçalhos binários `.ckm` / `TES4` / `.bsa`:
 
 ```json
 {
-  "id": 35,
-  "bnetId": "9d94d88d-0275-45c0-8083-ecede3c8cbf1",
-  "legacyId": 4143740,
-  "title": "Vanilla Armor Replacer | By NordwarUA",
-  "author": "Raxxinate",
+  "id": 32,
+  "bnetId": "4f64358b-a5df-4790-bac1-4ac33cf114da",
+  "legacyId": 4313632,
+  "title": "Simply Realistic Armors & Weapons",
+  "author": "BraccaMykar79",
   "published": true,
   "deleted": false,
   "marketplace": false,
-  "bytes": 490425179,
-  "sizeMb": 467.71,
+  "bytes": 709554979,
+  "sizeMb": 676.68,
   "files": [
-    "DIS_Replacer.esp",
-    "DIS_Replacer.bsa"
+    "Real General Tullius.esp",
+    "Real General Tullius.ini",
+    "Real General Tullius.bsa"
   ],
   "deps": [
     "Skyrim.esm",
-    "Update.esm",
-    "Dawnguard.esm",
-    "Dragonborn.esm"
+    "Update.esm"
   ]
 }
 ```
 
 | Campo | Tipo | Descrição |
 | :--- | :--- | :--- |
-| `id` | `number` (`1..85`) | Posição estrita na Logical Load Order (`LLO2`), onde `1` = topo e `85` = rodapé no Xbox. |
+| `id` | `number` (`1..82`) | Posição estrita na Logical Load Order (`LLO2`), onde `1` = topo e `82` = rodapé no Xbox. |
 | `bnetId` | `string` (UUID v4) | Identificador canônico do pacote Xbox em `https://creations.bethesda.net/en/skyrim/details/{bnetId}`. |
 | `legacyId` | `number \| null` | ID numérico legado (pré-2024) usado como metadado secundário de *bookmark*. |
 | `bytes` / `sizeMb` | `number` | Tamanho binário real do arquivo `.ckm` de Xbox (`XBOXSERIESX` / `XBOXONE`). |
@@ -52,13 +51,14 @@ Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada dir
 ## 2. Contrato de Estado do Usuário (`localStorage` & Backup `.json`)
 
 - **Chave `localStorage`:** `skyrim_se_2026_xbox_cockpit_v2_ultra`
+- **Indexação Resiliente por UUID (`v2.3.0+`):** As marcações de cada mod são gravadas pela chave `mod.bnetId` (com leitura retrocompatível de `state.mods[id]`), preservando o progresso do usuário mesmo quando itens entram ou saem da lista.
 - **Formato de Exportação (`skyrim_se_2026_xbox_progresso.json`):**
 
 ```json
 {
   "mods": {
-    "1": { "web": true, "dl": true, "ord": true },
-    "14": { "web": true, "dl": false, "ord": false }
+    "fe05e888-47cb-445d-a070-bb3aa5765c99": { "web": true, "dl": true, "ord": true },
+    "4f64358b-a5df-4790-bac1-4ac33cf114da": { "web": true, "dl": true, "ord": false }
   },
   "calib": {
     "c1": true,
@@ -79,8 +79,8 @@ Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada dir
 | Função Global | Parâmetros | Comportamento |
 | :--- | :--- | :--- |
 | `switchTab(tab)` | `'llo' \| 'size' \| 'auto' \| 'enb'` | Alterna entre Ordem LLO2, Ordem por Tamanho, Ajuste/Automação e Calibração In-Game. |
-| `toggleStage(id, stage)` | `id: 1..85`, `stage: 'web' \| 'dl' \| 'ord'` | Alterna etapa concluída do mod, recalcula barras de progresso/espaço e salva no `localStorage`. |
-| `markWebOnOpen(id)` | `id: 1..85` | Marca `web = true` de forma assíncrona (`80ms`) ao seguir o link nativo `<a target="_blank">` sem bloquear a navegação mobile. |
+| `toggleStage(id, stage)` | `id: 1..82`, `stage: 'web' \| 'dl' \| 'ord'` | Alterna etapa concluída do mod (indexado por `bnetId`), recalcula barras de progresso/espaço e salva no `localStorage`. |
+| `markWebOnOpen(id)` | `id: 1..82` | Marca `web = true` de forma assíncrona (`80ms`) ao seguir o link nativo `<a target="_blank">` sem bloquear a navegação mobile. |
 | `copyText(txt, label)` | `txt: string`, `label: string` | Cópia resiliente em 3 níveis: `navigator.clipboard.writeText` (HTTPS GitHub Pages) → `document.execCommand('copy')` → Modal selecionável. |
 | `exportState()` / `importState(ev)` | — | Exporta ou restaura o progresso completo entre PC e celular via arquivo `.json`. |
 
@@ -88,7 +88,7 @@ Cada um dos `85` itens ordenados de `#01` a `#85` segue a estrutura auditada dir
 
 ## 4. Endpoints Bethesda.net Consumidos pelos Scripts de Console (`Aba 3`)
 
-Os scripts gerados na aba **3. Hotfix Anti-Crash V2.2** executam **exclusivamente dentro da aba autenticada do usuário** em `https://creations.bethesda.net/en/skyrim/library` (nenhuma credencial transita pelo GitHub Pages):
+Os scripts gerados na aba **3. Ajuste / Sync V2.3** executam **exclusivamente dentro da aba autenticada do usuário** em `https://creations.bethesda.net/en/skyrim/library` (nenhuma credencial transita pelo GitHub Pages):
 
 | Método & Endpoint (`https://api.bethesda.net`) | Finalidade | Payload / Query |
 | :--- | :--- | :--- |

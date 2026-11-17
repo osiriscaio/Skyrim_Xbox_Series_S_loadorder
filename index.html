@@ -96,7 +96,7 @@
               Skyrim SE 2026 — Cockpit Xbox Series S
             </h1>
             <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]">
-              V2.2 • 15 GB Cap
+              V2.3 • 15 GB Cap
             </span>
           </div>
           <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-1">
@@ -141,7 +141,7 @@
         <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
           <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
             <span class="truncate">1. Library Web</span>
-            <span id="statWebCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+            <span id="statWebCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 82</span>
           </div>
           <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
             <div id="barWeb" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
@@ -151,7 +151,7 @@
         <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
           <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
             <span class="truncate">2. Xbox DL</span>
-            <span id="statDlCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+            <span id="statDlCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 82</span>
           </div>
           <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
             <div id="barDl" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
@@ -161,7 +161,7 @@
         <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
           <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
             <span class="truncate">3. Ordem LLO2</span>
-            <span id="statOrdCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 85</span>
+            <span id="statOrdCount" class="font-semibold text-[var(--foreground)] shrink-0">0 / 82</span>
           </div>
           <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
             <div id="barOrd" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 0%"></div>
@@ -171,13 +171,13 @@
         <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-2.5 sm:p-3 min-w-0">
           <div class="flex items-center justify-between gap-1 text-xs text-[var(--muted-foreground)]">
             <span class="truncate">Espaço Xbox</span>
-            <span id="statSpaceText" class="font-semibold text-[var(--foreground)] shrink-0">11,54 / 15 GB</span>
+            <span id="statSpaceText" class="font-semibold text-[var(--foreground)] shrink-0">11,06 / 15 GB</span>
           </div>
           <div class="w-full h-2 rounded-full bg-[var(--secondary)] mt-2 overflow-hidden">
-            <div id="barSpace" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 77%"></div>
+            <div id="barSpace" class="h-full bg-[var(--primary)] transition-all duration-300" style="width: 73.7%"></div>
           </div>
           <p id="statDoubleSpaceHint" class="hidden sm:block text-xs text-[var(--muted-foreground)] mt-1 truncate">
-            Livre: ~3,46 GiB (VRAM Series S Segura!)
+            Livre: ~3,94 GiB (VRAM Series S Segura!)
           </p>
         </div>
       </div>
@@ -189,13 +189,13 @@
     <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-2">
       <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2">
         <button id="tab-llo" onclick="switchTab('llo')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] transition-all duration-200 cursor-pointer">
-          1. Ordem LLO2 (#01→#85)
+          1. Ordem LLO2 (#01→#82)
         </button>
         <button id="tab-size" onclick="switchTab('size')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
           2. Por Tamanho (GB)
         </button>
         <button id="tab-auto" onclick="switchTab('auto')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
-          3. Hotfix Anti-Crash V2.2
+          3. Ajuste / Sync V2.3
         </button>
         <button id="tab-enb" onclick="switchTab('enb')" class="touch-target w-full sm:w-auto px-2.5 sm:px-3.5 py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-medium bg-[var(--secondary)] text-[var(--secondary-foreground)] hover:opacity-85 transition-all duration-200 cursor-pointer">
           4. Calibração ENB / DAWN
@@ -215,13 +215,13 @@
             type="text"
             aria-label="Filtrar mods por nome, número ou zona"
             oninput="renderModList()"
-            placeholder="Buscar #15, #58, #84, Fabled Forests, Cheat Room, Whiterun..."
+            placeholder="Buscar #32 Simply Realistic, #55 Fabled Forests, #81 Cheat Room, Whiterun..."
             class="touch-target w-full px-3.5 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-base sm:text-sm bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] border border-[var(--border)] focus:outline-none focus:border-[var(--primary)]"
           />
         </div>
         <div class="grid grid-cols-1 sm:flex sm:flex-wrap items-center gap-2">
           <select id="statusFilter" aria-label="Filtrar por etapa concluída" onchange="renderModList()" class="touch-target w-full sm:w-auto px-3 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-base sm:text-sm bg-[var(--background)] text-[var(--foreground)] border border-[var(--border)] cursor-pointer">
-            <option value="all">Todos os 85 itens (V2.2 VRAM-Safe)</option>
+            <option value="all">Todos os 82 itens (V2.3 Híbrido + VRAM-Safe)</option>
             <option value="pending_web">Faltam adicionar na Web</option>
             <option value="pending_dl">Faltam baixar no Xbox</option>
             <option value="pending_ord">Faltam ordenar na LLO2</option>
@@ -240,109 +240,115 @@
 
     <!-- TAB 3: AUTOMATION & MOBILE 1-TAP HOTFIX -->
     <section id="view-auto" class="hidden space-y-5 sm:space-y-6">
-      <!-- Surgical In-Place Hotfix V2.2 Card (VRAM Whiterun Forest + Cheat Teleport Crash Fix) -->
+      <!-- Surgical In-Place Upgrade V2.3 Card (Hybrid Simply Realistic Armors & Weapons + NordWarUA 2K Factions) -->
       <div class="bg-[var(--card)] border-2 border-[var(--accent)] rounded-xl p-4 sm:p-5 space-y-4">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div class="min-w-0">
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[var(--accent)]/20 text-[var(--accent)] mb-1">
-              HOTFIX V2.2 • ANTI-CRASH FLORESTA DE WHITERUN & CHEAT TELEPORT
+              UPGRADE V2.3 • CAMINHO B HÍBRIDO (SIMPLY REALISTIC + GUARDAS 2K • -499 MB!)
             </div>
-            <h3 class="text-base font-bold text-[var(--foreground)] wrap-anywhere">Estabilização Cirúrgica de VRAM no Xbox Series S (~2,3 GB de RAM/VRAM liberados sem perder o visual 2K!)</h3>
+            <h3 class="text-base font-bold text-[var(--foreground)] wrap-anywhere">Mundo 100% Medieval do Nível 1 ao 80 + Ícones 3D Consistentes no Inventário (~3,94 GiB Livres!)</h3>
             <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-1 leading-relaxed">
-              O Series S tem teto físico de <strong>~8,0 GB de memória unificada</strong>: somar <em>SMIM Full 2016 (908 MB)</em> + <em>HPP Full 2K (349 MB)</em> + <em>Nature of the Wild Lands (árvores de 20.000 polígonos × centenas no vale de Whiterun)</em> estourava a memória ao chegar na floresta e ao carregar os 427 objetos do <em>Cheat Room</em>.<br/>
-              <strong>Troque apenas esses 3 pacotes pelas versões 3D BC7 otimizadas + mova 2 posições (sem limpar os 15 GB!):</strong>
+              Substitui <em>Just Shields</em>, <em>Believable weapons</em>, <em>Xavbio AiO (671,9 MB)</em> e <em>Vanilla Armor Replacer (467,7 MB)</em> por um único pacote leve — <strong>#32 Simply Realistic Armors &amp; Weapons (676,7 MB)</strong> — remodelando também Orc, Élfica, Vidro, Daédrica e Dragão com ícones consistentes no inventário, enquanto preserva <strong>#33 New Legion 2K</strong> e <strong>#34 Sons of Skyrim 2K</strong> logo abaixo!
             </p>
           </div>
           <button onclick="copyHotfixSwapScript()" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--accent)] text-[#052e16] hover:opacity-90 transition-all duration-200 cursor-pointer shrink-0">
-            Copiar Hotfix V2.2 (PC F12)
+            Copiar Upgrade V2.3 (PC F12)
           </button>
         </div>
 
-        <!-- 6 Direct Mobile 1-Tap Buttons (Zero F12 Needed!) -->
+        <!-- 5 Direct Mobile 1-Tap Buttons (Zero F12 Needed!) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-          <a href="https://creations.bethesda.net/en/skyrim/details/b306155a-d36c-40fb-857d-6d52d9a4329a" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
-            <span>1. Desmarcar SMIM Antigo (907,5 MB)</span>
+          <a href="https://creations.bethesda.net/en/skyrim/details/7fa3fed7-6cd6-4035-bf10-5c0ba80fddf1" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>1. Desmarcar Just Shields (2,2 MB)</span>
             <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
           </a>
-          <a href="https://creations.bethesda.net/en/skyrim/details/87294b6e-6e9d-410c-91ed-6bb9fccac15e" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border border-[var(--primary)]/50 text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
-            <span>2. Adicionar #15: Super Smim'd 1k (502,7 MB)</span>
-            <span class="text-[var(--primary)] font-bold shrink-0">Adicionar ↗</span>
-          </a>
-          <a href="https://creations.bethesda.net/en/skyrim/details/7150b7a4-cc64-4ddc-9216-ada180f153b9" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
-            <span>3. Desmarcar HPP 2K Antigo (348,6 MB)</span>
+          <a href="https://creations.bethesda.net/en/skyrim/details/95372fdb-5774-4e70-92bf-ea0b386b2b00" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>2. Desmarcar Believable weapons (33,6 MB)</span>
             <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
           </a>
-          <a href="https://creations.bethesda.net/en/skyrim/details/48f7c830-d51d-4e34-910f-80a9166cbcce" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border border-[var(--primary)]/50 text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
-            <span>4. Adicionar #16: LucidAPs' HPP 1K (142,5 MB)</span>
-            <span class="text-[var(--primary)] font-bold shrink-0">Adicionar ↗</span>
-          </a>
-          <a href="https://creations.bethesda.net/en/skyrim/details/87a402ad-8447-48e6-90ff-609bf3bd11e2" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
-            <span>5. Desmarcar Nature of Wild Lands (396,2 MB)</span>
+          <a href="https://creations.bethesda.net/en/skyrim/details/3b1908d3-b4b2-4d42-9351-5bf3532c798a" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>3. Desmarcar Xavbio Retextures AiO (671,9 MB)</span>
             <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
           </a>
-          <a href="https://creations.bethesda.net/en/skyrim/details/89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border border-[var(--primary)]/50 text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
-            <span>6. Adicionar #58: Fabled Forests 1k (91,8 MB)</span>
+          <a href="https://creations.bethesda.net/en/skyrim/details/9d94d88d-0275-45c0-8083-ecede3c8cbf1" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--background)] border border-[var(--border)] text-xs sm:text-sm font-medium text-[var(--foreground)] hover:border-[var(--primary)] transition-all">
+            <span>4. Desmarcar Vanilla Armor Replacer (467,7 MB)</span>
+            <span class="text-[var(--primary)] font-bold shrink-0">Abrir ↗</span>
+          </a>
+          <a href="https://creations.bethesda.net/en/skyrim/details/4f64358b-a5df-4790-bac1-4ac33cf114da" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target sm:col-span-2 flex items-center justify-between gap-2 px-3.5 py-3 rounded-xl bg-[var(--secondary)] border-2 border-[var(--primary)] text-xs sm:text-sm font-semibold text-[var(--foreground)] hover:opacity-90 transition-all">
+            <span>5. Adicionar NOVO #32: Simply Realistic Armors &amp; Weapons (676,68 MB • BraccaMykar79)</span>
             <span class="text-[var(--primary)] font-bold shrink-0">Adicionar ↗</span>
           </a>
         </div>
 
         <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
-          <strong>No Xbox Series S:</strong> em <em>Creations → Y (Load Order)</em>, apague com <strong>X</strong> os 3 antigos, baixe os 3 novos (posicione <code>Super Smim'd 1k</code> em <code>#15</code>, <code>HPP 1K</code> em <code>#16</code> e <code>Fabled Forests 1k</code> em <code>#58</code>), suba o <code>CFPAO</code> para <code>#48</code> (acima do <code>XP32</code>) e desça o <code>Cheat Room</code> para <code>#84</code> (logo acima do <code>Alternate Perspective</code>). Salve a ordem, <strong>segure o botão Xbox → Reiniciar Console</strong> (obrigatório!) e inicie um <strong>New Game</strong>!
+          <strong>No Xbox Series S:</strong> em <em>Creations → Y (Load Order)</em>, apague com <strong>X</strong> os 4 antigos acima, baixe o <code>Simply Realistic Armors &amp; Weapons</code> e posicione-o em <strong><code>#32</code></strong> — logo <strong>abaixo</strong> de <code>#31 Optimized Quality CubeMaps</code> e logo <strong>acima</strong> de <code>#33 New Legion 2k (SWF)</code> e <code>#34 Sons of Skyrim (SWF) 2k</code>. Salve a ordem e <strong>segure o botão Xbox → Reiniciar Console</strong>!
         </p>
 
         <details class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
           <summary class="touch-target flex items-center text-xs sm:text-sm font-semibold text-[var(--foreground)] cursor-pointer">
-            Ver código do Script PC (Console F12)
+            Ver código do Script Cirúrgico V2.3 (Console PC F12)
           </summary>
           <pre id="hotfixArmorScriptBox" class="mt-3 pt-3 border-t border-[var(--border)] text-xs text-[var(--foreground)] overflow-x-auto max-h-60 leading-relaxed"></pre>
+        </details>
+
+        <details class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-3">
+          <summary class="touch-target flex items-center text-xs sm:text-sm font-medium text-[var(--muted-foreground)] cursor-pointer">
+            Referência V2.2 Anterior — Links de Estabilização de VRAM (Super Smim'd 1k #14, HPP 1K #15, Fabled Forests 1k #55)
+          </summary>
+          <div class="mt-3 pt-3 border-t border-[var(--border)] grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+            <a href="https://creations.bethesda.net/en/skyrim/details/87294b6e-6e9d-410c-91ed-6bb9fccac15e" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between px-3 py-2 rounded-lg bg-[var(--card)] text-[var(--foreground)]">#14 Super Smim'd 1k <span>↗</span></a>
+            <a href="https://creations.bethesda.net/en/skyrim/details/48f7c830-d51d-4e34-910f-80a9166cbcce" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between px-3 py-2 rounded-lg bg-[var(--card)] text-[var(--foreground)]">#15 LucidAPs' HPP 1K <span>↗</span></a>
+            <a href="https://creations.bethesda.net/en/skyrim/details/89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d" target="_blank" rel="noopener noreferrer" class="touch-btn touch-target flex items-center justify-between px-3 py-2 rounded-lg bg-[var(--card)] text-[var(--foreground)]">#55 Fabled Forests 1k <span>↗</span></a>
+          </div>
         </details>
       </div>
 
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 space-y-4">
-        <h2 class="text-lg font-bold text-[var(--foreground)]">Automação Completa V2.2 "PC-Ultra Medieval Estável no Series S" (Smart-Sync 85 Mods • 11,54 GiB)</h2>
+        <h2 class="text-lg font-bold text-[var(--foreground)]">Automação Completa V2.3 "PC-Ultra Medieval Híbrido &amp; VRAM-Safe" (Smart-Sync 82 Mods • 11,06 GiB)</h2>
         <p class="text-sm text-[var(--muted-foreground)]">
-          O novo <strong>Autopilot Smart-Sync REST API v2</strong> abaixo faz a transição completa da lista V1 para a V2 sozinho: remove automaticamente da sua <code>Library</code> qualquer mod antigo que saiu da lista, mantém os que continuam e inscreve todos os novos pacotes <code>2K + Malhas 3D + NordWarUA + Cidades Fortificadas + Florestas</code> validando <strong>85/85</strong> no servidor!
+          O <strong>Autopilot Smart-Sync REST API v2</strong> abaixo sincroniza sua <code>Library</code> para a lista completa de <strong>82 mods (`11,06 GiB`)</strong>: remove automaticamente sobras de versões anteriores, mantém os pacotes compartilhados e inscreve todos os itens calibrados validando <strong>82/82</strong> no servidor!
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
           <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
             <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 1 • Smart-Sync API (~20s)</div>
-            <h3 class="text-sm font-semibold mt-1">Poda V1 + Injeção dos 85 Mods V2</h3>
+            <h3 class="text-sm font-semibold mt-1">Poda Automática + 82 Mods V2.3</h3>
             <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
-              Logado em <code>creations.bethesda.net/en/skyrim/library</code>, cole o script <strong>Passo 1</strong> abaixo no Console (<code>F12</code>). Ele limpa as sobras da V1 e crava exatos <strong>85/85 UUIDs verificados</strong> na sua conta.
+              Logado em <code>creations.bethesda.net/en/skyrim/library</code>, cole o script <strong>Passo 1</strong> abaixo no Console (<code>F12</code>). Ele limpa sobras antigas e crava exatos <strong>82/82 UUIDs verificados</strong> na sua conta.
             </p>
           </div>
 
           <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
             <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 2 • Limpar 15 GB + Download Lote</div>
-            <h3 class="text-sm font-semibold mt-1">11,54 GiB c/ Folga p/ Espaço Duplo</h3>
+            <h3 class="text-sm font-semibold mt-1">11,06 GiB c/ 3,94 GiB Livres</h3>
             <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
-              No Xbox Series S, limpe o <em>Espaço Reservado (15,0 GB)</em>, abra <em>Creations → Options (☰)</em>, ative <em>Disable Missing Creation Check</em> e clique em <strong>"Download all Creations in my Library"</strong> (~3,46 GiB livres garantem extração do maior arquivo de 1,62 GiB sem erro!).
+              Em instalação do zero, limpe o <em>Espaço Reservado (15,0 GB)</em>, abra <em>Creations → Options (☰)</em>, ative <em>Disable Missing Creation Check</em> e clique em <strong>"Download all Creations in my Library"</strong> (~3,94 GiB livres garantem extração folgada do maior arquivo de 1,62 GiB!).
             </p>
           </div>
 
           <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-4">
             <div class="text-xs font-bold uppercase tracking-wider text-[var(--primary)]">Etapa 3 • Ordenar Antes de Sair (`Y`)</div>
-            <h3 class="text-sm font-semibold mt-1">Ordenar #01 → #85 + New Game</h3>
+            <h3 class="text-sm font-semibold mt-1">Ordenar #01 → #82 + Hard Reset</h3>
             <p class="text-xs text-[var(--muted-foreground)] mt-1.5 leading-relaxed">
-              <strong>Regra de Ouro Anti-Crash:</strong> ao terminar o download, <strong>NÃO aperte B!</strong> Aperte <strong>Y (Load Order)</strong> ali mesmo, ordene de <code>#01</code> a <code>#85</code>, salve com <strong>Options (☰) → "Save Load Order to Bethesda.net"</strong>, reinicie o console e inicie <strong>New Game</strong>!
+              <strong>Regra de Ouro Anti-Crash:</strong> ao terminar o download, <strong>NÃO aperte B!</strong> Aperte <strong>Y (Load Order)</strong> ali mesmo, ordene de <code>#01</code> a <code>#82</code>, salve com <strong>Options (☰) → "Save Load Order to Bethesda.net"</strong>, reinicie o console e inicie <strong>New Game</strong>!
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Browser Console Helper Script (Primary Smart-Sync V2.2) -->
+      <!-- Browser Console Helper Script (Primary Smart-Sync V2.3) -->
       <div class="bg-[var(--card)] border-2 border-[var(--primary)] rounded-xl p-5 space-y-4">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h3 class="text-base font-bold text-[var(--foreground)]">Passo 1 (Principal) — Autopilot Smart-Sync V2.2: Limpa Sobras + Inscreve os 85 Mods Estáveis (~20s)</h3>
+            <h3 class="text-base font-bold text-[var(--foreground)]">Passo 1 (Principal) — Autopilot Smart-Sync V2.3: Limpa Sobras + Inscreve os 82 Mods Estáveis (~20s)</h3>
             <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-0.5">
               1. Logado em <a href="https://creations.bethesda.net/en/skyrim/library" target="_blank" rel="noopener noreferrer" class="underline text-[var(--primary)]">creations.bethesda.net/en/skyrim/library</a>, pressione <code>F12</code> → <strong>Console</strong>.<br/>
-              2. Cole o código abaixo e aperte <code>Enter</code>. Ele remove automaticamente qualquer mod antigo fora da lista V2.2, inscreve os pacotes calibrados e audita <strong>85/85</strong> no servidor da Bethesda!
+              2. Cole o código abaixo e aperte <code>Enter</code>. Ele remove automaticamente qualquer mod antigo fora da lista V2.3, inscreve os pacotes calibrados e audita <strong>82/82</strong> no servidor da Bethesda!
             </p>
           </div>
           <button onclick="copyAutomationScript()" id="btnCopyScript" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--primary)] text-[var(--primary-foreground)] hover:opacity-90 transition-all duration-200 cursor-pointer shrink-0">
-            Copiar Smart-Sync V2.2 (85 Mods)
+            Copiar Smart-Sync V2.3 (82 Mods)
           </button>
         </div>
 
@@ -355,7 +361,7 @@
           <div>
             <h3 class="text-base font-bold text-[var(--foreground)]">Utilitário Opcional — Zerar 100% da <code>Library</code> via API Direta</h3>
             <p class="text-xs sm:text-sm text-[var(--muted-foreground)] mt-0.5">
-              Só é necessário se algum dia você quiser esvaziar completamente sua conta (o Smart-Sync acima já remove automaticamente os itens fora da lista V2.2).
+              Só é necessário se algum dia você quiser esvaziar completamente sua conta (o Smart-Sync acima já remove automaticamente os itens fora da lista V2.3).
             </p>
           </div>
           <button onclick="copyClearLibraryScript()" class="touch-target inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:py-2 rounded-xl sm:rounded-lg text-xs sm:text-sm font-semibold bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)] hover:opacity-85 transition-all duration-200 cursor-pointer shrink-0">
@@ -371,7 +377,7 @@
       <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 sm:p-5 space-y-4">
         <h2 class="text-lg font-bold text-[var(--foreground)]">Protocolo Final e Calibração "DAWN v2 + Rudy/Cabbage ENB Look" no Controle</h2>
         <p class="text-sm text-[var(--muted-foreground)]">
-          Após os 85 mods estarem ordenados de <code>#01</code> a <code>#85</code> e você iniciar um <strong>New Game</strong> (obrigatório para gerar as novas muralhas medievais, distritos de Whiterun, cidadelas e armaduras 2K sem conflito), aplique estes ajustes:
+          Após os 82 mods estarem ordenados de <code>#01</code> a <code>#82</code> e você iniciar um <strong>New Game</strong> (obrigatório para gerar as novas muralhas medievais, distritos de Whiterun, cidadelas e armaduras medievais sem conflito), aplique estes ajustes:
         </p>
 
         <div id="calibChecklist" class="space-y-3 pt-2"></div>
@@ -402,95 +408,92 @@
       {"id":1,"bnetId":"fe05e888-47cb-445d-a070-bb3aa5765c99","legacyId":2947658,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Unofficial Skyrim Special Edition Patch [USSEP]","query":"Unofficial Skyrim Special Edition Patch [USSEP]","sizeMb":288.54,"note":"Correções essenciais de engine/quests (compatível c/ SE Padrão 1.6+)."},
       {"id":2,"bnetId":"d32b3566-b46e-48c7-82c8-3deaa1edd4e9","legacyId":4326928,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Simple Workaround Framework","query":"Simple Workaround Framework","sizeMb":2.14,"note":"Framework base obrigatório p/ armaduras NordWarUA 2K e equipamentos visíveis."},
       {"id":3,"bnetId":"05c3dd40-b12f-4414-abb8-d389928ba2fc","legacyId":4343041,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Realistic Equipment - SE Edition","query":"Realistic Equipment - SE Edition","sizeMb":11.46,"note":"Exibe espadas duplas, machados e cajados na cintura/costas (SE Edition)."},
-      {"id":4,"bnetId":"7fa3fed7-6cd6-4035-bf10-5c0ba80fddf1","legacyId":4336261,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Just Shields (on Back) - SE Edition","query":"Just Shields (on Back) - SE Edition","sizeMb":2.2,"note":"Escudos heráldicos visíveis nas costas em tempo real (SE Edition)."},
-      {"id":5,"bnetId":"ac3ffcd0-2943-47f3-b365-e6fd1b980cc9","legacyId":4344623,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Reforging to the Masses (Weapon Expansion) - SWF Edition","query":"Reforging to the Masses (Weapon Expansion) - SWF Edition","sizeMb":51.88,"note":"Master ESM que distribui +300 armas medievais históricas (alabardas, lanças, espadas longas) no mundo!"},
-      {"id":6,"bnetId":"8a16bdda-8f83-4f36-840f-c0bffbaca677","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Resources v 2.2 (17102025)","query":"Lux Resources v 2.2 (17102025)","sizeMb":169.86,"note":"Recursos base de lanternas, malhas e feixes da suíte Lux."},
-      {"id":7,"bnetId":"3152322e-2b4b-4367-ac73-eceaf3766b5f","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Via v 2.2 - Master File","query":"Lux Via v 2.2 - Master File","sizeMb":45.88,"note":"Master file de estradas, pontes e marcos iluminados (FatalIllusion)."},
-      {"id":8,"bnetId":"4f7b6905-47f8-4c7a-a5d5-39026c6339a7","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Orbis v 4.5 - Master File","query":"Lux Orbis v 4.5 - Master File","sizeMb":0.16,"note":"Master file de iluminação externa das cidades e vilas."},
-      {"id":9,"bnetId":"097cb9b0-e543-43e9-ab29-46365bb4e89a","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux v 7.1 - Master File","query":"Lux v 7.1 - Master File","sizeMb":0.03,"note":"Master file de iluminação interna cinematográfica."},
-      {"id":10,"bnetId":"29b8495b-6f70-4130-afd8-fea999034f81","legacyId":4281182,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Nordic SkyHUD","query":"Nordic SkyHUD","sizeMb":0.47,"note":"HUD minimalista nórdica pura (zero conflito c/ Creation Club)."},
-      {"id":11,"bnetId":"2d5ff0fe-249d-49f1-9aa5-60043ee44762","legacyId":null,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Kontrol - Updated","query":"Kontrol - Updated","sizeMb":0.01,"note":"8 atalhos rápidos via LB + D-Pad/Botões no controle Xbox."},
-      {"id":12,"bnetId":"25f42b49-82ad-4218-a2e0-9a6d4e93f5a7","legacyId":4231363,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"DMH Busty Skeevers","query":"DMH Busty Skeevers","sizeMb":0.29,"note":"FOV 90, câmera 3ª pessoa moderna, anti-serrilhado de folhagem e Snow Fix."},
-      {"id":13,"bnetId":"bb5077d5-39f6-46b7-8497-28cdbf7ae038","legacyId":3304897,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Display Enhancements (XB1)","query":"Display Enhancements (XB1)","sizeMb":0.69,"note":"Preset 28 + Sunlight Scale p/ simular Rudy/Cabbage ENB sobre o DAWN v2."},
-      {"id":14,"bnetId":"d9cb9a1c-4b5f-4f73-9505-987aa4f0930d","legacyId":4269547,"zone":"Zona 3 — Áudio Acústico Next-Gen","name":"Audio SFX Overhaul","query":"Audio SFX Overhaul","sizeMb":129.82,"note":"Reverberação física realista de lâminas, armaduras pesadas, vento, chuva e cavernas."},
-      {"id":15,"bnetId":"87294b6e-6e9d-410c-91ed-6bb9fccac15e","legacyId":4285638,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Super Smim'd 1k","query":"Super Smim'd 1k","sizeMb":502.65,"note":"SMIM Completo em 1K BC7 moderno (não 512px!) + pontes/treliças 3D de Whiterun: 100% da geometria 3D com metade do uso de VRAM do SMIM de 2016!"},
-      {"id":16,"bnetId":"48f7c830-d51d-4e34-910f-80a9166cbcce","legacyId":4243083,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"LucidAPs' High Poly Project (v5.x) - 1K (with Fixes)","query":"LucidAPs' High Poly Project (v5.x) - 1K (with Fixes)","sizeMb":142.54,"note":"Mesmas malhas ultra-3D do HPP v5.x c/ texturas 1K otimizadas: elimina o pico de VRAM em Whiterun e nos 54 baús do Cheat Room!"},
-      {"id":17,"bnetId":"98903899-c893-48dd-b96c-840ab221779f","legacyId":4337752,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Skyland Bits and Bobs - A Clutter Overhaul","query":"Skyland Bits and Bobs - A Clutter Overhaul","sizeMb":797.22,"note":"Retexturiza 100% da mobília, baús, louças, poções e interiores."},
-      {"id":18,"bnetId":"e70def02-08fc-4b14-ae1e-e49826063691","legacyId":4321263,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"FYX AIO - Mesh Improvements","query":"FYX AIO - Mesh Improvements","sizeMb":27.05,"note":"Segredo do Nolvus/Lorerim: converte torres, paliçadas, rampas, poços e telhados retos em malha 3D esculpida!"},
-      {"id":19,"bnetId":"f47c9a66-4160-458c-a9a4-cc5108e474cb","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","query":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","sizeMb":16.86,"note":"Substitui muros baixos chapados por rochas 3D individuais empilhadas em 2K (mindflux)."},
-      {"id":20,"bnetId":"97fa1d34-4f4c-4e90-ba33-eb5d81e5f6b9","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Nordic Farmhouse Stonewall - 2k1k","query":"Nordic Farmhouse Stonewall - 2k1k","sizeMb":4.48,"note":"Muros rurais de vilarejos remodelados pedra por pedra em 3D 2K/1K (mindflux)."},
-      {"id":21,"bnetId":"f9ccd915-2485-41e2-9644-8792c34ce0dd","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"High Quality Ivy Replacer 1k - Variation 1","query":"High Quality Ivy Replacer 1k - Variation 1","sizeMb":9.81,"note":"Substitui heras 2D coladas nas paredes medievais por folhagem 3D densa."},
-      {"id":22,"bnetId":"23c08480-c611-4c44-9997-f9b44be7560e","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 1","query":"SRP Architecture 2K - Part 1","sizeMb":1654.16,"note":"Parte 1 (1,65 GB em 2K puro!): todas as cidades, castelos e vilas com normal maps profundos anti-chapados!"},
-      {"id":23,"bnetId":"334113cc-ad69-484c-ac43-230c4f7bb94d","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 2","query":"SRP Architecture 2K - Part 2","sizeMb":1539.49,"note":"Parte 2 (1,54 GB em 2K puro!): completa 100% da arquitetura medieval base + DLCs do Skurkbro v4."},
-      {"id":24,"bnetId":"36a20bde-06f5-421d-8c35-eade6ae490de","legacyId":4281562,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Dungeons 1k","query":"SRP Dungeons 1k","sizeMb":476.49,"note":"Ruínas Nórdicas, Dwemer, Cavernas, Minas e Apocrypha com relevo profundo Skurkbro."},
-      {"id":25,"bnetId":"2d01fb32-2469-48b8-a397-7d1d21da49d4","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","query":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","sizeMb":536.79,"note":"Whiterun inteira em 2K (2048px) com Complex Material nativo p/ brilho/relevo real em madeira, ouro e pedra!"},
-      {"id":26,"bnetId":"e18692d5-d32b-4ae2-9701-b887527c4abf","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Whiterun Doors and Gate 2K by todor0v","query":"Whiterun Doors and Gate 2K by todor0v","sizeMb":28.79,"note":"Portões e portas medievais de Whiterun em 2K com ferragens 3D e reflexo metálico."},
-      {"id":27,"bnetId":"09ec0e22-d218-4f5b-8790-1469a2ba3137","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Skyking Fantasia Landscapes","query":"Skyking Fantasia Landscapes","sizeMb":525.27,"note":"Adeus terra seca marrom: terrenos vibrantes, musgo verde vivo, rochas nítidas, pontes e estradas!"},
-      {"id":28,"bnetId":"4e411d00-d5d6-4212-a9b2-366984105cc3","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"ERM - Enhanced Rocks and Mountains","query":"ERM - Enhanced Rocks and Mountains","sizeMb":13.11,"note":"Aumenta a poligonagem 3D das montanhas e penhascos."},
-      {"id":29,"bnetId":"2144a6f4-b525-4a0c-9ef2-e41208d06225","legacyId":4150681,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Blended Roads Redone","query":"Blended Roads Redone","sizeMb":21.8,"note":"Pedras de calçamento medieval em alto-relevo 3D nas estradas."},
-      {"id":30,"bnetId":"c04aef31-2293-443f-911f-618775057684","legacyId":4150670,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Hyperborean Snow","query":"Hyperborean Snow","sizeMb":20.05,"note":"Textura de neve cristalina de alta definição."},
-      {"id":31,"bnetId":"79b1ab4b-9277-4e55-9bef-b5bcd7b1d3a2","legacyId":4235981,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Simplicity of Snow","query":"Simplicity of Snow","sizeMb":19.73,"note":"Shader dinâmico de neve realista sob telhados e muralhas."},
-      {"id":32,"bnetId":"95372fdb-5774-4e70-92bf-ea0b386b2b00","legacyId":4256227,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Believable weapons (sheathed greatswords)","query":"Believable weapons (sheathed greatswords)","sizeMb":33.57,"note":"Remodela todas as espadas, machados e martelos vanilla p/ proporções medievais reais."},
-      {"id":33,"bnetId":"3b1908d3-b4b2-4d42-9351-5bf3532c798a","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"(Updated) Xavbio Retextures AiO (No CC)","query":"(Updated) Xavbio Retextures AiO (No CC)","sizeMb":671.89,"note":"Base ultra-nítida (672 MB) p/ 100% das armas, roupas nobres/magos e sets Orc/Élfico/Vidro/Daédrico/Dracônico!"},
-      {"id":34,"bnetId":"c50337a2-215d-4e33-9792-f10dd2aa0901","legacyId":4228043,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Optimized Quality CubeMaps - HD Cube Maps","query":"Optimized Quality CubeMaps - HD Cube Maps","sizeMb":100.49,"note":"CubeMaps HD de PC: faz o aço polido das armaduras e lâminas refletir a luz com realismo metálico!"},
-      {"id":35,"bnetId":"9d94d88d-0275-45c0-8083-ecede3c8cbf1","legacyId":4143740,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Vanilla Armor Replacer | By NordwarUA","query":"Vanilla Armor Replacer | By NordwarUA","sizeMb":467.71,"note":"Pacote Completo 2K Sem Cortes (467,7 MB • 822 arquivos BSA íntegros): substitui Ferro, Aço (incluindo Botas da Lydia!), Placas de Aço, Couro, Pelagem, Escamas, Anão, Ébano, Lobo e Nórdica Antiga em 2K!"},
-      {"id":36,"bnetId":"61f19279-a197-441d-b331-9f70d4d98d39","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"New Legion 2k (SWF)","query":"New Legion 2k (SWF)","sizeMb":111.68,"note":"NordWarUA 2K: Legião Imperial inteira com armaduras pesadas históricas em 2K!"},
-      {"id":37,"bnetId":"d058f69d-1734-4091-9278-af5794550b8f","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","query":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","sizeMb":342.35,"note":"NordWarUA 2K (342 MB): Guardas de TODAS as cidades + Stormcloaks c/ cotas de malha, capas, elmos e escudos 2K!"},
-      {"id":38,"bnetId":"e43b23d2-cb7c-489f-b235-c9005244bbc5","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Unplayable Faction Armors SSE 2k SWF","query":"Unplayable Faction Armors SSE 2k SWF","sizeMb":204.86,"note":"NordWarUA 2K (205 MB): Vigilantes de Stendarr, Mão de Prata e Alik'r com sets medievais exclusivos em 2K!"},
-      {"id":39,"bnetId":"3cbfd96a-d5cc-4ff7-a6ff-f67db10e9635","legacyId":null,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","query":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","sizeMb":70.4,"note":"NordWarUA 2K: Os Companheiros de Jorrvaskr (Whiterun) vestem armaduras nórdicas medievais de elite em 2K!"},
-      {"id":40,"bnetId":"2815fe8a-1a3e-47d1-8712-f13fe97b404d","legacyId":4316242,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Divergence - Compendium of Beasts - AIO - 1K","query":"Divergence - Compendium of Beasts - AIO - 1K","sizeMb":163.66,"note":"Dragões, gigantes, trolls e autômatos retexturizados em alta definição."},
-      {"id":41,"bnetId":"764fe718-2f09-4e14-9950-c510aef11b9d","legacyId":4237141,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Fluffworks (Fluffy Animals) Quality 2K","query":"Fluffworks (Fluffy Animals) Quality 2K","sizeMb":160.4,"note":"Assinatura visual do Nolvus PC (2K): lobos, ursos, cavalos e sabrecats com pelagem volumétrica 3D real!"},
-      {"id":42,"bnetId":"248a7ee0-b71c-4a90-b2d5-557501003ea5","legacyId":4329497,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","query":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","sizeMb":56.44,"note":"Brasas, fogueiras, forjas e tochas incandescentes 3D calibradas p/ Lux Orbis."},
-      {"id":43,"bnetId":"892f943a-aaf2-4323-8cca-b0ded4016a1d","legacyId":4320119,"zone":"Zona 6 — Armaduras Medievais Históricas 2K (NordWarUA + Xavbio), Pelagem 3D & Fogo","name":"VAE2 - Visual Animated Enchants 2-023","query":"VAE2 - Visual Animated Enchants 2-023","sizeMb":9.41,"note":"Partículas modernas nas armas encantadas."},
-      {"id":44,"bnetId":"1a32bed2-577a-4e6b-b36e-df939b1397f7","legacyId":4187379,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Pandorable Mega Pack","query":"Pandorable Mega Pack","sizeMb":859.31,"note":"Mega-pacote (859 MB): centenas de NPCs masculinos e femininos esculpidos em alta definição!"},
-      {"id":45,"bnetId":"a479bf14-bd34-48cc-aff6-cb7b768fa429","legacyId":4244883,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"RS Children Optimized","query":"RS Children Optimized","sizeMb":29.42,"note":"Rostos realistas p/ crianças do jogo base."},
-      {"id":46,"bnetId":"b85ca6d7-a9bc-45ec-a6b1-f2e022f0f228","legacyId":4238237,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Bella Beauty AND THE BEASTS Bundle","query":"Bella Beauty AND THE BEASTS Bundle","sizeMb":107.01,"note":"Carregado abaixo do Pandorable p/ unificar pele, olhos reflexivos e feras sem risco de Dark Face Bug!"},
-      {"id":47,"bnetId":"a0b75c6a-1c54-4dba-8fcd-14d5e0576132","legacyId":4337459,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Subsurface Scattering Shaders for Skins","query":"Subsurface Scattering Shaders for Skins","sizeMb":0.04,"note":"Espalhamento sub-superficial de luz na pele sob o sol do DAWN v2."},
-      {"id":48,"bnetId":"44797002-072b-43d6-919b-7f512e591de4","legacyId":4318966,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"Comprehensive First Person Animation Overhaul - CFPAO","query":"Comprehensive First Person Animation Overhaul - CFPAO","sizeMb":0.81,"note":"Posicionado ACIMA do XP32 (#49) p/ manter XP32 + GDB colados sem conflito ao lançar magias em 1ª/3ª pessoa!"},
-      {"id":49,"bnetId":"61ea861e-8a0c-48e7-a189-4ab827d5818b","legacyId":4271284,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"XP32 Maximum Skeleton Special Extended Plus","query":"XP32 Maximum Skeleton Special Extended Plus","sizeMb":1.63,"note":"Esqueleto obrigatório colado imediatamente acima do GDB's The Revenge (#50)."},
-      {"id":50,"bnetId":"7c34465e-fac0-4378-83f7-a8af4b4e2e4e","legacyId":4307936,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"GDB's The Revenge","query":"GDB's The Revenge","sizeMb":154.47,"note":"Combate moderno Nemesis em 3ª pessoa, esquiva, poções e interações animadas."},
-      {"id":51,"bnetId":"20c24db7-c1bf-49b9-a42f-9c519e379b1f","legacyId":2970997,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"VioLens - A Killmove Mod SE [XB1]","query":"VioLens - A Killmove Mod SE [XB1]","sizeMb":1.25,"note":"Controle de câmeras de finalização cinematográficas."},
-      {"id":52,"bnetId":"9b085660-ba68-4140-bb62-3bedd571cca2","legacyId":4335752,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Skoglendi - A Grass Mod (Green Tundra)","query":"Skoglendi - A Grass Mod (Green Tundra)","sizeMb":54.44,"note":"Pasto longo verde vibrante em 100% de densidade cobrindo campinas e vales!"},
-      {"id":53,"bnetId":"d7b08b61-e7f8-42c0-9be7-aafa27370474","legacyId":4199686,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Origins of Forest - 3D Forest Grass","query":"Origins of Forest - 3D Forest Grass","sizeMb":12.23,"note":"Adiciona samambaias gigantes e arbustos 3D na altura da cintura no chão das florestas!"},
-      {"id":54,"bnetId":"4f4642c6-2841-4a13-b3fc-aaac078dfc20","legacyId":4263944,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Cathedral 3D Pine Grass","query":"Cathedral 3D Pine Grass","sizeMb":9.8,"note":"Plantas alpinas 3D fotografadas cobrindo o solo dos pinheirais."},
-      {"id":55,"bnetId":"01132b5b-c389-4706-ba70-cfaeb5991934","legacyId":4011845,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Landscape Fixes For Grass Mods","query":"Landscape Fixes For Grass Mods","sizeMb":7.81,"note":"Impede a grama densa de atravessar calçadas e pisos das cidades."},
-      {"id":56,"bnetId":"4781fe76-09e9-4103-bbc0-d47bd3a0636b","legacyId":4147709,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Cathedral Plants and Mushrooms 2k","query":"Cathedral Plants and Mushrooms 2k","sizeMb":96.98,"note":"Flores silvestres, lavandas, tundras e cogumelos vibrantes em 2K!"},
-      {"id":57,"bnetId":"ffb09c5f-9df8-45c9-82ab-4fb0d6a659de","legacyId":4282550,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Draco's 3D Plants & Shrubs (2k-2k)","query":"Draco's 3D Plants & Shrubs (2k-2k)","sizeMb":36.67,"note":"Substitui arbustos e plantas por modelos 3D high-poly em 2K/2K!"},
-      {"id":58,"bnetId":"89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d","legacyId":4353887,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Fabled Forests Author's Choice 1k","query":"Fabled Forests Author's Choice 1k","sizeMb":91.79,"note":"Posições densas do Nature of the Wild Lands + Ulvenwald c/ malhas 3D gigantes otimizadas p/ 60 FPS e zero crash em Whiterun no Series S!"},
-      {"id":59,"bnetId":"1cb4c5c8-5d50-4e66-a3b0-e0607fe09ac6","legacyId":4186064,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Alpine Forest of Whiterun Valley XB1","query":"Alpine Forest of Whiterun Valley XB1","sizeMb":1.01,"note":"Fecha todo o vale de Whiterun em floresta densa usando as árvores 3D leves do Fabled Forests (#58) sem estourar VRAM!"},
-      {"id":60,"bnetId":"7bc79410-960f-4844-8a25-5ade0ab6d0e9","legacyId":4243144,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundle","query":"The Great Cities, Towns, and Villages Bundle","sizeMb":47.89,"note":"Reconstrói Winterhold, Falkreath, Dawnstar, Morthal, Dragon Bridge, Rorikstead e +6 vilas como fortalezas épicas!"},
-      {"id":61,"bnetId":"be476c43-c71f-4ead-8af9-2cb555e1bc21","legacyId":4285981,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Interiors AiO","query":"JK's Interiors AiO","sizeMb":35.28,"note":"Transforma palácios, estalagens, templos e guildas em interiores medievais riquíssimos."},
-      {"id":62,"bnetId":"6f90cb1e-f00d-4490-8c9f-aedb752b11a1","legacyId":4059215,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Skyrim - All in One by jkrojmal & Teabag86","query":"JK's Skyrim - All in One by jkrojmal & Teabag86","sizeMb":11.91,"note":"Reforma externa completa de todas as grandes capitais de Skyrim."},
-      {"id":63,"bnetId":"20319fab-ef0c-46f1-b228-72d925a06f0c","legacyId":4247819,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","query":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","sizeMb":1.45,"note":"Integra perfeitamente The Great Cities (#60) com JK's Skyrim (#62)."},
-      {"id":64,"bnetId":"ce5d06bc-a37b-4bca-94f7-16f1273449ff","legacyId":4176401,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun","query":"Fortified Whiterun","sizeMb":17.06,"note":"Ergue muralhas medievais altas c/ ameias, torres de vigia, portões rastrilhos e passarelas em Whiterun!"},
-      {"id":65,"bnetId":"bb537194-3fea-4b3d-b019-1eac0f999232","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion with Fixes - No Planks","query":"Capital Whiterun Expansion with Fixes - No Planks","sizeMb":27.78,"note":"Expande Whiterun com novos distritos murados, praças, lojas e vida de grande capital medieval!"},
-      {"id":66,"bnetId":"70b62127-cf25-4b16-9cee-bedf2c3567ed","legacyId":4177549,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun - JK’s Skyrim Patch","query":"Fortified Whiterun - JK’s Skyrim Patch","sizeMb":0.01,"note":"Patch oficial entre Fortified Whiterun (#64) e JK's Skyrim (#62)."},
-      {"id":67,"bnetId":"767fa253-a705-45f4-b117-b324a8cc1afe","legacyId":4321077,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"FYX - Fortified Whiterun Consistency Patch","query":"FYX - Fortified Whiterun Consistency Patch","sizeMb":0.91,"note":"Aplica as malhas 3D e arquitetura de Whiterun nas torres do Fortified Whiterun (#64)."},
-      {"id":68,"bnetId":"5789c8a0-1bc5-470b-9086-8719eeab19f0","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - Fortified Whiterun Patch","query":"Capital Whiterun Expansion - Fortified Whiterun Patch","sizeMb":0.05,"note":"Patch oficial entre Capital Whiterun Expansion (#65) e Fortified Whiterun (#64)."},
-      {"id":69,"bnetId":"cc2945b5-c4a6-4c3a-ab46-ac6cffb31f6e","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","query":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","sizeMb":0.1,"note":"Patch combo oficial entre Capital Whiterun (#65), JK's Skyrim (#62) e JK's Interiors (#61)."},
-      {"id":70,"bnetId":"adfc2d2e-b1a2-49bd-b68a-a19e69d400aa","legacyId":4220849,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Trees In Cities for JK's Skyrim","query":"Trees In Cities for JK's Skyrim","sizeMb":0.09,"note":"Adiciona árvores majestosas dentro de Whiterun, Solitude, Windhelm, Riften e Markarth!"},
-      {"id":71,"bnetId":"736fcb09-316d-40f1-9182-702afc17140a","legacyId":4273311,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"SRP LODs (Medium Resolution)","query":"SRP LODs (Medium Resolution)","sizeMb":462.96,"note":"LODs distantes das cidades, torres e ruínas alinhados com as texturas do SRP 2K (#22–#24)."},
-      {"id":72,"bnetId":"41f6cc87-078f-4e43-88a2-f4f13d975ee6","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Green Tundra LOD","query":"Green Tundra LOD","sizeMb":8.75,"note":"Garante horizonte distante verde vibrante no vale de Whiterun em sintonia com Skoglendi + Fantasia!"},
-      {"id":73,"bnetId":"edd90cb6-3150-4956-9d80-fd89bcb8efab","legacyId":4302401,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN: Dramatic Atmospheres, Weathers, & Nature","query":"DAWN: Dramatic Atmospheres, Weathers, & Nature","sizeMb":146.42,"note":"O melhor clima do Xbox (146 MB): raios solares volumétricos, cores vibrantes, neblina épica e áudio natural 3D!"},
-      {"id":74,"bnetId":"ad96197d-21cf-40a3-b1aa-c689400833f4","legacyId":4318909,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN Waters w/ Natural Waterfalls","query":"DAWN Waters w/ Natural Waterfalls","sizeMb":14.69,"note":"Água física cristalina, espuma de corredeiras e cachoeiras naturais integradas ao DAWN v2."},
-      {"id":75,"bnetId":"3d0e7f09-120c-4a73-89e8-4c838f12cdd0","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Via v 2.2 - Plugin","query":"Lux Via v 2.2 - Plugin","sizeMb":0.78,"note":"Pontes medievais, santuários e lanternas nas estradas florestadas (pareado c/ Master #07)."},
-      {"id":76,"bnetId":"d627ca87-efb4-4db3-84ca-282db9ce65b7","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis v 4.5 - Plugin","query":"Lux Orbis v 4.5 - Plugin","sizeMb":24.47,"note":"Iluminação quente de tochas, braseiros e vitrais nas muralhas medievais à noite."},
-      {"id":77,"bnetId":"9cd85311-2507-4d29-9fe2-568a03e039f4","legacyId":4250877,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / JK's Skyrim AIO Patch","query":"Lux Orbis / JK's Skyrim AIO Patch","sizeMb":0.25,"note":"Sincroniza as luzes externas do Lux Orbis com JK's Skyrim (#62)."},
-      {"id":78,"bnetId":"aae5792a-3d12-43cd-b107-4c6390fd6101","legacyId":4253383,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","query":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","sizeMb":0.09,"note":"Sincroniza as luzes externas do Lux Orbis com as fortalezas do The Great Cities (#60)."},
-      {"id":79,"bnetId":"1de3a7f2-7b1b-4046-b9ac-7144111c7815","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux v 7.1 - Plugin","query":"Lux v 7.1 - Plugin","sizeMb":113.72,"note":"Iluminação interna dramática com sombras reais e feixes de luz pelas janelas."},
-      {"id":80,"bnetId":"c8fa0a02-e38f-44fa-a8ef-7f1e937f3e30","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"Lux - Updated USSEP Patch","query":"Lux - Updated USSEP Patch","sizeMb":0.02,"note":"Compatibiliza o Lux v7.1 (#79) com o USSEP (#01)."},
-      {"id":81,"bnetId":"7d00fe62-ebab-4d20-a8f2-cbdeeed2bfeb","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"Lux - Free Creation Club Content Patch","query":"Lux - Free Creation Club Content Patch","sizeMb":0.03,"note":"Iluminação Lux v7.1 p/ as Creations gratuitas do SE 1.6 (Fishing & Saints and Seducers)."},
-      {"id":82,"bnetId":"1b8d0adc-0108-40ad-9ac9-c9efdcce06e4","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"Jk's Interiors AiO - Lux Patch","query":"Jk's Interiors AiO - Lux Patch","sizeMb":3.69,"note":"Patch reconstruído p/ Lux v7.1 (#79) + JK's Interiors AiO (#61)."},
-      {"id":83,"bnetId":"9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264","legacyId":4268574,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"JK's Interiors AiO JK's Skyrim AIO Patch","query":"JK's Interiors AiO JK's Skyrim AIO Patch","sizeMb":0.11,"note":"Conecta portas e janelas entre JK's Interiors (#61) e JK's Skyrim (#62)."},
-      {"id":84,"bnetId":"39c6a829-bfca-4af7-9588-3745e23d6e9c","legacyId":3010376,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"Cheat Room (XB1)","query":"Cheat Room (XB1)","sizeMb":1.25,"note":"Posicionado no rodapé (#84) para nunca deslocar IDs dos mods acima! Estável via Cheat Teleport após Hard Reset + HPP 1K!"},
-      {"id":85,"bnetId":"07b6749e-71f1-4c60-8a2b-f9e77d888b3c","legacyId":4319624,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#80 → #85)","name":"Alternate Perspective - Alternate Start","query":"Alternate Perspective - Alternate Start","sizeMb":4.93,"note":"Último da lista! Inicia New Game em 5s na sala segura (obrigatório após trocar .esp p/ evitar crash de transição de célula)."}
+      {"id":4,"bnetId":"ac3ffcd0-2943-47f3-b365-e6fd1b980cc9","legacyId":4344623,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Reforging to the Masses (Weapon Expansion) - SWF Edition","query":"Reforging to the Masses (Weapon Expansion) - SWF Edition","sizeMb":51.88,"note":"Master ESM que distribui +300 armas medievais históricas (alabardas, lanças, espadas longas) no mundo!"},
+      {"id":5,"bnetId":"8a16bdda-8f83-4f36-840f-c0bffbaca677","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Resources v 2.2 (17102025)","query":"Lux Resources v 2.2 (17102025)","sizeMb":169.86,"note":"Recursos base de lanternas, malhas e feixes da suíte Lux."},
+      {"id":6,"bnetId":"3152322e-2b4b-4367-ac73-eceaf3766b5f","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Via v 2.2 - Master File","query":"Lux Via v 2.2 - Master File","sizeMb":45.88,"note":"Master file de estradas, pontes e marcos iluminados (FatalIllusion)."},
+      {"id":7,"bnetId":"4f7b6905-47f8-4c7a-a5d5-39026c6339a7","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux Orbis v 4.5 - Master File","query":"Lux Orbis v 4.5 - Master File","sizeMb":0.16,"note":"Master file de iluminação externa das cidades e vilas."},
+      {"id":8,"bnetId":"097cb9b0-e543-43e9-ab29-46365bb4e89a","legacyId":null,"zone":"Zona 1 — Master Files & Arsenal Medieval Base (Topo Fixo)","name":"Lux v 7.1 - Master File","query":"Lux v 7.1 - Master File","sizeMb":0.03,"note":"Master file de iluminação interna cinematográfica."},
+      {"id":9,"bnetId":"29b8495b-6f70-4130-afd8-fea999034f81","legacyId":4281182,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Nordic SkyHUD","query":"Nordic SkyHUD","sizeMb":0.47,"note":"HUD minimalista nórdica pura (zero conflito c/ Creation Club)."},
+      {"id":10,"bnetId":"2d5ff0fe-249d-49f1-9aa5-60043ee44762","legacyId":null,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Kontrol - Updated","query":"Kontrol - Updated","sizeMb":0.01,"note":"8 atalhos rápidos via LB + D-Pad/Botões no controle Xbox."},
+      {"id":11,"bnetId":"25f42b49-82ad-4218-a2e0-9a6d4e93f5a7","legacyId":4231363,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"DMH Busty Skeevers","query":"DMH Busty Skeevers","sizeMb":0.29,"note":"FOV 90, câmera 3ª pessoa moderna, anti-serrilhado de folhagem e Snow Fix."},
+      {"id":12,"bnetId":"bb5077d5-39f6-46b7-8497-28cdbf7ae038","legacyId":3304897,"zone":"Zona 2 — HUD Segura, Câmera & Pós-Processamento ENB","name":"Display Enhancements (XB1)","query":"Display Enhancements (XB1)","sizeMb":0.69,"note":"Preset 28 + Sunlight Scale p/ simular Rudy/Cabbage ENB sobre o DAWN v2."},
+      {"id":13,"bnetId":"d9cb9a1c-4b5f-4f73-9505-987aa4f0930d","legacyId":4269547,"zone":"Zona 3 — Áudio Acústico Next-Gen","name":"Audio SFX Overhaul","query":"Audio SFX Overhaul","sizeMb":129.82,"note":"Reverberação física realista de lâminas, armaduras pesadas, vento, chuva e cavernas."},
+      {"id":14,"bnetId":"87294b6e-6e9d-410c-91ed-6bb9fccac15e","legacyId":4285638,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Super Smim'd 1k","query":"Super Smim'd 1k","sizeMb":502.65,"note":"SMIM Completo em 1K BC7 moderno (não 512px!) + pontes/treliças 3D de Whiterun: 100% da geometria 3D com metade do uso de VRAM do SMIM de 2016!"},
+      {"id":15,"bnetId":"48f7c830-d51d-4e34-910f-80a9166cbcce","legacyId":4243083,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"LucidAPs' High Poly Project (v5.x) - 1K (with Fixes)","query":"LucidAPs' High Poly Project (v5.x) - 1K (with Fixes)","sizeMb":142.54,"note":"Mesmas malhas ultra-3D do HPP v5.x c/ texturas 1K otimizadas: elimina o pico de VRAM em Whiterun e nos 54 baús do Cheat Room!"},
+      {"id":16,"bnetId":"98903899-c893-48dd-b96c-840ab221779f","legacyId":4337752,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Skyland Bits and Bobs - A Clutter Overhaul","query":"Skyland Bits and Bobs - A Clutter Overhaul","sizeMb":797.22,"note":"Retexturiza 100% da mobília, baús, louças, poções e interiores."},
+      {"id":17,"bnetId":"e70def02-08fc-4b14-ae1e-e49826063691","legacyId":4321263,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"FYX AIO - Mesh Improvements","query":"FYX AIO - Mesh Improvements","sizeMb":27.05,"note":"Segredo do Nolvus/Lorerim: converte torres, paliçadas, rampas, poços e telhados retos em malha 3D esculpida!"},
+      {"id":18,"bnetId":"f47c9a66-4160-458c-a9a4-cc5108e474cb","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","query":"Nordic Stonewalls Terraces (Style1, Nordic)- 2K","sizeMb":16.86,"note":"Substitui muros baixos chapados por rochas 3D individuais empilhadas em 2K (mindflux)."},
+      {"id":19,"bnetId":"97fa1d34-4f4c-4e90-ba33-eb5d81e5f6b9","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"Nordic Farmhouse Stonewall - 2k1k","query":"Nordic Farmhouse Stonewall - 2k1k","sizeMb":4.48,"note":"Muros rurais de vilarejos remodelados pedra por pedra em 3D 2K/1K (mindflux)."},
+      {"id":20,"bnetId":"f9ccd915-2485-41e2-9644-8792c34ce0dd","legacyId":null,"zone":"Zona 4 — Geometria 3D Anti-Chapada Calibrada p/ Series S (Super SMIM 1K + HPP 1K + FYX 3D)","name":"High Quality Ivy Replacer 1k - Variation 1","query":"High Quality Ivy Replacer 1k - Variation 1","sizeMb":9.81,"note":"Substitui heras 2D coladas nas paredes medievais por folhagem 3D densa."},
+      {"id":21,"bnetId":"23c08480-c611-4c44-9997-f9b44be7560e","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 1","query":"SRP Architecture 2K - Part 1","sizeMb":1654.16,"note":"Parte 1 (1,65 GB em 2K puro!): todas as cidades, castelos e vilas com normal maps profundos anti-chapados!"},
+      {"id":22,"bnetId":"334113cc-ad69-484c-ac43-230c4f7bb94d","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Architecture 2K - Part 2","query":"SRP Architecture 2K - Part 2","sizeMb":1539.49,"note":"Parte 2 (1,54 GB em 2K puro!): completa 100% da arquitetura medieval base + DLCs do Skurkbro v4."},
+      {"id":23,"bnetId":"36a20bde-06f5-421d-8c35-eade6ae490de","legacyId":4281562,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"SRP Dungeons 1k","query":"SRP Dungeons 1k","sizeMb":476.49,"note":"Ruínas Nórdicas, Dwemer, Cavernas, Minas e Apocrypha com relevo profundo Skurkbro."},
+      {"id":24,"bnetId":"2d01fb32-2469-48b8-a397-7d1d21da49d4","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","query":"Illustrious Whiterun v 4.0 - Complex Material(2k1k)","sizeMb":536.79,"note":"Whiterun inteira em 2K (2048px) com Complex Material nativo p/ brilho/relevo real em madeira, ouro e pedra!"},
+      {"id":25,"bnetId":"e18692d5-d32b-4ae2-9701-b887527c4abf","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Whiterun Doors and Gate 2K by todor0v","query":"Whiterun Doors and Gate 2K by todor0v","sizeMb":28.79,"note":"Portões e portas medievais de Whiterun em 2K com ferragens 3D e reflexo metálico."},
+      {"id":26,"bnetId":"09ec0e22-d218-4f5b-8790-1469a2ba3137","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Skyking Fantasia Landscapes","query":"Skyking Fantasia Landscapes","sizeMb":525.27,"note":"Adeus terra seca marrom: terrenos vibrantes, musgo verde vivo, rochas nítidas, pontes e estradas!"},
+      {"id":27,"bnetId":"4e411d00-d5d6-4212-a9b2-366984105cc3","legacyId":null,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"ERM - Enhanced Rocks and Mountains","query":"ERM - Enhanced Rocks and Mountains","sizeMb":13.11,"note":"Aumenta a poligonagem 3D das montanhas e penhascos."},
+      {"id":28,"bnetId":"2144a6f4-b525-4a0c-9ef2-e41208d06225","legacyId":4150681,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Blended Roads Redone","query":"Blended Roads Redone","sizeMb":21.8,"note":"Pedras de calçamento medieval em alto-relevo 3D nas estradas."},
+      {"id":29,"bnetId":"c04aef31-2293-443f-911f-618775057684","legacyId":4150670,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Hyperborean Snow","query":"Hyperborean Snow","sizeMb":20.05,"note":"Textura de neve cristalina de alta definição."},
+      {"id":30,"bnetId":"79b1ab4b-9277-4e55-9bef-b5bcd7b1d3a2","legacyId":4235981,"zone":"Zona 5 — Arquitetura Medieval 2K Ultra-Profunda (SRP 2K + Illustrious CM) & Fantasia","name":"Simplicity of Snow","query":"Simplicity of Snow","sizeMb":19.73,"note":"Shader dinâmico de neve realista sob telhados e muralhas."},
+      {"id":31,"bnetId":"c50337a2-215d-4e33-9792-f10dd2aa0901","legacyId":4228043,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Optimized Quality CubeMaps - HD Cube Maps","query":"Optimized Quality CubeMaps - HD Cube Maps","sizeMb":100.49,"note":"CubeMaps HD de PC: faz o aço polido das armaduras e lâminas refletir a luz com realismo metálico!"},
+      {"id":32,"bnetId":"4f64358b-a5df-4790-bac1-4ac33cf114da","legacyId":4313632,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Simply Realistic Armors & Weapons","query":"Simply Realistic Armors & Weapons","sizeMb":676.68,"note":"Base Medieval Unificada (676,7 MB • BraccaMykar79): remodela Ferro, Aço, Couro, Anão, Ébano, Orc, Élfica, Vidro, Daédrica, Osso/Escama de Dragão + Armas Billyro (c/ ícones 3D consistentes no inventário!), deixando Guardas/Legião p/ os pacotes 2K abaixo!"},
+      {"id":33,"bnetId":"61f19279-a197-441d-b331-9f70d4d98d39","legacyId":null,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"New Legion 2k (SWF)","query":"New Legion 2k (SWF)","sizeMb":111.68,"note":"NordWarUA 2K: Legião Imperial inteira com armaduras pesadas históricas em 2K!"},
+      {"id":34,"bnetId":"d058f69d-1734-4091-9278-af5794550b8f","legacyId":null,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","query":"Sons of Skyrim (SWF) 2k - with Patches and Fixes SE by Xtudo","sizeMb":342.35,"note":"NordWarUA 2K (342 MB): Guardas de TODAS as cidades + Stormcloaks c/ cotas de malha, capas, elmos e escudos 2K!"},
+      {"id":35,"bnetId":"e43b23d2-cb7c-489f-b235-c9005244bbc5","legacyId":null,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Unplayable Faction Armors SSE 2k SWF","query":"Unplayable Faction Armors SSE 2k SWF","sizeMb":204.86,"note":"NordWarUA 2K (205 MB): Vigilantes de Stendarr, Mão de Prata e Alik'r com sets medievais exclusivos em 2K!"},
+      {"id":36,"bnetId":"3cbfd96a-d5cc-4ff7-a6ff-f67db10e9635","legacyId":null,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","query":"Legacy of Ysgramor (SWF) - No Wuuthrad or Shield of Ysgramor 2k - with Fixes by Xtudo","sizeMb":70.4,"note":"NordWarUA 2K: Os Companheiros de Jorrvaskr (Whiterun) vestem armaduras nórdicas medievais de elite em 2K!"},
+      {"id":37,"bnetId":"2815fe8a-1a3e-47d1-8712-f13fe97b404d","legacyId":4316242,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Divergence - Compendium of Beasts - AIO - 1K","query":"Divergence - Compendium of Beasts - AIO - 1K","sizeMb":163.66,"note":"Dragões, gigantes, trolls e autômatos retexturizados em alta definição."},
+      {"id":38,"bnetId":"764fe718-2f09-4e14-9950-c510aef11b9d","legacyId":4237141,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Fluffworks (Fluffy Animals) Quality 2K","query":"Fluffworks (Fluffy Animals) Quality 2K","sizeMb":160.4,"note":"Assinatura visual do Nolvus PC (2K): lobos, ursos, cavalos e sabrecats com pelagem volumétrica 3D real!"},
+      {"id":39,"bnetId":"248a7ee0-b71c-4a90-b2d5-557501003ea5","legacyId":4329497,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","query":"Embers XD V 3.2.8 (1K) - Lux Orbis Edition","sizeMb":56.44,"note":"Brasas, fogueiras, forjas e tochas incandescentes 3D calibradas p/ Lux Orbis."},
+      {"id":40,"bnetId":"892f943a-aaf2-4323-8cca-b0ded4016a1d","legacyId":4320119,"zone":"Zona 6 — Armaduras & Armas Medievais Completas (Simply Realistic + NordWarUA 2K), Pelagem 3D & Fogo","name":"VAE2 - Visual Animated Enchants 2-023","query":"VAE2 - Visual Animated Enchants 2-023","sizeMb":9.41,"note":"Partículas modernas nas armas encantadas."},
+      {"id":41,"bnetId":"1a32bed2-577a-4e6b-b36e-df939b1397f7","legacyId":4187379,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Pandorable Mega Pack","query":"Pandorable Mega Pack","sizeMb":859.31,"note":"Mega-pacote (859 MB): centenas de NPCs masculinos e femininos esculpidos em alta definição!"},
+      {"id":42,"bnetId":"a479bf14-bd34-48cc-aff6-cb7b768fa429","legacyId":4244883,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"RS Children Optimized","query":"RS Children Optimized","sizeMb":29.42,"note":"Rostos realistas p/ crianças do jogo base."},
+      {"id":43,"bnetId":"b85ca6d7-a9bc-45ec-a6b1-f2e022f0f228","legacyId":4238237,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Bella Beauty AND THE BEASTS Bundle","query":"Bella Beauty AND THE BEASTS Bundle","sizeMb":107.01,"note":"Carregado abaixo do Pandorable p/ unificar pele, olhos reflexivos e feras sem risco de Dark Face Bug!"},
+      {"id":44,"bnetId":"a0b75c6a-1c54-4dba-8fcd-14d5e0576132","legacyId":4337459,"zone":"Zona 7 — NPCs High-Poly Nível PC (Pandorable Mega Pack) & Pele SSS","name":"Subsurface Scattering Shaders for Skins","query":"Subsurface Scattering Shaders for Skins","sizeMb":0.04,"note":"Espalhamento sub-superficial de luz na pele sob o sol do DAWN v2."},
+      {"id":45,"bnetId":"44797002-072b-43d6-919b-7f512e591de4","legacyId":4318966,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"Comprehensive First Person Animation Overhaul - CFPAO","query":"Comprehensive First Person Animation Overhaul - CFPAO","sizeMb":0.81,"note":"Posicionado ACIMA do XP32 (#46) p/ manter XP32 + GDB colados sem conflito ao lançar magias em 1ª/3ª pessoa!"},
+      {"id":46,"bnetId":"61ea861e-8a0c-48e7-a189-4ab827d5818b","legacyId":4271284,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"XP32 Maximum Skeleton Special Extended Plus","query":"XP32 Maximum Skeleton Special Extended Plus","sizeMb":1.63,"note":"Esqueleto obrigatório colado imediatamente acima do GDB's The Revenge (#47)."},
+      {"id":47,"bnetId":"7c34465e-fac0-4378-83f7-a8af4b4e2e4e","legacyId":4307936,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"GDB's The Revenge","query":"GDB's The Revenge","sizeMb":154.47,"note":"Combate moderno Nemesis em 3ª pessoa, esquiva, poções e interações animadas."},
+      {"id":48,"bnetId":"20c24db7-c1bf-49b9-a42f-9c519e379b1f","legacyId":2970997,"zone":"Zona 8 — Esqueleto, Combate & Animações (GDB)","name":"VioLens - A Killmove Mod SE [XB1]","query":"VioLens - A Killmove Mod SE [XB1]","sizeMb":1.25,"note":"Controle de câmeras de finalização cinematográficas."},
+      {"id":49,"bnetId":"9b085660-ba68-4140-bb62-3bedd571cca2","legacyId":4335752,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Skoglendi - A Grass Mod (Green Tundra)","query":"Skoglendi - A Grass Mod (Green Tundra)","sizeMb":54.44,"note":"Pasto longo verde vibrante em 100% de densidade cobrindo campinas e vales!"},
+      {"id":50,"bnetId":"d7b08b61-e7f8-42c0-9be7-aafa27370474","legacyId":4199686,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Origins of Forest - 3D Forest Grass","query":"Origins of Forest - 3D Forest Grass","sizeMb":12.23,"note":"Adiciona samambaias gigantes e arbustos 3D na altura da cintura no chão das florestas!"},
+      {"id":51,"bnetId":"4f4642c6-2841-4a13-b3fc-aaac078dfc20","legacyId":4263944,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Cathedral 3D Pine Grass","query":"Cathedral 3D Pine Grass","sizeMb":9.8,"note":"Plantas alpinas 3D fotografadas cobrindo o solo dos pinheirais."},
+      {"id":52,"bnetId":"01132b5b-c389-4706-ba70-cfaeb5991934","legacyId":4011845,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Landscape Fixes For Grass Mods","query":"Landscape Fixes For Grass Mods","sizeMb":7.81,"note":"Impede a grama densa de atravessar calçadas e pisos das cidades."},
+      {"id":53,"bnetId":"4781fe76-09e9-4103-bbc0-d47bd3a0636b","legacyId":4147709,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Cathedral Plants and Mushrooms 2k","query":"Cathedral Plants and Mushrooms 2k","sizeMb":96.98,"note":"Flores silvestres, lavandas, tundras e cogumelos vibrantes em 2K!"},
+      {"id":54,"bnetId":"ffb09c5f-9df8-45c9-82ab-4fb0d6a659de","legacyId":4282550,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Draco's 3D Plants & Shrubs (2k-2k)","query":"Draco's 3D Plants & Shrubs (2k-2k)","sizeMb":36.67,"note":"Substitui arbustos e plantas por modelos 3D high-poly em 2K/2K!"},
+      {"id":55,"bnetId":"89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d","legacyId":4353887,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Fabled Forests Author's Choice 1k","query":"Fabled Forests Author's Choice 1k","sizeMb":91.79,"note":"Posições densas do Nature of the Wild Lands + Ulvenwald c/ malhas 3D gigantes otimizadas p/ 60 FPS e zero crash em Whiterun no Series S!"},
+      {"id":56,"bnetId":"1cb4c5c8-5d50-4e66-a3b0-e0607fe09ac6","legacyId":4186064,"zone":"Zona 9 — Pasto Longo 100% Denso, Sub-Bosque 3D & Floresta Fechada Estável em Whiterun","name":"Alpine Forest of Whiterun Valley XB1","query":"Alpine Forest of Whiterun Valley XB1","sizeMb":1.01,"note":"Fecha todo o vale de Whiterun em floresta densa usando as árvores 3D leves do Fabled Forests (#55) sem estourar VRAM!"},
+      {"id":57,"bnetId":"7bc79410-960f-4844-8a25-5ade0ab6d0e9","legacyId":4243144,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundle","query":"The Great Cities, Towns, and Villages Bundle","sizeMb":47.89,"note":"Reconstrói Winterhold, Falkreath, Dawnstar, Morthal, Dragon Bridge, Rorikstead e +6 vilas como fortalezas épicas!"},
+      {"id":58,"bnetId":"be476c43-c71f-4ead-8af9-2cb555e1bc21","legacyId":4285981,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Interiors AiO","query":"JK's Interiors AiO","sizeMb":35.28,"note":"Transforma palácios, estalagens, templos e guildas em interiores medievais riquíssimos."},
+      {"id":59,"bnetId":"6f90cb1e-f00d-4490-8c9f-aedb752b11a1","legacyId":4059215,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"JK's Skyrim - All in One by jkrojmal & Teabag86","query":"JK's Skyrim - All in One by jkrojmal & Teabag86","sizeMb":11.91,"note":"Reforma externa completa de todas as grandes capitais de Skyrim."},
+      {"id":60,"bnetId":"20319fab-ef0c-46f1-b228-72d925a06f0c","legacyId":4247819,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","query":"The Great Cities, Towns, and Villages Bundles / JK's Skyrim AIO Patch","sizeMb":1.45,"note":"Integra perfeitamente The Great Cities (#57) com JK's Skyrim (#59)."},
+      {"id":61,"bnetId":"ce5d06bc-a37b-4bca-94f7-16f1273449ff","legacyId":4176401,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun","query":"Fortified Whiterun","sizeMb":17.06,"note":"Ergue muralhas medievais altas c/ ameias, torres de vigia, portões rastrilhos e passarelas em Whiterun!"},
+      {"id":62,"bnetId":"bb537194-3fea-4b3d-b019-1eac0f999232","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion with Fixes - No Planks","query":"Capital Whiterun Expansion with Fixes - No Planks","sizeMb":27.78,"note":"Expande Whiterun com novos distritos murados, praças, lojas e vida de grande capital medieval!"},
+      {"id":63,"bnetId":"70b62127-cf25-4b16-9cee-bedf2c3567ed","legacyId":4177549,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Fortified Whiterun - JK’s Skyrim Patch","query":"Fortified Whiterun - JK’s Skyrim Patch","sizeMb":0.01,"note":"Patch oficial entre Fortified Whiterun (#61) e JK's Skyrim (#59)."},
+      {"id":64,"bnetId":"767fa253-a705-45f4-b117-b324a8cc1afe","legacyId":4321077,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"FYX - Fortified Whiterun Consistency Patch","query":"FYX - Fortified Whiterun Consistency Patch","sizeMb":0.91,"note":"Aplica as malhas 3D e arquitetura de Whiterun nas torres do Fortified Whiterun (#61)."},
+      {"id":65,"bnetId":"5789c8a0-1bc5-470b-9086-8719eeab19f0","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - Fortified Whiterun Patch","query":"Capital Whiterun Expansion - Fortified Whiterun Patch","sizeMb":0.05,"note":"Patch oficial entre Capital Whiterun Expansion (#62) e Fortified Whiterun (#61)."},
+      {"id":66,"bnetId":"cc2945b5-c4a6-4c3a-ab46-ac6cffb31f6e","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","query":"Capital Whiterun Expansion - JK’s Skyrim and JK’s Interiors AiO Combo Patch","sizeMb":0.1,"note":"Patch combo oficial entre Capital Whiterun (#62), JK's Skyrim (#59) e JK's Interiors (#58)."},
+      {"id":67,"bnetId":"adfc2d2e-b1a2-49bd-b68a-a19e69d400aa","legacyId":4220849,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Trees In Cities for JK's Skyrim","query":"Trees In Cities for JK's Skyrim","sizeMb":0.09,"note":"Adiciona árvores majestosas dentro de Whiterun, Solitude, Windhelm, Riften e Markarth!"},
+      {"id":68,"bnetId":"736fcb09-316d-40f1-9182-702afc17140a","legacyId":4273311,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"SRP LODs (Medium Resolution)","query":"SRP LODs (Medium Resolution)","sizeMb":462.96,"note":"LODs distantes das cidades, torres e ruínas alinhados com as texturas do SRP 2K (#21–#23)."},
+      {"id":69,"bnetId":"41f6cc87-078f-4e43-88a2-f4f13d975ee6","legacyId":null,"zone":"Zona 10 — Cidades, Castelos & Cidadelas Medievais Grandiosas + LODs","name":"Green Tundra LOD","query":"Green Tundra LOD","sizeMb":8.75,"note":"Garante horizonte distante verde vibrante no vale de Whiterun em sintonia com Skoglendi + Fantasia!"},
+      {"id":70,"bnetId":"edd90cb6-3150-4956-9d80-fd89bcb8efab","legacyId":4302401,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN: Dramatic Atmospheres, Weathers, & Nature","query":"DAWN: Dramatic Atmospheres, Weathers, & Nature","sizeMb":146.42,"note":"O melhor clima do Xbox (146 MB): raios solares volumétricos, cores vibrantes, neblina épica e áudio natural 3D!"},
+      {"id":71,"bnetId":"ad96197d-21cf-40a3-b1aa-c689400833f4","legacyId":4318909,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"DAWN Waters w/ Natural Waterfalls","query":"DAWN Waters w/ Natural Waterfalls","sizeMb":14.69,"note":"Água física cristalina, espuma de corredeiras e cachoeiras naturais integradas ao DAWN v2."},
+      {"id":72,"bnetId":"3d0e7f09-120c-4a73-89e8-4c838f12cdd0","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Via v 2.2 - Plugin","query":"Lux Via v 2.2 - Plugin","sizeMb":0.78,"note":"Pontes medievais, santuários e lanternas nas estradas florestadas (pareado c/ Master #06)."},
+      {"id":73,"bnetId":"d627ca87-efb4-4db3-84ca-282db9ce65b7","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis v 4.5 - Plugin","query":"Lux Orbis v 4.5 - Plugin","sizeMb":24.47,"note":"Iluminação quente de tochas, braseiros e vitrais nas muralhas medievais à noite."},
+      {"id":74,"bnetId":"9cd85311-2507-4d29-9fe2-568a03e039f4","legacyId":4250877,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / JK's Skyrim AIO Patch","query":"Lux Orbis / JK's Skyrim AIO Patch","sizeMb":0.25,"note":"Sincroniza as luzes externas do Lux Orbis com JK's Skyrim (#59)."},
+      {"id":75,"bnetId":"aae5792a-3d12-43cd-b107-4c6390fd6101","legacyId":4253383,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","query":"Lux Orbis / The Great Cities, Towns, and Villages Bundle Patch","sizeMb":0.09,"note":"Sincroniza as luzes externas do Lux Orbis com as fortalezas do The Great Cities (#57)."},
+      {"id":76,"bnetId":"1de3a7f2-7b1b-4046-b9ac-7144111c7815","legacyId":null,"zone":"Zona 11 — Atmosfera Épica DAWN v2, Água Física & Iluminação LUX Suite","name":"Lux v 7.1 - Plugin","query":"Lux v 7.1 - Plugin","sizeMb":113.72,"note":"Iluminação interna dramática com sombras reais e feixes de luz pelas janelas."},
+      {"id":77,"bnetId":"c8fa0a02-e38f-44fa-a8ef-7f1e937f3e30","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"Lux - Updated USSEP Patch","query":"Lux - Updated USSEP Patch","sizeMb":0.02,"note":"Compatibiliza o Lux v7.1 (#76) com o USSEP (#01)."},
+      {"id":78,"bnetId":"7d00fe62-ebab-4d20-a8f2-cbdeeed2bfeb","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"Lux - Free Creation Club Content Patch","query":"Lux - Free Creation Club Content Patch","sizeMb":0.03,"note":"Iluminação Lux v7.1 p/ as Creations gratuitas do SE 1.6 (Fishing & Saints and Seducers)."},
+      {"id":79,"bnetId":"1b8d0adc-0108-40ad-9ac9-c9efdcce06e4","legacyId":null,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"Jk's Interiors AiO - Lux Patch","query":"Jk's Interiors AiO - Lux Patch","sizeMb":3.69,"note":"Patch reconstruído p/ Lux v7.1 (#76) + JK's Interiors AiO (#58)."},
+      {"id":80,"bnetId":"9a3db0a7-ae8a-4be8-8665-6bfc7a0d6264","legacyId":4268574,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"JK's Interiors AiO JK's Skyrim AIO Patch","query":"JK's Interiors AiO JK's Skyrim AIO Patch","sizeMb":0.11,"note":"Conecta portas e janelas entre JK's Interiors (#58) e JK's Skyrim (#59)."},
+      {"id":81,"bnetId":"39c6a829-bfca-4af7-9588-3745e23d6e9c","legacyId":3010376,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"Cheat Room (XB1)","query":"Cheat Room (XB1)","sizeMb":1.25,"note":"Posicionado no rodapé (#81) para nunca deslocar IDs dos mods acima! Estável via Cheat Teleport após Hard Reset + HPP 1K!"},
+      {"id":82,"bnetId":"07b6749e-71f1-4c60-8a2b-f9e77d888b3c","legacyId":4319624,"zone":"Zona 12 — Patches Finais, Cheat Room & Start Seguro (#77 → #82)","name":"Alternate Perspective - Alternate Start","query":"Alternate Perspective - Alternate Start","sizeMb":4.93,"note":"Último da lista! Inicia New Game em 5s na sala segura (obrigatório após trocar .esp p/ evitar crash de transição de célula)."}
     ];
 
     var CALIB_STEPS = [
-      { key: 'c1', title: '1. Limpar Espaço Reservado (15,0 GB) — Somente em Instalação do Zero', desc: 'Se estiver migrando da V1 do zero: Meus Jogos e Apps → Skyrim → Gerenciar Jogo → Dados Salvos → Espaço Reservado (15,0 GB) → Limpar. (Para pequenos ajustes na V2, NÃO limpe!)' },
-      { key: 'c2', title: '2. Desligar Missing Creation Check + Download 1-Clique (12,44 GiB)', desc: 'Dentro de Creations → Options (☰), ative "Disable Missing Creation Check on Save" e clique em "Download all Creations in my Library".' },
-      { key: 'c3', title: '3. REGRA DE OURO: Ordenar #01 → #85 em Y (Load Order) ANTES de Sair!', desc: 'Assim que os downloads terminarem, NÃO aperte B! Aperte Y (Load Order) ali mesmo, ordene de #01 a #85, salve na nuvem com Options (☰) → "Save Load Order to Bethesda.net", encerre o Skyrim e reinicie o Xbox Series S.' },
-      { key: 'c3b', title: '4. Iniciar via NEW GAME (Cidades Fortificadas & NordWarUA Full 2K)', desc: 'Em New Game, você nasce em 5s no quarto do Alternate Perspective com 100% das muralhas do Fortified Whiterun, distritos do Capital Whiterun, fortalezas do The Great Cities e armaduras NordWarUA 2K gerados limpos!' },
+      { key: 'c1', title: '1. Limpar Espaço Reservado (15,0 GB) — Somente em Instalação do Zero', desc: 'Se estiver instalando do zero: Meus Jogos e Apps → Skyrim → Gerenciar Jogo → Dados Salvos → Espaço Reservado (15,0 GB) → Limpar. (Para ajustes incrementais como V2.2 → V2.3, NÃO limpe!)' },
+      { key: 'c2', title: '2. Desligar Missing Creation Check + Download 1-Clique (11,06 GiB)', desc: 'Dentro de Creations → Options (☰), ative "Disable Missing Creation Check on Save" e clique em "Download all Creations in my Library" (~3,94 GiB livres!).' },
+      { key: 'c3', title: '3. REGRA DE OURO: Ordenar #01 → #82 em Y (Load Order) ANTES de Sair!', desc: 'Assim que os downloads terminarem, NÃO aperte B! Aperte Y (Load Order) ali mesmo, ordene de #01 a #82, salve na nuvem com Options (☰) → "Save Load Order to Bethesda.net" e faça Reiniciar Console (Hard Reset).' },
+      { key: 'c3b', title: '4. Iniciar via NEW GAME (Cidades Fortificadas + Simply Realistic & Guardas 2K)', desc: 'Em New Game, você nasce em 5s no quarto do Alternate Perspective com 100% das muralhas do Fortified Whiterun, distritos do Capital Whiterun, fortalezas do The Great Cities e armaduras medievais geradas limpas!' },
       { key: 'c4', title: '5. Configurar Cathedral Meditation (Poder nativo do DAWN v2)', desc: 'Em Magias → Poderes → Cathedral Meditation: escolha WorldView → "Vivid" (1x) + "Warm" (1x) para realçar o verde esmeralda das matas, os dourados do sol e o aço medieval!' },
       { key: 'c5', title: '6. Configurar Display Enhancements (Assinatura Rudy/Cabbage ENB de PC)', desc: 'Ative o Preset 28 (1x), depois em Cinematic: Contrast +1, Saturation +2, Sunlight Scale +2. Cria feixes volumétricos intensos e sombras profundas!' },
       { key: 'c6', title: '7. Configurar Busty Skeevers (Anti-Shimmering p/ Florestas Densas)', desc: 'Em Display: FOV = 90, Shadow Fix = ON, Snow Fix = Mode 2 e Softening = 0.15 (suaviza o serrilhado das agulhas de pinheiro e pasto 3D em 1440p).' }
@@ -529,10 +532,16 @@
     }
 
     function getModState(id) {
-      if (!state.mods[id]) {
-        state.mods[id] = { web: false, dl: false, ord: false };
+      var mod = MODS.find(function (m) { return m.id === id; });
+      var key = (mod && mod.bnetId) ? mod.bnetId : String(id);
+      if (!state.mods[key]) {
+        if (state.mods[id]) {
+          state.mods[key] = { web: !!state.mods[id].web, dl: !!state.mods[id].dl, ord: !!state.mods[id].ord };
+        } else {
+          state.mods[key] = { web: false, dl: false, ord: false };
+        }
       }
-      return state.mods[id];
+      return state.mods[key];
     }
 
     function toggleStage(id, stage) {
@@ -918,7 +927,7 @@
       });
 
       return [
-        '// === SMART-SYNC REST API v2 — SKYRIM PC-ULTRA MEDIEVAL V2 (85 MODS • 12,34 GiB) ===',
+        '// === SMART-SYNC REST API v2 — SKYRIM PC-ULTRA MEDIEVAL V2.3 HÍBRIDO (82 MODS • 11,06 GiB) ===',
         '// 1. Esteja logado em https://creations.bethesda.net/en/skyrim/library',
         '// 2. Abra o Console (F12), cole este script inteiro e aperte Enter (~20 segundos).',
         '(async function() {',
@@ -1005,7 +1014,7 @@
         '    await sleep(190);',
         '  }',
         '  if (stop) return;',
-        '  renderHud(MODS.length, "Fase 3/3: Auditando 85/85 no servidor Bethesda...", "Conferindo GET /ugcmods/v2/content/subscribe?product=SKYRIM...", "run");',
+        '  renderHud(MODS.length, "Fase 3/3: Auditando 82/82 no servidor Bethesda...", "Conferindo GET /ugcmods/v2/content/subscribe?product=SKYRIM...", "run");',
         '  await sleep(800);',
         '  let serverMap = await fetchSubscribedMap(token);',
         '  const missingAfter = MODS.filter(m => !serverMap.has(m.bnetId));',
@@ -1018,7 +1027,7 @@
         '  failList = MODS.filter(m => !serverMap.has(m.bnetId)).map(m => ({ ...m, reason: "Não confirmado no GET /subscribe" }));',
         '  okCount = verifiedCount;',
         '  if (verifiedCount === MODS.length) {',
-        '    renderHud(MODS.length, `SUCESSO TOTAL: ${verifiedCount}/${MODS.length} Mods V2 Confirmados!`, `Removidos da V1: ${prunedCount} | Ativos na Library: ${serverMap.size} (12,34 GiB). Agora limpe o Espaço Reservado (15 GB) no Xbox Series S e use Options (☰) → "Download all Creations in my Library"!`, "done");',
+        '    renderHud(MODS.length, `SUCESSO TOTAL: ${verifiedCount}/${MODS.length} Mods V2.3 Confirmados!`, `Podados: ${prunedCount} | Ativos na Library: ${serverMap.size} (11,06 GiB • ~3,94 GiB livres). No Xbox Series S, baixe em Creations e ordene de #01 a #82!`, "done");',
         '  } else {',
         '    renderHud(MODS.length, `Confirmados no Servidor: ${verifiedCount}/${MODS.length}`, `Quase lá! Verifique os itens listados abaixo ou clique em Recarregar Library.`, "err");',
         '  }',
@@ -1028,7 +1037,7 @@
 
     function copyAutomationScript() {
       var code = buildConsoleAutomationSnippet();
-      copyText(code, 'Smart-Sync V2 (85 Mods PC-Ultra)');
+      copyText(code, 'Smart-Sync V2.3 (82 Mods Híbrido)');
     }
 
     function buildClearLibrarySnippet() {
@@ -1087,23 +1096,27 @@
 
     function buildHotfixSwapSnippet() {
       return [
-        '// === HOTFIX ANTI-CRASH V2.2 (~4s) — ESTABILIZA VRAM EM WHITERUN & CHEAT TELEPORT ===',
+        '// === UPGRADE CIRÚRGICO V2.3 CAMINHO B (~4s) — SIMPLY REALISTIC ARMORS & WEAPONS + GUARDAS 2K ===',
         '// Cole no Console (F12) logado em https://creations.bethesda.net/en/skyrim/library',
         '(async function() {'
       ].concat(buildTokenHelperLines()).concat([
         '  const token = await acquireIdToken(false);',
         '  if (!token) { alert("Faça login em creations.bethesda.net, aperte F5 e cole novamente."); return; }',
         '  const REMOVE = [',
-        '    { id: "b306155a-d36c-40fb-857d-6d52d9a4329a", legacyId: 3017337, name: "OLD SMIM SE 2016 (907,5 MB sem compressão BC7)" },',
-        '    { id: "7150b7a4-cc64-4ddc-9216-ada180f153b9", legacyId: 4241333, name: "OLD High Poly Project 2K/4K (348,6 MB)" },',
-        '    { id: "87a402ad-8447-48e6-90ff-609bf3bd11e2", legacyId: null, name: "OLD Nature of the Wild Lands 2.31 (396,2 MB)" }',
+        '    { id: "7fa3fed7-6cd6-4035-bf10-5c0ba80fddf1", legacyId: 4336261, name: "OLD Just Shields (on Back) - SE Edition" },',
+        '    { id: "95372fdb-5774-4e70-92bf-ea0b386b2b00", legacyId: 4256227, name: "OLD Believable weapons (sheathed greatswords)" },',
+        '    { id: "3b1908d3-b4b2-4d42-9351-5bf3532c798a", legacyId: null, name: "OLD (Updated) Xavbio Retextures AiO (No CC) (671,9 MB)" },',
+        '    { id: "9d94d88d-0275-45c0-8083-ecede3c8cbf1", legacyId: 4143740, name: "OLD Vanilla Armor Replacer | By NordwarUA (467,7 MB)" },',
+        '    { id: "b306155a-d36c-40fb-857d-6d52d9a4329a", legacyId: 3017337, name: "OLD SMIM SE 2016 (se ainda estiver na conta)" },',
+        '    { id: "7150b7a4-cc64-4ddc-9216-ada180f153b9", legacyId: 4241333, name: "OLD High Poly Project 2K (se ainda estiver na conta)" },',
+        '    { id: "87a402ad-8447-48e6-90ff-609bf3bd11e2", legacyId: null, name: "OLD Nature of the Wild Lands (se ainda estiver na conta)" }',
         '  ];',
         '  const ADD = [',
-        '    { id: "87294b6e-6e9d-410c-91ed-6bb9fccac15e", legacyId: 4285638, name: "NEW #15 Super Smim\'d 1k (502,65 MB BC7)" },',
-        '    { id: "48f7c830-d51d-4e34-910f-80a9166cbcce", legacyId: 4243083, name: "NEW #16 LucidAPs\' High Poly Project 1K (142,54 MB)" },',
-        '    { id: "89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d", legacyId: 4353887, name: "NEW #58 Fabled Forests Author\'s Choice 1k (91,79 MB)" },',
-        '    { id: "39c6a829-bfca-4af7-9588-3745e23d6e9c", legacyId: 3010376, name: "KEEP #84 Cheat Room (XB1)" },',
-        '    { id: "9d94d88d-0275-45c0-8083-ecede3c8cbf1", legacyId: 4143740, name: "KEEP #35 Vanilla Armor Replacer Full 2K" }',
+        '    { id: "4f64358b-a5df-4790-bac1-4ac33cf114da", legacyId: 4313632, name: "NEW #32 Simply Realistic Armors & Weapons (676,68 MB • BraccaMykar79)" },',
+        '    { id: "87294b6e-6e9d-410c-91ed-6bb9fccac15e", legacyId: 4285638, name: "KEEP #14 Super Smim\'d 1k (502,65 MB)" },',
+        '    { id: "48f7c830-d51d-4e34-910f-80a9166cbcce", legacyId: 4243083, name: "KEEP #15 LucidAPs\' High Poly Project 1K (142,54 MB)" },',
+        '    { id: "89eaa99c-9dc5-4dcc-8c4f-b73ea19b567d", legacyId: 4353887, name: "KEEP #55 Fabled Forests Author\'s Choice 1k (91,79 MB)" },',
+        '    { id: "39c6a829-bfca-4af7-9588-3745e23d6e9c", legacyId: 3010376, name: "KEEP #81 Cheat Room (XB1)" }',
         '  ];',
         '  for (const r of REMOVE) {',
         '    await fetch(`${BASE_API}/ugcmods/v2/content/${r.id}/preference`, {',
@@ -1132,14 +1145,14 @@
         '    console.log("✅ Confirmado na Library:", a.name);',
         '  }',
         '  const map = await fetchSubscribedMap(token);',
-        '  alert(`Hotfix V2.2 concluído!\\nTotal na Library: ${map.size} (11,54 GiB • ~2,3 GB de VRAM liberados).\\n\\nNo Xbox: apague os 3 antigos em Y (Load Order), baixe Super Smim\'d 1k (#15), HPP 1K (#16) e Fabled Forests 1k (#58), suba CFPAO p/ #48, desça Cheat Room p/ #84, Reinicie o Console e teste em New Game!`);',
+        '  alert(`Upgrade V2.3 (Caminho B Híbrido) concluído!\\nTotal na Library: ${map.size} (11,06 GiB • ~3,94 GiB livres).\\n\\nNo Xbox: apague Just Shields, Believable weapons, Xavbio e Vanilla Armor Replacer em Y (Load Order), baixe Simply Realistic Armors & Weapons em #32 (entre Optimized CubeMaps #31 e New Legion #33) e Reinicie o Console!`);',
         '  window.location.reload();',
         '})();'
       ]).join('\n');
     }
 
     function copyHotfixSwapScript() {
-      copyText(buildHotfixSwapSnippet(), 'Hotfix Anti-Crash V2.2 (VRAM Series S)');
+      copyText(buildHotfixSwapSnippet(), 'Upgrade Cirúrgico V2.3 (Simply Realistic + Guardas 2K)');
     }
 
     function exportState() {
